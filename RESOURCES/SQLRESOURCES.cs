@@ -8,7 +8,7 @@ namespace GESTIONECOLE.RESOURCES
     {
 
 
-        public SqlConnection connection = new SqlConnection("Data Source=DESKTOP-ETINB28\\SQLEXPRESS;Initial Catalog=The_school_management;Integrated Security=True");
+        public SqlConnection connection = new SqlConnection("Data Source=.\\SQLEXPRESS;Initial Catalog=The_school_management;Integrated Security=True");
 
         public DataSet ds = new DataSet();
         public SqlDataAdapter adapter;
