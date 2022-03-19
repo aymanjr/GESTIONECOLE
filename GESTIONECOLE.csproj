@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8FEDA5DA-4EEC-42B7-9ECB-0BD96DDB4C75}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GESTIONECOLE</RootNamespace>
+    <AssemblyName>GESTIONECOLE</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>RESOURCES\images\MainIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Core, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>C:\Users\ayman\Downloads\Compressed\_Getintopc.com_Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
+      <HintPath>C:\Users\ayman\Downloads\Compressed\_Getintopc.com_Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCircleProgress">
+      <HintPath>C:\Users\ayman\Downloads\Compressed\_Getintopc.com_Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuCircleProgress.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuColorTransition">
+      <HintPath>C:\Users\ayman\Downloads\Compressed\_Getintopc.com_Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuColorTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>C:\Users\ayman\Downloads\Compressed\_Getintopc.com_Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
+      <HintPath>C:\Users\ayman\Downloads\Compressed\_Getintopc.com_Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>C:\Users\ayman\Downloads\Compressed\_Getintopc.com_Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuProgressBar">
+      <HintPath>C:\Users\ayman\Downloads\Compressed\_Getintopc.com_Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar">
+      <HintPath>C:\Users\ayman\Downloads\Compressed\_Getintopc.com_Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>C:\Users\ayman\Downloads\Compressed\_Getintopc.com_Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTransition">
+      <HintPath>C:\Users\ayman\Downloads\Compressed\_Getintopc.com_Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>C:\Users\ayman\Downloads\Compressed\_Getintopc.com_Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FORMS\CREATEETUDIANTFORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\CREATEETUDIANTFORM.Designer.cs">
+      <DependentUpon>CREATEETUDIANTFORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\CreateExtra_Frais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\CreateExtra_Frais.Designer.cs">
+      <DependentUpon>CreateExtra_Frais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\CREATEINSCRIPTIONFORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\CREATEINSCRIPTIONFORM.Designer.cs">
+      <DependentUpon>CREATEINSCRIPTIONFORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\CreatetEMPLOYEEFORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\CreatetEMPLOYEEFORM.Designer.cs">
+      <DependentUpon>CreatetEMPLOYEEFORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\CREATETRANSPORTFORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\CREATETRANSPORTFORM.Designer.cs">
+      <DependentUpon>CREATETRANSPORTFORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\EVENTSFORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\EVENTSFORM.Designer.cs">
+      <DependentUpon>EVENTSFORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\TheIn_out_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\TheIn_out_Form.Designer.cs">
+      <DependentUpon>TheIn_out_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Frais_Salaire.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\Frais_Salaire.Designer.cs">
+      <DependentUpon>Frais_Salaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Frais_CLASS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\Frais_CLASS.Designer.cs">
+      <DependentUpon>Frais_CLASS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\Frais_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\Frais_Form.Designer.cs">
+      <DependentUpon>Frais_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Frais_Transport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\Frais_Transport.Designer.cs">
+      <DependentUpon>Frais_Transport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\LOGINFORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\LOGINFORM.Designer.cs">
+      <DependentUpon>LOGINFORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\Modification_Frais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\Modification_Frais.Designer.cs">
+      <DependentUpon>Modification_Frais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\PAYMENT_DE_MOIS_FORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\PAYMENT_DE_MOIS_FORM.Designer.cs">
+      <DependentUpon>PAYMENT_DE_MOIS_FORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\THEMAINFORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\THEMAINFORM.Designer.cs">
+      <DependentUpon>THEMAINFORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\TRANSPORTFORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\TRANSPORTFORM.Designer.cs">
+      <DependentUpon>TRANSPORTFORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RESOURCES\SQLRESOURCES.cs" />
+    <Compile Include="SCHOOLMANAGEMENTDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCHOOLMANAGEMENTDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\EMPLOYEEFORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\EMPLOYEEFORM.Designer.cs">
+      <DependentUpon>EMPLOYEEFORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\ETUDIANTFORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\ETUDIANTFORM.Designer.cs">
+      <DependentUpon>ETUDIANTFORM.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FORMS\CREATEETUDIANTFORM.resx">
+      <DependentUpon>CREATEETUDIANTFORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\CreateExtra_Frais.resx">
+      <DependentUpon>CreateExtra_Frais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\CREATEINSCRIPTIONFORM.resx">
+      <DependentUpon>CREATEINSCRIPTIONFORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\CreatetEMPLOYEEFORM.resx">
+      <DependentUpon>CreatetEMPLOYEEFORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\CREATETRANSPORTFORM.resx">
+      <DependentUpon>CREATETRANSPORTFORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\EVENTSFORM.resx">
+      <DependentUpon>EVENTSFORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\TheIn_out_Form.resx">
+      <DependentUpon>TheIn_out_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\Frais_Salaire.resx">
+      <DependentUpon>Frais_Salaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\Frais_CLASS.resx">
+      <DependentUpon>Frais_CLASS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\Frais_Form.resx">
+      <DependentUpon>Frais_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\Frais_Transport.resx">
+      <DependentUpon>Frais_Transport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\LOGINFORM.resx">
+      <DependentUpon>LOGINFORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\Modification_Frais.resx">
+      <DependentUpon>Modification_Frais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\PAYMENT_DE_MOIS_FORM.resx">
+      <DependentUpon>PAYMENT_DE_MOIS_FORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\THEMAINFORM.resx">
+      <DependentUpon>THEMAINFORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\TRANSPORTFORM.resx">
+      <DependentUpon>TRANSPORTFORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="FORMS\EMPLOYEEFORM.resx">
+      <DependentUpon>EMPLOYEEFORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\ETUDIANTFORM.resx">
+      <DependentUpon>ETUDIANTFORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SCHOOLMANAGEMENTDataSet.xsc">
+      <DependentUpon>SCHOOLMANAGEMENTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SCHOOLMANAGEMENTDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SCHOOLMANAGEMENTDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SCHOOLMANAGEMENTDataSet.xss">
+      <DependentUpon>SCHOOLMANAGEMENTDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RESOURCES\images\1515216081212.jpg" />
+    <Content Include="RESOURCES\images\1515674874405.jpg" />
+    <Content Include="RESOURCES\images\16071.png" />
+    <Content Include="RESOURCES\images\22.png" />
+    <Content Include="RESOURCES\images\33.png" />
+    <Content Include="RESOURCES\images\331.png" />
+    <Content Include="RESOURCES\images\332.png" />
+    <Content Include="RESOURCES\images\333.png" />
+    <Content Include="RESOURCES\images\441.png" />
+    <Content Include="RESOURCES\images\442.png" />
+    <Content Include="RESOURCES\images\66.png" />
+    <Content Include="RESOURCES\images\77.png" />
+    <Content Include="RESOURCES\images\a-bunch-of-kids-5a28b30137a392.2006039015126167052279.jpg" />
+    <Content Include="RESOURCES\images\Add User Male_48px.png" />
+    <None Include="RESOURCES\images\add_user_male_480px.png" />
+    <None Include="RESOURCES\images\add_480px.png" />
+    <Content Include="RESOURCES\images\airport-bus-aaa.png" />
+    <Content Include="RESOURCES\images\Attention_32px.png" />
+    <Content Include="RESOURCES\images\Attention_32px1.png" />
+    <Content Include="RESOURCES\images\bus-computer-icons-iconfinder-free-icon-bus-png-clip-art.png" />
+    <None Include="RESOURCES\images\bus_96px.png" />
+    <None Include="RESOURCES\images\calendar_4_208px.png" />
+    <Content Include="RESOURCES\images\Checkmark_32px.png" />
+    <Content Include="RESOURCES\images\Delete_32px.png" />
+    <Content Include="RESOURCES\images\Delete_48px.png" />
+    <Content Include="RESOURCES\images\Do Not Disturb_32px.png" />
+    <Content Include="RESOURCES\images\dollaraaaa.png" />
+    <Content Include="RESOURCES\images\download.jpg" />
+    <None Include="RESOURCES\images\exchange_480px.png" />
+    <Content Include="RESOURCES\images\ggg.png" />
+    <Content Include="RESOURCES\images\icons8_Accounting_32px.png" />
+    <Content Include="RESOURCES\images\icons8_Account_32px.png" />
+    <Content Include="RESOURCES\images\icons8_Account_80px.png" />
+    <Content Include="RESOURCES\images\icons8_Add_32px.png" />
+    <Content Include="RESOURCES\images\icons8_Add_User_Group_Man_Man_25px.png" />
+    <Content Include="RESOURCES\images\icons8_Add_User_Group_Man_Man_25px_2.png" />
+    <Content Include="RESOURCES\images\icons8_Add_User_Group_Man_Man_28px_3.png" />
+    <Content Include="RESOURCES\images\icons8_Add_User_Group_Man_Man_32px_1.png" />
+    <Content Include="RESOURCES\images\icons8_Add_User_Group_Man_Man_32px_2.png" />
+    <Content Include="RESOURCES\images\icons8_Add_User_Group_Man_Man_32px_3.png" />
+    <Content Include="RESOURCES\images\icons8_Add_User_Male_48px.png" />
+    <Content Include="RESOURCES\images\icons8_Admin_100px_1.png" />
+    <Content Include="RESOURCES\images\icons8_Admin_25px.png" />
+    <Content Include="RESOURCES\images\icons8_Admin_32px.png" />
+    <Content Include="RESOURCES\images\icons8_Admin_96px.png" />
+    <Content Include="RESOURCES\images\icons8_America_100px.png" />
+    <Content Include="RESOURCES\images\icons8_Asia_96px_1.png" />
+    <Content Include="RESOURCES\images\icons8_Book_Shelf_96px.png" />
+    <Content Include="RESOURCES\images\icons8_Cancel_32px.png" />
+    <Content Include="RESOURCES\images\icons8_Checked_48px_1.png" />
+    <Content Include="RESOURCES\images\icons8_Circled_User_Male_Skin_Type_4_96px.png" />
+    <Content Include="RESOURCES\images\icons8_Close_Window_48px.png" />
+    <Content Include="RESOURCES\images\icons8_Collaborator_Male_96px_2.png" />
+    <Content Include="RESOURCES\images\icons8_Collaborator_Male_96px_3.png" />
+    <Content Include="RESOURCES\images\icons8_Collaborator_Male_96px_31.png" />
+    <Content Include="RESOURCES\images\icons8_Combo_Chart_32px.png" />
+    <Content Include="RESOURCES\images\icons8_Combo_Chart_32px1.png" />
+    <Content Include="RESOURCES\images\icons8_Crowd_100px.png" />
+    <Content Include="RESOURCES\images\icons8_edit_480px_1.png" />
+    <Content Include="RESOURCES\images\icons8_edit_480px_2.png" />
+    <Content Include="RESOURCES\images\icons8_Exit_96px.png" />
+    <Content Include="RESOURCES\images\icons8_E_Learning_96px_6.png" />
+    <Content Include="RESOURCES\images\icons8_Globe_96px_1.png" />
+    <Content Include="RESOURCES\images\icons8_Google_Classroom_25px_1.png" />
+    <Content Include="RESOURCES\images\icons8_Google_Classroom_32px.png" />
+    <Content Include="RESOURCES\images\icons8_google_web_search_400px.png" />
+    <Content Include="RESOURCES\images\icons8_go_back_480px.png" />
+    <Content Include="RESOURCES\images\icons8_Group_25px.png" />
+    <Content Include="RESOURCES\images\icons8_Group_32px.png" />
+    <Content Include="RESOURCES\images\icons8_ID_Card_25px.png" />
+    <Content Include="RESOURCES\images\icons8_ID_Card_25px1.png" />
+    <Content Include="RESOURCES\images\icons8_Key_2_100px_1.png" />
+    <Content Include="RESOURCES\images\icons8_Key_2_96px.png" />
+    <Content Include="RESOURCES\images\icons8_Maintenance_64px.png" />
+    <None Include="RESOURCES\images\icons8_Maintenance_96px.png" />
+    <Content Include="RESOURCES\images\icons8_Male_User_100px_4.png" />
+    <Content Include="RESOURCES\images\icons8_Management_20px.png" />
+    <Content Include="RESOURCES\images\icons8_Maximize_Window_96px.png" />
+    <Content Include="RESOURCES\images\icons8_Menu_32px.png" />
+    <Content Include="RESOURCES\images\icons8_Menu_32px_2.png" />
+    <Content Include="RESOURCES\images\icons8_Minimize_Window_96px.png" />
+    <Content Include="RESOURCES\images\icons8_Paper_Money_25px.png" />
+    <Content Include="RESOURCES\images\icons8_Paper_Money_32px_1.png" />
+    <Content Include="RESOURCES\images\icons8_Pin_96px.png" />
+    <Content Include="RESOURCES\images\icons8_Presentation_32px.png" />
+    <Content Include="RESOURCES\images\icons8_Purchase_Order_25px.png" />
+    <Content Include="RESOURCES\images\icons8_Queue_25px.png" />
+    <Content Include="RESOURCES\images\icons8_Racism_100px_2.png" />
+    <Content Include="RESOURCES\images\icons8_Racism_96px_2.png" />
+    <Content Include="RESOURCES\images\icons8_Report_Card_25px.png" />
+    <Content Include="RESOURCES\images\icons8_Report_Card_32px.png" />
+    <Content Include="RESOURCES\images\icons8_School_Director_96px_7.png" />
+    <Content Include="RESOURCES\images\icons8_Search_25px_1.png" />
+    <None Include="RESOURCES\images\icons8_Search_48px_1.png" />
+    <Content Include="RESOURCES\images\icons8_search_480px.png" />
+    <Content Include="RESOURCES\images\icons8_search_in_list_512px.png" />
+    <Content Include="RESOURCES\images\icons8_Training_20px.png" />
+    <Content Include="RESOURCES\images\icons8_Training_25px.png" />
+    <Content Include="RESOURCES\images\icons8_User_100px_8.png" />
+    <Content Include="RESOURCES\images\icons8_User_20px.png" />
+    <Content Include="RESOURCES\images\icons8_User_Account_20px.png" />
+    <Content Include="RESOURCES\images\icons8_User_Groups_20px.png" />
+    <Content Include="RESOURCES\images\icons8_User_Groups_25px.png" />
+    <Content Include="RESOURCES\images\icons8_User_Groups_32px.png" />
+    <Content Include="RESOURCES\images\icons8_User_Groups_50px_1.png" />
+    <Content Include="RESOURCES\images\icons8_User_Male_25px.png" />
+    <None Include="RESOURCES\images\management_480px.png" />
+    <None Include="RESOURCES\images\money_bag_512px.png" />
+    <None Include="RESOURCES\images\installing_updates_96px.png" />
+    <Content Include="RESOURCES\images\Ok_100px.png" />
+    <Content Include="RESOURCES\images\Paper Money_100px.png" />
+    <None Include="RESOURCES\images\payment_history_512px.png" />
+    <Content Include="RESOURCES\images\Record_32px.png" />
+    <Content Include="RESOURCES\images\Record_96px.png" />
+    <Content Include="RESOURCES\images\rsz_1116071.png" />
+    <Content Include="RESOURCES\images\rsz_116071.png" />
+    <Content Include="RESOURCES\images\rsz_dollaraaaa.png" />
+    <Content Include="RESOURCES\images\sampl.png" />
+    <Content Include="RESOURCES\images\Search_48px.png" />
+    <Content Include="RESOURCES\images\Shutdown_96px.png" />
+    <None Include="RESOURCES\images\students_480px.png" />
+    <Content Include="RESOURCES\images\User_50px.png" />
+    <None Include="RESOURCES\images\55.png" />
+    <Content Include="RESOURCES\images\44.png" />
+    <Content Include="RESOURCES\images\Add User Group Man Man_50px.png" />
+    <Content Include="RESOURCES\images\agt_back-256.png" />
+    <Content Include="RESOURCES\images\agt_forward-256.png" />
+    <Content Include="RESOURCES\images\end.png" />
+    <None Include="RESOURCES\images\icons8_School_96px.png" />
+    <None Include="RESOURCES\images\icons8_Home_35px_1.png" />
+    <Content Include="RESOURCES\images\icons8_Add_User_Group_Man_Man_25px_22.png" />
+    <None Include="RESOURCES\images\icons8_Students_25px_1.png" />
+    <None Include="RESOURCES\images\icons8_Classroom_32px.png" />
+    <Content Include="RESOURCES\images\icons8_Training_32px.png" />
+    <Content Include="RESOURCES\images\MainIcon.ico" />
+    <Content Include="RESOURCES\images\refresh.png" />
+    <Content Include="RESOURCES\images\stdAdd.png" />
+    <Content Include="RESOURCES\images\stdDelete.png" />
+    <Content Include="RESOURCES\images\stdEdit.png" />
+    <Content Include="RESOURCES\images\stdUpdate.png" />
+    <Content Include="RESOURCES\images\student.png" />
+    <Content Include="RESOURCES\images\subject.png" />
+    <Content Include="RESOURCES\images\subject_add.png" />
+    <Content Include="RESOURCES\images\subject_delete.png" />
+    <Content Include="RESOURCES\images\subject_edit.png" />
+    <Content Include="RESOURCES\images\subject_main.png" />
+    <Content Include="RESOURCES\images\teachAdd.png" />
+    <Content Include="RESOURCES\images\teachDelete.png" />
+    <Content Include="RESOURCES\images\teachEdit.png" />
+    <Content Include="RESOURCES\images\Teachers.png" />
+    <Content Include="RESOURCES\images\Training_100px.png" />
+    <Content Include="RESOURCES\images\Unavailable_100px.png" />
+    <Content Include="RESOURCES\images\Unavailable_32px.png" />
+    <Content Include="RESOURCES\images\Unavailable_48px.png" />
+    <Content Include="RESOURCES\images\Untitled-1.png" />
+    <Content Include="RESOURCES\images\Untitled-11.png" />
+    <Content Include="RESOURCES\images\Untitled-2.png" />
+    <Content Include="RESOURCES\images\Untitled.png" />
+    <Content Include="RESOURCES\images\Upward Arrow_100px.png" />
+    <Content Include="RESOURCES\images\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="REPORTS\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
