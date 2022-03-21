@@ -24,7 +24,7 @@ namespace GESTIONECOLE.FORMS
         public void eleve_mois_frais_out()
         {
             r.connecter();
-            r.command = new SqlCommand("select sum(f.FR_TOTAL) from FRAIS_MOIS_ELEVE f where f.FR_datepayment  between '01/09/'+trim(str((YEAR(GETDATE())-1))) and GETDATE()",r.connection);
+            r.command = new SqlCommand("select sum(f.FR_TOTAL) from FRAIS_MOIS_ELEVE f ",r.connection);
 
             r.reader = r.command.ExecuteReader();
             while (r.reader.Read())
@@ -39,7 +39,7 @@ namespace GESTIONECOLE.FORMS
          public void inscription_frais_out()
         {
             r.connecter();
-            r.command = new SqlCommand("select sum(i.INS_cout) from INSCRIPTION i where i.INS_date between '01/09/'+trim(str((YEAR(GETDATE())-1))) and GETDATE()",r.connection);
+            r.command = new SqlCommand("select sum(i.INS_cout) from INSCRIPTION i",r.connection);
 
             r.reader = r.command.ExecuteReader();
             while (r.reader.Read())

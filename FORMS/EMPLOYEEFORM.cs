@@ -24,8 +24,9 @@ namespace GESTIONECOLE
             t.Close();
 
             list_teachers();
-            showpost();
             showville();
+
+            showpost();
         }
         private void list_teachers()
         {
@@ -276,6 +277,11 @@ namespace GESTIONECOLE
             this.Hide();
         ee.ShowDialog();
         this.Close();
+
+        }
+
+        private void panel_ville_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }
