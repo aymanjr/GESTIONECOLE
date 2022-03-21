@@ -389,8 +389,8 @@ namespace GESTIONECOLE.FORMS
         {
             THEMAINFORM ee = new THEMAINFORM();
             this.Hide();
-        ee.ShowDialog();
-        this.Close();
+            ee.ShowDialog();
+            this.Close();
         }
     }
 }
