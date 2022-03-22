@@ -29,60 +29,52 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TheIn_out_Form));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.extra_frais_label = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.eleve_mois_frais_label = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.inscription_label = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.Total_frais_in_label = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_descr_outfrais = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.cout_out_frais_label = new System.Windows.Forms.Label();
             this.date_out_frais_label = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.salaire_frais_label = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.total_frais_out_label = new System.Windows.Forms.Label();
             this.date_frais_in_label = new System.Windows.Forms.Label();
             this.cose_frais_in_label = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.txt_desc_in = new System.Windows.Forms.RichTextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel_date = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.datetimepicker_TO = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.datetimepicker_from = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.recherchbtn_date = new Bunifu.Framework.UI.BunifuImageButton();
+            this.Panel_Type = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.rechercheBTN_type = new Bunifu.Framework.UI.BunifuImageButton();
+            this.combobox_type = new Bunifu.Framework.UI.BunifuDropdown();
+            this.refreshBTN = new Bunifu.Framework.UI.BunifuImageButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.combo_choice = new Bunifu.Framework.UI.BunifuDropdown();
+            this.totalrecherchLABEL = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.datagrid_Recherche = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.combo_inoutsearch = new Bunifu.Framework.UI.BunifuDropdown();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Combo_section = new Bunifu.Framework.UI.BunifuDropdown();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.panel_date.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.recherchbtn_date)).BeginInit();
+            this.Panel_Type.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rechercheBTN_type)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.refreshBTN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datagrid_Recherche)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuFlatButton1
@@ -122,203 +114,12 @@
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.panel2.Location = new System.Drawing.Point(425, -1);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(10, 656);
-            this.panel2.TabIndex = 57;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.extra_frais_label);
-            this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.panel1.Location = new System.Drawing.Point(638, 142);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(225, 54);
-            this.panel1.TabIndex = 58;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(159, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(63, 48);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // extra_frais_label
-            // 
-            this.extra_frais_label.AutoSize = true;
-            this.extra_frais_label.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.extra_frais_label.ForeColor = System.Drawing.Color.Black;
-            this.extra_frais_label.Location = new System.Drawing.Point(23, 18);
-            this.extra_frais_label.Name = "extra_frais_label";
-            this.extra_frais_label.Size = new System.Drawing.Size(58, 19);
-            this.extra_frais_label.TabIndex = 0;
-            this.extra_frais_label.Text = "label1";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
-            this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Controls.Add(this.eleve_mois_frais_label);
-            this.panel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.panel3.Location = new System.Drawing.Point(161, 142);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(225, 54);
-            this.panel3.TabIndex = 59;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(159, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(63, 48);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // eleve_mois_frais_label
-            // 
-            this.eleve_mois_frais_label.AutoSize = true;
-            this.eleve_mois_frais_label.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.eleve_mois_frais_label.ForeColor = System.Drawing.Color.Black;
-            this.eleve_mois_frais_label.Location = new System.Drawing.Point(23, 18);
-            this.eleve_mois_frais_label.Name = "eleve_mois_frais_label";
-            this.eleve_mois_frais_label.Size = new System.Drawing.Size(58, 19);
-            this.eleve_mois_frais_label.TabIndex = 0;
-            this.eleve_mois_frais_label.Text = "label1";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
-            this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.Controls.Add(this.inscription_label);
-            this.panel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.panel4.Location = new System.Drawing.Point(161, 242);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(225, 54);
-            this.panel4.TabIndex = 59;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(159, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(63, 48);
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            // 
-            // inscription_label
-            // 
-            this.inscription_label.AutoSize = true;
-            this.inscription_label.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inscription_label.ForeColor = System.Drawing.Color.Black;
-            this.inscription_label.Location = new System.Drawing.Point(23, 18);
-            this.inscription_label.Name = "inscription_label";
-            this.inscription_label.Size = new System.Drawing.Size(58, 19);
-            this.inscription_label.TabIndex = 0;
-            this.inscription_label.Text = "label1";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Silver;
-            this.label3.Location = new System.Drawing.Point(492, 163);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 19);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Extras Frais : ";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Silver;
-            this.label4.Location = new System.Drawing.Point(18, 162);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 19);
-            this.label4.TabIndex = 60;
-            this.label4.Text = "Eleve Mois Frais : ";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Silver;
-            this.label1.Location = new System.Drawing.Point(12, 260);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 19);
-            this.label1.TabIndex = 61;
-            this.label1.Text = "Inscription Frais : ";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
-            this.panel5.Controls.Add(this.pictureBox4);
-            this.panel5.Controls.Add(this.Total_frais_in_label);
-            this.panel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.panel5.Location = new System.Drawing.Point(158, 329);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(225, 54);
-            this.panel5.TabIndex = 60;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(159, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(63, 48);
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
-            // 
-            // Total_frais_in_label
-            // 
-            this.Total_frais_in_label.AutoSize = true;
-            this.Total_frais_in_label.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Total_frais_in_label.ForeColor = System.Drawing.Color.Black;
-            this.Total_frais_in_label.Location = new System.Drawing.Point(23, 18);
-            this.Total_frais_in_label.Name = "Total_frais_in_label";
-            this.Total_frais_in_label.Size = new System.Drawing.Size(58, 19);
-            this.Total_frais_in_label.TabIndex = 0;
-            this.Total_frais_in_label.Text = "label1";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Silver;
-            this.label6.Location = new System.Drawing.Point(19, 343);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 19);
-            this.label6.TabIndex = 62;
-            this.label6.Text = "Total Frais : ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Silver;
-            this.label2.Location = new System.Drawing.Point(633, 75);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(138, 28);
-            this.label2.TabIndex = 63;
-            this.label2.Text = "OUT Frais : ";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.panel6.Location = new System.Drawing.Point(-2, 409);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(437, 10);
-            this.panel6.TabIndex = 58;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Silver;
-            this.label5.Location = new System.Drawing.Point(5, 431);
+            this.label5.Location = new System.Drawing.Point(5, 504);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(118, 19);
             this.label5.TabIndex = 64;
@@ -330,7 +131,7 @@
             this.txt_descr_outfrais.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_descr_outfrais.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_descr_outfrais.ForeColor = System.Drawing.Color.Silver;
-            this.txt_descr_outfrais.Location = new System.Drawing.Point(12, 462);
+            this.txt_descr_outfrais.Location = new System.Drawing.Point(12, 535);
             this.txt_descr_outfrais.Name = "txt_descr_outfrais";
             this.txt_descr_outfrais.Size = new System.Drawing.Size(407, 61);
             this.txt_descr_outfrais.TabIndex = 107;
@@ -341,7 +142,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Silver;
-            this.label7.Location = new System.Drawing.Point(12, 547);
+            this.label7.Location = new System.Drawing.Point(12, 620);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(57, 19);
             this.label7.TabIndex = 108;
@@ -352,7 +153,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Silver;
-            this.label8.Location = new System.Drawing.Point(12, 606);
+            this.label8.Location = new System.Drawing.Point(12, 679);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(57, 19);
             this.label8.TabIndex = 109;
@@ -363,7 +164,7 @@
             this.cout_out_frais_label.AutoSize = true;
             this.cout_out_frais_label.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cout_out_frais_label.ForeColor = System.Drawing.Color.DarkGray;
-            this.cout_out_frais_label.Location = new System.Drawing.Point(157, 547);
+            this.cout_out_frais_label.Location = new System.Drawing.Point(157, 620);
             this.cout_out_frais_label.Name = "cout_out_frais_label";
             this.cout_out_frais_label.Size = new System.Drawing.Size(58, 19);
             this.cout_out_frais_label.TabIndex = 2;
@@ -374,100 +175,18 @@
             this.date_out_frais_label.AutoSize = true;
             this.date_out_frais_label.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_out_frais_label.ForeColor = System.Drawing.Color.DarkGray;
-            this.date_out_frais_label.Location = new System.Drawing.Point(157, 606);
+            this.date_out_frais_label.Location = new System.Drawing.Point(157, 679);
             this.date_out_frais_label.Name = "date_out_frais_label";
             this.date_out_frais_label.Size = new System.Drawing.Size(58, 19);
             this.date_out_frais_label.TabIndex = 110;
             this.date_out_frais_label.Text = "label1";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Silver;
-            this.label9.Location = new System.Drawing.Point(481, 260);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(112, 19);
-            this.label9.TabIndex = 59;
-            this.label9.Text = "Salaire Frais : ";
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
-            this.panel7.Controls.Add(this.pictureBox5);
-            this.panel7.Controls.Add(this.salaire_frais_label);
-            this.panel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.panel7.Location = new System.Drawing.Point(638, 242);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(225, 54);
-            this.panel7.TabIndex = 60;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Location = new System.Drawing.Point(159, 3);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(63, 48);
-            this.pictureBox5.TabIndex = 1;
-            this.pictureBox5.TabStop = false;
-            // 
-            // salaire_frais_label
-            // 
-            this.salaire_frais_label.AutoSize = true;
-            this.salaire_frais_label.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.salaire_frais_label.ForeColor = System.Drawing.Color.Black;
-            this.salaire_frais_label.Location = new System.Drawing.Point(23, 18);
-            this.salaire_frais_label.Name = "salaire_frais_label";
-            this.salaire_frais_label.Size = new System.Drawing.Size(58, 19);
-            this.salaire_frais_label.TabIndex = 0;
-            this.salaire_frais_label.Text = "label1";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Silver;
-            this.label10.Location = new System.Drawing.Point(498, 346);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(95, 19);
-            this.label10.TabIndex = 112;
-            this.label10.Text = "Total Frais : ";
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
-            this.panel8.Controls.Add(this.pictureBox6);
-            this.panel8.Controls.Add(this.total_frais_out_label);
-            this.panel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.panel8.Location = new System.Drawing.Point(637, 332);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(225, 54);
-            this.panel8.TabIndex = 111;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Location = new System.Drawing.Point(159, 3);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(63, 48);
-            this.pictureBox6.TabIndex = 1;
-            this.pictureBox6.TabStop = false;
-            // 
-            // total_frais_out_label
-            // 
-            this.total_frais_out_label.AutoSize = true;
-            this.total_frais_out_label.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.total_frais_out_label.ForeColor = System.Drawing.Color.Black;
-            this.total_frais_out_label.Location = new System.Drawing.Point(23, 18);
-            this.total_frais_out_label.Name = "total_frais_out_label";
-            this.total_frais_out_label.Size = new System.Drawing.Size(58, 19);
-            this.total_frais_out_label.TabIndex = 0;
-            this.total_frais_out_label.Text = "label1";
             // 
             // date_frais_in_label
             // 
             this.date_frais_in_label.AutoSize = true;
             this.date_frais_in_label.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_frais_in_label.ForeColor = System.Drawing.Color.DarkGray;
-            this.date_frais_in_label.Location = new System.Drawing.Point(600, 606);
+            this.date_frais_in_label.Location = new System.Drawing.Point(863, 679);
             this.date_frais_in_label.Name = "date_frais_in_label";
             this.date_frais_in_label.Size = new System.Drawing.Size(58, 19);
             this.date_frais_in_label.TabIndex = 119;
@@ -478,7 +197,7 @@
             this.cose_frais_in_label.AutoSize = true;
             this.cose_frais_in_label.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cose_frais_in_label.ForeColor = System.Drawing.Color.DarkGray;
-            this.cose_frais_in_label.Location = new System.Drawing.Point(600, 547);
+            this.cose_frais_in_label.Location = new System.Drawing.Point(863, 620);
             this.cose_frais_in_label.Name = "cose_frais_in_label";
             this.cose_frais_in_label.Size = new System.Drawing.Size(58, 19);
             this.cose_frais_in_label.TabIndex = 113;
@@ -489,7 +208,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Silver;
-            this.label13.Location = new System.Drawing.Point(455, 606);
+            this.label13.Location = new System.Drawing.Point(718, 679);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(57, 19);
             this.label13.TabIndex = 118;
@@ -500,7 +219,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Silver;
-            this.label14.Location = new System.Drawing.Point(455, 547);
+            this.label14.Location = new System.Drawing.Point(718, 620);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(57, 19);
             this.label14.TabIndex = 117;
@@ -512,7 +231,7 @@
             this.txt_desc_in.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_desc_in.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_desc_in.ForeColor = System.Drawing.Color.Silver;
-            this.txt_desc_in.Location = new System.Drawing.Point(455, 462);
+            this.txt_desc_in.Location = new System.Drawing.Point(718, 535);
             this.txt_desc_in.Name = "txt_desc_in";
             this.txt_desc_in.Size = new System.Drawing.Size(407, 61);
             this.txt_desc_in.TabIndex = 116;
@@ -523,90 +242,396 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Silver;
-            this.label15.Location = new System.Drawing.Point(448, 431);
+            this.label15.Location = new System.Drawing.Point(711, 504);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(105, 19);
             this.label15.TabIndex = 115;
             this.label15.Text = "Last In Frais : ";
             // 
-            // panel9
+            // panel2
             // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.panel9.Location = new System.Drawing.Point(433, 409);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(445, 10);
-            this.panel9.TabIndex = 114;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.panel2.Location = new System.Drawing.Point(276, -4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(11, 503);
+            this.panel2.TabIndex = 132;
             // 
-            // label11
+            // panel1
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Silver;
-            this.label11.Location = new System.Drawing.Point(156, 75);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(118, 28);
-            this.label11.TabIndex = 120;
-            this.label11.Text = "IN Frais : ";
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.panel1.Location = new System.Drawing.Point(1, 492);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1175, 10);
+            this.panel1.TabIndex = 133;
+            // 
+            // panel_date
+            // 
+            this.panel_date.Controls.Add(this.label17);
+            this.panel_date.Controls.Add(this.label16);
+            this.panel_date.Controls.Add(this.datetimepicker_TO);
+            this.panel_date.Controls.Add(this.datetimepicker_from);
+            this.panel_date.Controls.Add(this.recherchbtn_date);
+            this.panel_date.Location = new System.Drawing.Point(487, 9);
+            this.panel_date.Name = "panel_date";
+            this.panel_date.Size = new System.Drawing.Size(355, 62);
+            this.panel_date.TabIndex = 163;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Silver;
+            this.label17.Location = new System.Drawing.Point(147, 24);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(35, 21);
+            this.label17.TabIndex = 157;
+            this.label17.Text = "A : ";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Silver;
+            this.label16.Location = new System.Drawing.Point(4, 24);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(40, 21);
+            this.label16.TabIndex = 156;
+            this.label16.Text = "De :";
+            // 
+            // datetimepicker_TO
+            // 
+            this.datetimepicker_TO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.datetimepicker_TO.BorderRadius = 0;
+            this.datetimepicker_TO.ForeColor = System.Drawing.Color.White;
+            this.datetimepicker_TO.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.datetimepicker_TO.FormatCustom = null;
+            this.datetimepicker_TO.Location = new System.Drawing.Point(196, 15);
+            this.datetimepicker_TO.Name = "datetimepicker_TO";
+            this.datetimepicker_TO.Size = new System.Drawing.Size(72, 36);
+            this.datetimepicker_TO.TabIndex = 156;
+            this.datetimepicker_TO.Value = new System.DateTime(2020, 6, 9, 23, 5, 29, 244);
+            // 
+            // datetimepicker_from
+            // 
+            this.datetimepicker_from.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.datetimepicker_from.BorderRadius = 0;
+            this.datetimepicker_from.ForeColor = System.Drawing.Color.White;
+            this.datetimepicker_from.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.datetimepicker_from.FormatCustom = null;
+            this.datetimepicker_from.Location = new System.Drawing.Point(57, 15);
+            this.datetimepicker_from.Name = "datetimepicker_from";
+            this.datetimepicker_from.Size = new System.Drawing.Size(72, 36);
+            this.datetimepicker_from.TabIndex = 155;
+            this.datetimepicker_from.Value = new System.DateTime(2020, 6, 9, 23, 5, 29, 244);
+            // 
+            // recherchbtn_date
+            // 
+            this.recherchbtn_date.BackColor = System.Drawing.Color.Transparent;
+            this.recherchbtn_date.Image = ((System.Drawing.Image)(resources.GetObject("recherchbtn_date.Image")));
+            this.recherchbtn_date.ImageActive = null;
+            this.recherchbtn_date.Location = new System.Drawing.Point(314, 15);
+            this.recherchbtn_date.Name = "recherchbtn_date";
+            this.recherchbtn_date.Size = new System.Drawing.Size(34, 30);
+            this.recherchbtn_date.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.recherchbtn_date.TabIndex = 154;
+            this.recherchbtn_date.TabStop = false;
+            this.recherchbtn_date.Zoom = 10;
+            // 
+            // Panel_Type
+            // 
+            this.Panel_Type.Controls.Add(this.label1);
+            this.Panel_Type.Controls.Add(this.rechercheBTN_type);
+            this.Panel_Type.Controls.Add(this.combobox_type);
+            this.Panel_Type.Location = new System.Drawing.Point(487, 9);
+            this.Panel_Type.Name = "Panel_Type";
+            this.Panel_Type.Size = new System.Drawing.Size(318, 62);
+            this.Panel_Type.TabIndex = 162;
+            this.Panel_Type.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Silver;
+            this.label1.Location = new System.Drawing.Point(22, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 21);
+            this.label1.TabIndex = 154;
+            this.label1.Text = "Type :";
+            // 
+            // rechercheBTN_type
+            // 
+            this.rechercheBTN_type.BackColor = System.Drawing.Color.Transparent;
+            this.rechercheBTN_type.Image = ((System.Drawing.Image)(resources.GetObject("rechercheBTN_type.Image")));
+            this.rechercheBTN_type.ImageActive = null;
+            this.rechercheBTN_type.Location = new System.Drawing.Point(273, 16);
+            this.rechercheBTN_type.Name = "rechercheBTN_type";
+            this.rechercheBTN_type.Size = new System.Drawing.Size(34, 30);
+            this.rechercheBTN_type.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.rechercheBTN_type.TabIndex = 154;
+            this.rechercheBTN_type.TabStop = false;
+            this.rechercheBTN_type.Zoom = 10;
+            // 
+            // combobox_type
+            // 
+            this.combobox_type.BackColor = System.Drawing.Color.Transparent;
+            this.combobox_type.BorderRadius = 3;
+            this.combobox_type.DisabledColor = System.Drawing.Color.Gray;
+            this.combobox_type.ForeColor = System.Drawing.Color.Silver;
+            this.combobox_type.items = new string[0];
+            this.combobox_type.Location = new System.Drawing.Point(107, 18);
+            this.combobox_type.Name = "combobox_type";
+            this.combobox_type.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.combobox_type.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.combobox_type.selectedIndex = -1;
+            this.combobox_type.Size = new System.Drawing.Size(133, 30);
+            this.combobox_type.TabIndex = 154;
+            // 
+            // refreshBTN
+            // 
+            this.refreshBTN.BackColor = System.Drawing.Color.Transparent;
+            this.refreshBTN.Image = ((System.Drawing.Image)(resources.GetObject("refreshBTN.Image")));
+            this.refreshBTN.ImageActive = null;
+            this.refreshBTN.Location = new System.Drawing.Point(1059, 25);
+            this.refreshBTN.Name = "refreshBTN";
+            this.refreshBTN.Size = new System.Drawing.Size(27, 32);
+            this.refreshBTN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.refreshBTN.TabIndex = 158;
+            this.refreshBTN.TabStop = false;
+            this.refreshBTN.Zoom = 10;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Silver;
+            this.label6.Location = new System.Drawing.Point(12, 57);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(138, 21);
+            this.label6.TabIndex = 157;
+            this.label6.Text = "Recherche par : ";
+            // 
+            // combo_choice
+            // 
+            this.combo_choice.BackColor = System.Drawing.Color.Transparent;
+            this.combo_choice.BorderRadius = 3;
+            this.combo_choice.DisabledColor = System.Drawing.Color.Gray;
+            this.combo_choice.ForeColor = System.Drawing.Color.Silver;
+            this.combo_choice.items = new string[] {
+        "Type",
+        "Cost la plus haut",
+        "Cost la plus pas ",
+        "Date "};
+            this.combo_choice.Location = new System.Drawing.Point(16, 93);
+            this.combo_choice.Name = "combo_choice";
+            this.combo_choice.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.combo_choice.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.combo_choice.selectedIndex = -1;
+            this.combo_choice.Size = new System.Drawing.Size(157, 30);
+            this.combo_choice.TabIndex = 156;
+            // 
+            // totalrecherchLABEL
+            // 
+            this.totalrecherchLABEL.AutoSize = true;
+            this.totalrecherchLABEL.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalrecherchLABEL.ForeColor = System.Drawing.Color.Silver;
+            this.totalrecherchLABEL.Location = new System.Drawing.Point(731, 427);
+            this.totalrecherchLABEL.Name = "totalrecherchLABEL";
+            this.totalrecherchLABEL.Size = new System.Drawing.Size(0, 23);
+            this.totalrecherchLABEL.TabIndex = 165;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Silver;
+            this.label2.Location = new System.Drawing.Point(541, 427);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(69, 23);
+            this.label2.TabIndex = 164;
+            this.label2.Text = "Total : ";
+            // 
+            // datagrid_Recherche
+            // 
+            this.datagrid_Recherche.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.datagrid_Recherche.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.datagrid_Recherche.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.datagrid_Recherche.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.datagrid_Recherche.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            this.datagrid_Recherche.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.datagrid_Recherche.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagrid_Recherche.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.datagrid_Recherche.ColumnHeadersHeight = 30;
+            this.datagrid_Recherche.DoubleBuffered = true;
+            this.datagrid_Recherche.EnableHeadersVisualStyles = false;
+            this.datagrid_Recherche.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.datagrid_Recherche.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.datagrid_Recherche.HeaderForeColor = System.Drawing.Color.Silver;
+            this.datagrid_Recherche.Location = new System.Drawing.Point(338, 111);
+            this.datagrid_Recherche.Name = "datagrid_Recherche";
+            this.datagrid_Recherche.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagrid_Recherche.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.datagrid_Recherche.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            this.datagrid_Recherche.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datagrid_Recherche.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Silver;
+            this.datagrid_Recherche.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Silver;
+            this.datagrid_Recherche.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            this.datagrid_Recherche.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.datagrid_Recherche.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.datagrid_Recherche.Size = new System.Drawing.Size(773, 268);
+            this.datagrid_Recherche.TabIndex = 166;
+            // 
+            // combo_inoutsearch
+            // 
+            this.combo_inoutsearch.BackColor = System.Drawing.Color.Transparent;
+            this.combo_inoutsearch.BorderRadius = 3;
+            this.combo_inoutsearch.DisabledColor = System.Drawing.Color.Gray;
+            this.combo_inoutsearch.ForeColor = System.Drawing.Color.Silver;
+            this.combo_inoutsearch.items = new string[] {
+        "Type",
+        "Cost la plus haut",
+        "Cost la plus pas ",
+        "Date "};
+            this.combo_inoutsearch.Location = new System.Drawing.Point(20, 209);
+            this.combo_inoutsearch.Name = "combo_inoutsearch";
+            this.combo_inoutsearch.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.combo_inoutsearch.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.combo_inoutsearch.selectedIndex = -1;
+            this.combo_inoutsearch.Size = new System.Drawing.Size(157, 30);
+            this.combo_inoutsearch.TabIndex = 167;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Silver;
+            this.label3.Location = new System.Drawing.Point(16, 171);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(87, 21);
+            this.label3.TabIndex = 168;
+            this.label3.Text = "In or Out :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Silver;
+            this.label4.Location = new System.Drawing.Point(16, 287);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(76, 21);
+            this.label4.TabIndex = 170;
+            this.label4.Text = "Section :";
+            // 
+            // Combo_section
+            // 
+            this.Combo_section.BackColor = System.Drawing.Color.Transparent;
+            this.Combo_section.BorderRadius = 3;
+            this.Combo_section.DisabledColor = System.Drawing.Color.Gray;
+            this.Combo_section.ForeColor = System.Drawing.Color.Silver;
+            this.Combo_section.items = new string[] {
+        "Type",
+        "Cost la plus haut",
+        "Cost la plus pas ",
+        "Date "};
+            this.Combo_section.Location = new System.Drawing.Point(20, 325);
+            this.Combo_section.Name = "Combo_section";
+            this.Combo_section.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.Combo_section.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.Combo_section.selectedIndex = -1;
+            this.Combo_section.Size = new System.Drawing.Size(157, 30);
+            this.Combo_section.TabIndex = 169;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Silver;
+            this.label9.Location = new System.Drawing.Point(987, 33);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(66, 21);
+            this.label9.TabIndex = 171;
+            this.label9.Text = "Refresh";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Silver;
+            this.label10.Location = new System.Drawing.Point(439, 87);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(576, 21);
+            this.label10.TabIndex = 172;
+            this.label10.Text = "Note : this is the result from this month. use filter above to get more results";
             // 
             // TheIn_out_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
-            this.ClientSize = new System.Drawing.Size(887, 646);
-            this.Controls.Add(this.label11);
+            this.ClientSize = new System.Drawing.Size(1173, 712);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.Combo_section);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.combo_inoutsearch);
+            this.Controls.Add(this.datagrid_Recherche);
+            this.Controls.Add(this.totalrecherchLABEL);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.panel_date);
+            this.Controls.Add(this.Panel_Type);
+            this.Controls.Add(this.refreshBTN);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.combo_choice);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.date_frais_in_label);
             this.Controls.Add(this.cose_frais_in_label);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.txt_desc_in);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.panel9);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.date_out_frais_label);
-            this.Controls.Add(this.panel7);
             this.Controls.Add(this.cout_out_frais_label);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txt_descr_outfrais);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.bunifuFlatButton1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TheIn_out_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TheIn_out_Form";
             this.Load += new System.EventHandler(this.TheIn_out_Form_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.panel_date.ResumeLayout(false);
+            this.panel_date.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.recherchbtn_date)).EndInit();
+            this.Panel_Type.ResumeLayout(false);
+            this.Panel_Type.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rechercheBTN_type)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.refreshBTN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datagrid_Recherche)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -615,46 +640,41 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label extra_frais_label;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label eleve_mois_frais_label;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label inscription_label;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label Total_frais_in_label;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RichTextBox txt_descr_outfrais;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label cout_out_frais_label;
         private System.Windows.Forms.Label date_out_frais_label;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label salaire_frais_label;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Label total_frais_out_label;
         private System.Windows.Forms.Label date_frais_in_label;
         private System.Windows.Forms.Label cose_frais_in_label;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.RichTextBox txt_desc_in;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel_date;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private Bunifu.Framework.UI.BunifuDatepicker datetimepicker_TO;
+        private Bunifu.Framework.UI.BunifuDatepicker datetimepicker_from;
+        private Bunifu.Framework.UI.BunifuImageButton recherchbtn_date;
+        private System.Windows.Forms.Panel Panel_Type;
+        private System.Windows.Forms.Label label1;
+        private Bunifu.Framework.UI.BunifuImageButton rechercheBTN_type;
+        private Bunifu.Framework.UI.BunifuDropdown combobox_type;
+        private Bunifu.Framework.UI.BunifuImageButton refreshBTN;
+        private System.Windows.Forms.Label label6;
+        private Bunifu.Framework.UI.BunifuDropdown combo_choice;
+        private System.Windows.Forms.Label totalrecherchLABEL;
+        private System.Windows.Forms.Label label2;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid datagrid_Recherche;
+        private Bunifu.Framework.UI.BunifuDropdown combo_inoutsearch;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private Bunifu.Framework.UI.BunifuDropdown Combo_section;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }

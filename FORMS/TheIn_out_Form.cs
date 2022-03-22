@@ -24,19 +24,35 @@ namespace GESTIONECOLE.FORMS
         public void eleve_mois_frais_out()
         {
             r.connecter();
-            r.command = new SqlCommand("select sum(f.FR_TOTAL) from FRAIS_MOIS_ELEVE f ",r.connection);
+            r.command = new SqlCommand("select * from FRAIS_MOIS_ELEVE f ", r.connection);
 
             r.reader = r.command.ExecuteReader();
             while (r.reader.Read())
             {
 
-                eleve_mois_frais_label.Text = r.reader.GetValue(0).ToString()+ " DH";
+                //   eleve_mois_frais_label.Text = r.reader.GetValue(0).ToString()+ " DH";
                 theintotal = float.Parse(r.reader.GetValue(0).ToString());
             }
             r.deconnecter();
 
         }
-         public void inscription_frais_out()
+
+        float costrech;
+        public void recent_activ()
+        {
+            r.connecter();
+            r.adapter = new SqlDataAdapter("select f.ft_type as Type,f.ft_cout as Cout,f.ft_date as Date,f.ft_description as Description from frais_total f where MONTH(f.ft_date)=MONTH(GETDATE()) order by f.ft_date desc", r.connection);
+            r.adapter.Fill(r.ds, "frais");
+            datagrid_Recherche.DataSource = r.ds.Tables["frais"];
+            for (int i = 0; i < r.ds.Tables["frais"].Rows.Count; i++)
+            {
+                costrech = costrech + float.Parse(r.ds.Tables["frais"].Rows[i]["Cout"].ToString());
+            }
+            totalrecherchLABEL.Text = costrech.ToString() + " DH";
+
+            r.deconnecter();
+        }
+        public void inscription_frais_out()
         {
             r.connecter();
             r.command = new SqlCommand("select sum(i.INS_cout) from INSCRIPTION i",r.connection);
@@ -45,7 +61,7 @@ namespace GESTIONECOLE.FORMS
             while (r.reader.Read())
             {
 
-                inscription_label.Text = r.reader.GetValue(0).ToString()+ " DH";
+             //   inscription_label.Text = r.reader.GetValue(0).ToString()+ " DH";
                 theintotal = theintotal + float.Parse(r.reader.GetValue(0).ToString());
             }
             r.deconnecter();
@@ -60,7 +76,7 @@ namespace GESTIONECOLE.FORMS
             while (r.reader.Read())
             {
 
-                extra_frais_label.Text = r.reader.GetValue(0).ToString()+ " DH";
+               // extra_frais_label.Text = r.reader.GetValue(0).ToString()+ " DH";
                 theouttotal = float.Parse( r.reader.GetValue(0).ToString());
             }
             r.deconnecter();
@@ -75,7 +91,7 @@ namespace GESTIONECOLE.FORMS
             while (r.reader.Read())
             {
 
-                salaire_frais_label.Text = r.reader.GetValue(0).ToString()+ " DH";
+             //   salaire_frais_label.Text = r.reader.GetValue(0).ToString()+ " DH";
               theouttotal = theouttotal+float.Parse( r.reader.GetValue(0).ToString());
 
             }
@@ -120,14 +136,15 @@ namespace GESTIONECOLE.FORMS
 
         private void TheIn_out_Form_Load(object sender, EventArgs e)
         {
+            recent_activ();
             lastin();
             lastOut();
-            eleve_mois_frais_out();
-            inscription_frais_out();
-            extras_frais_out();
-            salaire_frais_out();
-            Total_frais_in_label.Text = theintotal.ToString() + "  DH"; 
-            total_frais_out_label.Text = theouttotal.ToString()+"  DH";
+            //eleve_mois_frais_out();
+           // inscription_frais_out();
+           // extras_frais_out();
+           // salaire_frais_out();
+        //    Total_frais_in_label.Text = theintotal.ToString() + "  DH"; 
+          //  total_frais_out_label.Text = theouttotal.ToString()+"  DH";
         }
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
