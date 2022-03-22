@@ -154,5 +154,24 @@ namespace GESTIONECOLE.FORMS
         ee.ShowDialog();
         this.Close();
         }
+
+        private void recherchbtn_date_Click(object sender, EventArgs e)
+        {
+            r.ds.Tables["frais"].Clear();
+            costrech = 0;
+            r.connecter();
+            r.adapter = new SqlDataAdapter("select f.ft_type as Type,f.ft_cout as Cout,f.ft_date as Date,f.ft_description as Description from frais_total f where f.ft_date between'" + datetimepicker_from.Value.ToShortDateString() + "' and '" + datetimepicker_TO.Value.ToShortDateString() + "' order by f.ft_date desc ", r.connection);
+            r.adapter.Fill(r.ds, "frais");
+
+            datagrid_Recherche.DataSource = r.ds.Tables["frais"];
+
+            for (int i = 0; i < r.ds.Tables["frais"].Rows.Count; i++)
+            {
+                costrech = costrech + float.Parse(r.ds.Tables["frais"].Rows[i]["Cout"].ToString());
+            }
+            totalrecherchLABEL.Text = costrech.ToString();
+
+            r.deconnecter();
+        }
     }
 }
