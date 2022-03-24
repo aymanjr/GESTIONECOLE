@@ -156,6 +156,12 @@
     <Compile Include="FORMS\TheIn_out_Form.Designer.cs">
       <DependentUpon>TheIn_out_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="REPORTS\InscriptionReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InscriptionReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="UserControl\Frais_Salaire.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -250,6 +256,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FORMS\TheIn_out_Form.resx">
       <DependentUpon>TheIn_out_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\InscriptionReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InscriptionReport.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Frais_Salaire.resx">
       <DependentUpon>Frais_Salaire.cs</DependentUpon>
@@ -496,8 +506,6 @@
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="REPORTS\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
