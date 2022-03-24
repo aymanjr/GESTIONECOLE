@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GESTIONECOLE.REPORTS;
+using System;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
@@ -44,7 +45,7 @@ namespace GESTIONECOLE.FORMS
         {
             r.ds.Clear();
             r.connecter();
-            r.adapter = new SqlDataAdapter(" select (EL_NOM +SPACE(2)+ EL_PRENOM) as Nom_Complet,SUBSTRING (c.CL_nom,7,20) as Class,c.CL_annee_scolaire as   Anne_scolaire,i.INS_date  as date_Inscription from eleve E , INSCRIPTION I, CLASS c where e.EL_ID = i.INS_eleveID# and c.CL_id=i.INS_classID# order by i.INS_date desc ", r.connection);
+            r.adapter = new SqlDataAdapter(" select [INS_id] as 'Numero Inscription', (EL_NOM +SPACE(2)+ EL_PRENOM) as Nom_Complet,SUBSTRING (c.CL_nom,7,20) as Class,c.CL_annee_scolaire as   Anne_scolaire,i.INS_date  as date_Inscription from eleve E , INSCRIPTION I, CLASS c where e.EL_ID = i.INS_eleveID# and c.CL_id=i.INS_classID# order by i.INS_date desc ", r.connection);
             r.adapter.Fill(r.ds, "inscr");
             dataGridView1.DataSource = r.ds.Tables["inscr"];
 
@@ -167,6 +168,37 @@ namespace GESTIONECOLE.FORMS
 
         }
 
+        private void Print()
+        {
+            int id = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+
+            r.connecter();
+            r.command = new SqlCommand("SELECT    [INS_id] as 'Numero Inscription' ,[EL_NOM] as 'Nom' ,[EL_PRENOM] as 'Prenom' ,[Niv_nom] as 'Niveau' ,[CL_nom] as 'Class' ,[INS_date] as 'Date Inscription' ,[INS_cout] as 'Frais Inscription' FROM [dbo].[INSCRIPTION], [dbo].[ELEVE], [dbo].[NIVEAU], [dbo].[CLASS] where [dbo].[INSCRIPTION].INS_eleveID# = [dbo].[ELEVE].EL_ID and [dbo].[INSCRIPTION].INS_classID# = [dbo].[CLASS].CL_id and [dbo].[CLASS].CL_niveauID# = [dbo].[NIVEAU].Niv_id and INS_id=" + id+"", r.connection);
+            try
+            {
+                Frm_Print frm = new Frm_Print();
+
+                frm.crystalReportViewer1.RefreshReport();
+
+                InscriptionReport rpt = new InscriptionReport();
+
+
+                rpt.SetDatabaseLogon("", "", @"med\SQLEXPRESS", "sales_system");
+                rpt.SetDataSource(r);
+                rpt.SetParameterValue("ID", id);
+                frm.crystalReportViewer1.ReportSource = rpt;
+
+
+
+                System.Drawing.Printing.PrintDocument printDocument = new System.Drawing.Printing.PrintDocument();
+                rpt.PrintOptions.PrinterName = printDocument.PrinterSettings.PrinterName;
+                //rpt.PrintToPrinter(1, true, 0, 0);
+                frm.ShowDialog();
+            }
+            catch (Exception) { }
+        }
+
+
         private void AJOUTERBTN_Click_1(object sender, EventArgs e)
         {
             classid();
@@ -195,6 +227,8 @@ namespace GESTIONECOLE.FORMS
 
                 gridfill();
                 showrecents();
+
+                Print();
 
             }
         }
