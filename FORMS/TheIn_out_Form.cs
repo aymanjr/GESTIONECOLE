@@ -23,18 +23,18 @@ namespace GESTIONECOLE.FORMS
         float theouttotal;
         public void eleve_mois_frais_out()
         {
+
             r.connecter();
-            r.command = new SqlCommand("select * from FRAIS_MOIS_ELEVE f ", r.connection);
+            r.adapter = new SqlDataAdapter("select (e.EL_NOM + ' ' + e.EL_PRENOM) as Eleve ,m.Mois_nom as Mois,YEAR(f.FR_datepayment) as Annee, t.FRTRSP_type as TransportType, f.FR_TOTAL as Montanttotal  from FRAIS_MOIS_ELEVE f ,ELEVE e , MOIS m ,INSCRIPTION i , FRAIS_MOIS_TRSP t  where f.FR_INSID# = i.INS_id and f.FR_MOISID# = m.Mois_id and i.INS_eleveID# = e.EL_ID and t.FRTRSP_id = f.FR_FRTRSPID# ", r.connection);
+            r.adapter.Fill(r.ds, "Moiseleve");
+            datagrid_Recherche.DataSource = r.ds.Tables["Moiseleve"];
 
-            r.reader = r.command.ExecuteReader();
-            while (r.reader.Read())
+            for (int i = 0; i < r.ds.Tables["Moiseleve"].Rows.Count; i++)
             {
-
-                //   eleve_mois_frais_label.Text = r.reader.GetValue(0).ToString()+ " DH";
-                theintotal = float.Parse(r.reader.GetValue(0).ToString());
+                costrech = costrech + float.Parse(r.ds.Tables["Moiseleve"].Rows[i]["Montanttotal"].ToString());
             }
+            totalrecherchLABEL.Text = costrech.ToString() + " DH";
             r.deconnecter();
-
         }
 
         float costrech;
@@ -136,6 +136,8 @@ namespace GESTIONECOLE.FORMS
 
         private void TheIn_out_Form_Load(object sender, EventArgs e)
         {
+
+            eleve_mois_frais_out();
             recent_activ();
             lastin();
             lastOut();
@@ -172,6 +174,15 @@ namespace GESTIONECOLE.FORMS
             totalrecherchLABEL.Text = costrech.ToString();
 
             r.deconnecter();
+        }
+
+        private void Combo_section_onItemSelected(object sender, EventArgs e)
+        {
+            if(Combo_section.selectedValue == "Payment Mois")
+            {
+                eleve_mois_frais_out();
+
+            }
         }
     }
 }

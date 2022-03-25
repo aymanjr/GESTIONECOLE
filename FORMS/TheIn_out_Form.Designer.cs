@@ -551,10 +551,10 @@
             this.Combo_section.DisabledColor = System.Drawing.Color.Gray;
             this.Combo_section.ForeColor = System.Drawing.Color.Silver;
             this.Combo_section.items = new string[] {
-        "Type",
-        "Cost la plus haut",
-        "Cost la plus pas ",
-        "Date "};
+        "Payment Mois",
+        "Inscription",
+        "Extra Frais",
+        "Salaire"};
             this.Combo_section.Location = new System.Drawing.Point(20, 325);
             this.Combo_section.Name = "Combo_section";
             this.Combo_section.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
@@ -562,6 +562,7 @@
             this.Combo_section.selectedIndex = -1;
             this.Combo_section.Size = new System.Drawing.Size(157, 30);
             this.Combo_section.TabIndex = 169;
+            this.Combo_section.onItemSelected += new System.EventHandler(this.Combo_section_onItemSelected);
             // 
             // label9
             // 
