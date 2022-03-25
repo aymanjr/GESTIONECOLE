@@ -138,7 +138,7 @@ namespace GESTIONECOLE.FORMS
         {
 
             eleve_mois_frais_out();
-            recent_activ();
+         //   recent_activ();
             lastin();
             lastOut();
             //eleve_mois_frais_out();
