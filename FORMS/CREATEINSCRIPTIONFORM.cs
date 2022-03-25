@@ -1,5 +1,4 @@
-﻿using GESTIONECOLE.REPORTS;
-using System;
+﻿using System;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
