@@ -27,8 +27,7 @@ namespace GESTIONECOLE.FORMS
         {
             if (deja == true)
             {
-                r.ds.Tables["Moiseleve"].Clear();
-                costrech = 0;
+              
 
             }
 
@@ -36,17 +35,45 @@ namespace GESTIONECOLE.FORMS
 
             r.connecter();
             r.adapter = new SqlDataAdapter("select (e.EL_NOM + ' ' + e.EL_PRENOM) as Eleve ,m.Mois_nom as Mois,YEAR(f.FR_datepayment) as Annee, t.FRTRSP_type as TransportType, f.FR_TOTAL as Montanttotal  from FRAIS_MOIS_ELEVE f ,ELEVE e , MOIS m ,INSCRIPTION i , FRAIS_MOIS_TRSP t  where f.FR_INSID# = i.INS_id and f.FR_MOISID# = m.Mois_id and i.INS_eleveID# = e.EL_ID and t.FRTRSP_id = f.FR_FRTRSPID# order by f.FR_datepayment desc ", r.connection);
-            r.adapter.Fill(r.ds, "Moiseleve");
-            datagrid_Recherche.DataSource = r.ds.Tables["Moiseleve"];
+            
+           
+           
+                r.adapter.Fill(r.ds, "Moiseleve");
+                datagrid_Recherche.DataSource = r.ds.Tables["Moiseleve"];
 
-            for (int i = 0; i < r.ds.Tables["Moiseleve"].Rows.Count; i++)
+                for (int i = 0; i < r.ds.Tables["Moiseleve"].Rows.Count; i++)
+                {
+                    costrech = costrech + float.Parse(r.ds.Tables["Moiseleve"].Rows[i]["Montanttotal"].ToString());
+                }
+                totalrecherchLABEL.Text = costrech.ToString() + " DH";
+                r.deconnecter();
+            
+        }
+         public void the_in()
+        {
+            if (deja == true)
             {
-                costrech = costrech + float.Parse(r.ds.Tables["Moiseleve"].Rows[i]["Montanttotal"].ToString());
+                
+
+            }
+
+
+            
+            r.connecter();
+            r.adapter = new SqlDataAdapter("select f.ft_description description ,f.ft_cout cout,f.annescolaire ,f.ft_date date from frais_total f where f.ft_type = 'IN' ", r.connection);
+     
+            r.adapter.Fill(r.ds, "thein");
+
+            datagrid_Recherche.DataSource = r.ds.Tables["thein"];
+
+            for (int i = 0; i < r.ds.Tables["thein"].Rows.Count; i++)
+            {
+                costrech = costrech + float.Parse(r.ds.Tables["thein"].Rows[i]["cout"].ToString());
             }
             totalrecherchLABEL.Text = costrech.ToString() + " DH";
             r.deconnecter();
-        }
 
+        }
         public void recent_activ()
         {
             r.connecter();
@@ -146,7 +173,7 @@ namespace GESTIONECOLE.FORMS
         private void TheIn_out_Form_Load(object sender, EventArgs e)
         {
 
-            eleve_mois_frais_out();
+           // eleve_mois_frais_out();
          //   recent_activ();
             lastin();
             lastOut();
@@ -189,8 +216,27 @@ namespace GESTIONECOLE.FORMS
         {
             if(Combo_section.selectedValue == "Payment Mois")
             {
-                eleve_mois_frais_out();
+                datagrid_Recherche.DataSource = null;
+                datagrid_Recherche.Rows.Clear();
 
+
+                costrech = 0;
+                deja = true;
+                eleve_mois_frais_out();
+            }
+        }
+
+        private void combo_inoutsearch_onItemSelected(object sender, EventArgs e)
+        {
+            if (combo_inoutsearch.selectedValue== "In")
+            {
+                datagrid_Recherche.DataSource = null;
+                datagrid_Recherche.Rows.Clear();
+
+
+                costrech = 0;
+                deja = true;
+                the_in();
             }
         }
     }
