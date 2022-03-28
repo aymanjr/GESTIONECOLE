@@ -29,7 +29,13 @@ namespace GESTIONECOLE.FORMS
         /// </summary>
         private void InitializeComponent()
         {
-            
+            this.SuspendLayout();
+            // 
+            // Frm_Print
+            // 
+            this.ClientSize = new System.Drawing.Size(1384, 452);
+            this.Name = "Frm_Print";
+            this.ResumeLayout(false);
 
         }
 
