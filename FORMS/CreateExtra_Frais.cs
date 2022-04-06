@@ -55,10 +55,9 @@ namespace GESTIONECOLE.FORMS
             }
             else
             {
-
                 r.connecter();
 
-                r.command = new SqlCommand(" insert into extra_frais values('" + description_richtext.Text + "','" + thetype + "','" + txt_cost.Text + "','" + DateTime.Now.ToShortDateString() + "') ", r.connection);
+                r.command = new SqlCommand(" insert into extra_frais values('" + description_richtext.Text + "','" + thetype + "','" + txt_cost.Text + "','" + DateTime.Now.ToShortDateString()+"') ", r.connection);
                 r.command.ExecuteNonQuery();
                 MessageBox.Show("bien ajouter");
                 r.deconnecter();

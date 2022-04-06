@@ -33,7 +33,7 @@ namespace GESTIONECOLE.FORMS
             // 
             // Frm_Print
             // 
-            this.ClientSize = new System.Drawing.Size(1384, 452);
+            this.ClientSize = new System.Drawing.Size(1112, 452);
             this.Name = "Frm_Print";
             this.ResumeLayout(false);
 
