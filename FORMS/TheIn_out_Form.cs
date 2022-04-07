@@ -47,21 +47,21 @@ namespace GESTIONECOLE.FORMS
                 }
                 totalrecherchLABEL.Text = costrech.ToString() + " DH";
                 r.deconnecter();
-            
+
         }
-         public void the_in()
+        public void the_in()
         {
             if (deja == true)
             {
-                
+
 
             }
 
 
-            
+
             r.connecter();
             r.adapter = new SqlDataAdapter("select f.ft_description description ,f.ft_cout cout,f.annescolaire ,f.ft_date date from frais_total f where f.ft_type = 'IN' ", r.connection);
-     
+
             r.adapter.Fill(r.ds, "thein");
 
             datagrid_Recherche.DataSource = r.ds.Tables["thein"];
@@ -69,6 +69,25 @@ namespace GESTIONECOLE.FORMS
             for (int i = 0; i < r.ds.Tables["thein"].Rows.Count; i++)
             {
                 costrech = costrech + float.Parse(r.ds.Tables["thein"].Rows[i]["cout"].ToString());
+            }
+            totalrecherchLABEL.Text = costrech.ToString() + " DH";
+            r.deconnecter();
+
+        }
+        public void the_out()
+        {
+   
+
+            r.connecter();
+            r.adapter = new SqlDataAdapter("select f.ft_description description ,f.ft_cout cout,f.annescolaire ,f.ft_date date from frais_total f where f.ft_type = 'OUT' ", r.connection);
+
+            r.adapter.Fill(r.ds, "theout");
+
+            datagrid_Recherche.DataSource = r.ds.Tables["theout"];
+
+            for (int i = 0; i < r.ds.Tables["theout"].Rows.Count; i++)
+            {
+                costrech = costrech + float.Parse(r.ds.Tables["theout"].Rows[i]["cout"].ToString());
             }
             totalrecherchLABEL.Text = costrech.ToString() + " DH";
             r.deconnecter();
@@ -195,6 +214,7 @@ namespace GESTIONECOLE.FORMS
 
         private void recherchbtn_date_Click(object sender, EventArgs e)
         {
+
             r.ds.Tables["frais"].Clear();
             costrech = 0;
             r.connecter();
@@ -210,6 +230,7 @@ namespace GESTIONECOLE.FORMS
             totalrecherchLABEL.Text = costrech.ToString();
 
             r.deconnecter();
+
         }
 
         private void Combo_section_onItemSelected(object sender, EventArgs e)
@@ -237,6 +258,15 @@ namespace GESTIONECOLE.FORMS
                 costrech = 0;
                 deja = true;
                 the_in();
+            }else if (combo_inoutsearch.selectedValue == "Out")
+            {
+                datagrid_Recherche.DataSource = null;
+                datagrid_Recherche.Rows.Clear();
+
+
+                costrech = 0;
+                deja = true;
+                the_out();
             }
         }
     }
