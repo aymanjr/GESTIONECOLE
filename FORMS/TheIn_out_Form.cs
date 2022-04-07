@@ -35,11 +35,12 @@ namespace GESTIONECOLE.FORMS
 
             r.connecter();
             r.adapter = new SqlDataAdapter("select (e.EL_NOM + ' ' + e.EL_PRENOM) as Eleve ,m.Mois_nom as Mois,YEAR(f.FR_datepayment) as Annee, t.FRTRSP_type as TransportType, f.FR_TOTAL as Montanttotal  from FRAIS_MOIS_ELEVE f ,ELEVE e , MOIS m ,INSCRIPTION i , FRAIS_MOIS_TRSP t  where f.FR_INSID# = i.INS_id and f.FR_MOISID# = m.Mois_id and i.INS_eleveID# = e.EL_ID and t.FRTRSP_id = f.FR_FRTRSPID# order by f.FR_datepayment desc ", r.connection);
-            
-           
-           
-                r.adapter.Fill(r.ds, "Moiseleve");
-                datagrid_Recherche.DataSource = r.ds.Tables["Moiseleve"];
+
+
+
+            r.adapter.Fill(r.ds, "Moiseleve");
+
+            datagrid_Recherche.DataSource = r.ds.Tables["Moiseleve"];
 
                 for (int i = 0; i < r.ds.Tables["Moiseleve"].Rows.Count; i++)
                 {
