@@ -39,7 +39,6 @@ namespace GESTIONECOLE.FORMS
 
 
             r.adapter.Fill(r.ds, "Moiseleve");
-
             datagrid_Recherche.DataSource = r.ds.Tables["Moiseleve"];
 
                 for (int i = 0; i < r.ds.Tables["Moiseleve"].Rows.Count; i++)
