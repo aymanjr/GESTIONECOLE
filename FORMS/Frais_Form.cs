@@ -335,5 +335,10 @@ namespace GESTIONECOLE.FORMS
         ee.ShowDialog();
         this.Close();
         }
+
+        private void datagrid_Recherche_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

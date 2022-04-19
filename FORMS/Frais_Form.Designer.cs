@@ -495,6 +495,7 @@
             this.datagrid_Recherche.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.datagrid_Recherche.Size = new System.Drawing.Size(452, 268);
             this.datagrid_Recherche.TabIndex = 150;
+            this.datagrid_Recherche.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagrid_Recherche_CellContentClick);
             // 
             // totalrecherchLABEL
             // 

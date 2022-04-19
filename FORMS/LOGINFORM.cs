@@ -22,13 +22,6 @@ namespace GESTIONECOLE
 
         }
 
-        private void loginbtn_Click(object sender, EventArgs e)    //LOGIN BUTTON 
-        {
-
-
-
-        }
-
         private void checklogin()    //CHECK THE USER LOGIN 
         {
             r.connecter();
@@ -111,7 +104,10 @@ namespace GESTIONECOLE
         {
             if (e.KeyCode == Keys.F4 && e.Modifiers == Keys.Alt)
                 Application.Exit();
+
         }
+
+        
 
         private void cancelbtn_KeyDown(object sender, KeyEventArgs e)
         {
@@ -119,7 +115,7 @@ namespace GESTIONECOLE
                 Application.Exit();
         }
 
-        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        public void loginbtn_execute()
         {
             if (string.IsNullOrEmpty(Txtusername.Text) || string.IsNullOrEmpty(txtpass.Text))
             {
@@ -135,6 +131,10 @@ namespace GESTIONECOLE
 
             }
         }
+        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+            loginbtn_execute();
+        }
 
         private void txtpass_OnValueChanged(object sender, EventArgs e)
         {
@@ -149,6 +149,11 @@ namespace GESTIONECOLE
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void LOGINFORM_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
         }
     }
 }
