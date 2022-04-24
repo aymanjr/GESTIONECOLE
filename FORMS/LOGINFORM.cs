@@ -125,7 +125,7 @@ namespace GESTIONECOLE
 
 
             }
-            else
+            else  
             {
                 checklogin();
 
