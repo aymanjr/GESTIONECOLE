@@ -34,10 +34,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frais_Form));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frais_Form));
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridViewcetteANNEE = new Bunifu.Framework.UI.BunifuCustomDataGrid();
@@ -58,7 +58,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.bunifuImageButton4 = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.combo_choice = new Bunifu.Framework.UI.BunifuDropdown();
@@ -67,34 +66,35 @@
             this.label15 = new System.Windows.Forms.Label();
             this.Panel_Type = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.rechercheBTN_type = new Bunifu.Framework.UI.BunifuImageButton();
             this.combobox_type = new Bunifu.Framework.UI.BunifuDropdown();
             this.panel_date = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.datetimepicker_TO = new Bunifu.Framework.UI.BunifuDatepicker();
             this.datetimepicker_from = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.recherchbtn_date = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.Printbutton = new Bunifu.Framework.UI.BunifuImageButton();
             this.extras_frais_btn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.recherchbtn_date = new Bunifu.Framework.UI.BunifuImageButton();
+            this.rechercheBTN_type = new Bunifu.Framework.UI.BunifuImageButton();
             this.refreshBTN = new Bunifu.Framework.UI.BunifuImageButton();
             this.precedentBTN = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuImageButton4 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewcetteANNEE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagridviewCETTEMOIS)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_Recherche)).BeginInit();
             this.Panel_Type.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.rechercheBTN_type)).BeginInit();
             this.panel_date.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Printbutton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.recherchbtn_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rechercheBTN_type)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.refreshBTN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.precedentBTN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -396,19 +396,6 @@
             this.label14.TabIndex = 123;
             this.label14.Text = "Type  :";
             // 
-            // bunifuImageButton4
-            // 
-            this.bunifuImageButton4.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton4.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton4.Image")));
-            this.bunifuImageButton4.ImageActive = null;
-            this.bunifuImageButton4.Location = new System.Drawing.Point(86, 8);
-            this.bunifuImageButton4.Name = "bunifuImageButton4";
-            this.bunifuImageButton4.Size = new System.Drawing.Size(102, 76);
-            this.bunifuImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton4.TabIndex = 123;
-            this.bunifuImageButton4.TabStop = false;
-            this.bunifuImageButton4.Zoom = 10;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
@@ -542,20 +529,6 @@
             this.label7.TabIndex = 154;
             this.label7.Text = "Type :";
             // 
-            // rechercheBTN_type
-            // 
-            this.rechercheBTN_type.BackColor = System.Drawing.Color.Transparent;
-            this.rechercheBTN_type.Image = ((System.Drawing.Image)(resources.GetObject("rechercheBTN_type.Image")));
-            this.rechercheBTN_type.ImageActive = null;
-            this.rechercheBTN_type.Location = new System.Drawing.Point(273, 16);
-            this.rechercheBTN_type.Name = "rechercheBTN_type";
-            this.rechercheBTN_type.Size = new System.Drawing.Size(34, 30);
-            this.rechercheBTN_type.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.rechercheBTN_type.TabIndex = 154;
-            this.rechercheBTN_type.TabStop = false;
-            this.rechercheBTN_type.Zoom = 10;
-            this.rechercheBTN_type.Click += new System.EventHandler(this.rechercheBTN_type_Click);
-            // 
             // combobox_type
             // 
             this.combobox_type.BackColor = System.Drawing.Color.Transparent;
@@ -633,20 +606,6 @@
             this.datetimepicker_from.TabIndex = 155;
             this.datetimepicker_from.Value = new System.DateTime(2020, 6, 9, 23, 5, 29, 244);
             // 
-            // recherchbtn_date
-            // 
-            this.recherchbtn_date.BackColor = System.Drawing.Color.Transparent;
-            this.recherchbtn_date.Image = ((System.Drawing.Image)(resources.GetObject("recherchbtn_date.Image")));
-            this.recherchbtn_date.ImageActive = null;
-            this.recherchbtn_date.Location = new System.Drawing.Point(314, 15);
-            this.recherchbtn_date.Name = "recherchbtn_date";
-            this.recherchbtn_date.Size = new System.Drawing.Size(34, 30);
-            this.recherchbtn_date.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.recherchbtn_date.TabIndex = 154;
-            this.recherchbtn_date.TabStop = false;
-            this.recherchbtn_date.Zoom = 10;
-            this.recherchbtn_date.Click += new System.EventHandler(this.recherchbtn_date_Click);
-            // 
             // bunifuCustomLabel5
             // 
             this.bunifuCustomLabel5.AutoSize = true;
@@ -657,6 +616,19 @@
             this.bunifuCustomLabel5.Size = new System.Drawing.Size(138, 19);
             this.bunifuCustomLabel5.TabIndex = 157;
             this.bunifuCustomLabel5.Text = "Ajouter Un Frais : ";
+            // 
+            // Printbutton
+            // 
+            this.Printbutton.BackColor = System.Drawing.Color.Transparent;
+            this.Printbutton.Image = global::GESTIONECOLE.Properties.Resources.printicon;
+            this.Printbutton.ImageActive = null;
+            this.Printbutton.Location = new System.Drawing.Point(757, 107);
+            this.Printbutton.Name = "Printbutton";
+            this.Printbutton.Size = new System.Drawing.Size(39, 47);
+            this.Printbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Printbutton.TabIndex = 158;
+            this.Printbutton.TabStop = false;
+            this.Printbutton.Zoom = 10;
             // 
             // extras_frais_btn
             // 
@@ -694,6 +666,34 @@
             this.extras_frais_btn.Textcolor = System.Drawing.Color.Silver;
             this.extras_frais_btn.TextFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.extras_frais_btn.Click += new System.EventHandler(this.extras_frais_btn_Click);
+            // 
+            // recherchbtn_date
+            // 
+            this.recherchbtn_date.BackColor = System.Drawing.Color.Transparent;
+            this.recherchbtn_date.Image = ((System.Drawing.Image)(resources.GetObject("recherchbtn_date.Image")));
+            this.recherchbtn_date.ImageActive = null;
+            this.recherchbtn_date.Location = new System.Drawing.Point(297, 17);
+            this.recherchbtn_date.Name = "recherchbtn_date";
+            this.recherchbtn_date.Size = new System.Drawing.Size(34, 30);
+            this.recherchbtn_date.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.recherchbtn_date.TabIndex = 154;
+            this.recherchbtn_date.TabStop = false;
+            this.recherchbtn_date.Zoom = 10;
+            this.recherchbtn_date.Click += new System.EventHandler(this.recherchbtn_date_Click);
+            // 
+            // rechercheBTN_type
+            // 
+            this.rechercheBTN_type.BackColor = System.Drawing.Color.Transparent;
+            this.rechercheBTN_type.Image = ((System.Drawing.Image)(resources.GetObject("rechercheBTN_type.Image")));
+            this.rechercheBTN_type.ImageActive = null;
+            this.rechercheBTN_type.Location = new System.Drawing.Point(273, 16);
+            this.rechercheBTN_type.Name = "rechercheBTN_type";
+            this.rechercheBTN_type.Size = new System.Drawing.Size(34, 30);
+            this.rechercheBTN_type.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.rechercheBTN_type.TabIndex = 154;
+            this.rechercheBTN_type.TabStop = false;
+            this.rechercheBTN_type.Zoom = 10;
+            this.rechercheBTN_type.Click += new System.EventHandler(this.rechercheBTN_type_Click);
             // 
             // refreshBTN
             // 
@@ -737,6 +737,19 @@
             this.bunifuImageButton2.Zoom = 10;
             this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
             // 
+            // bunifuImageButton4
+            // 
+            this.bunifuImageButton4.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton4.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton4.Image")));
+            this.bunifuImageButton4.ImageActive = null;
+            this.bunifuImageButton4.Location = new System.Drawing.Point(86, 8);
+            this.bunifuImageButton4.Name = "bunifuImageButton4";
+            this.bunifuImageButton4.Size = new System.Drawing.Size(102, 76);
+            this.bunifuImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton4.TabIndex = 123;
+            this.bunifuImageButton4.TabStop = false;
+            this.bunifuImageButton4.Zoom = 10;
+            // 
             // bunifuFlatButton1
             // 
             this.bunifuFlatButton1.Active = true;
@@ -774,26 +787,13 @@
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(757, 107);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(34, 30);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 158;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            // 
             // Frais_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.ClientSize = new System.Drawing.Size(1184, 504);
-            this.Controls.Add(this.bunifuImageButton1);
+            this.Controls.Add(this.Printbutton);
             this.Controls.Add(this.bunifuCustomLabel5);
             this.Controls.Add(this.extras_frais_btn);
             this.Controls.Add(this.panel_date);
@@ -829,18 +829,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.datagridviewCETTEMOIS)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_Recherche)).EndInit();
             this.Panel_Type.ResumeLayout(false);
             this.Panel_Type.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.rechercheBTN_type)).EndInit();
             this.panel_date.ResumeLayout(false);
             this.panel_date.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Printbutton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.recherchbtn_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rechercheBTN_type)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.refreshBTN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.precedentBTN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -891,6 +891,6 @@
         private System.Windows.Forms.RichTextBox description_richtext;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
         private Bunifu.Framework.UI.BunifuFlatButton extras_frais_btn;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private Bunifu.Framework.UI.BunifuImageButton Printbutton;
     }
 }

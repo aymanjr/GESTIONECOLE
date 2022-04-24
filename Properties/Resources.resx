@@ -121,11 +121,8 @@
   <data name="students_480px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\RESOURCES\images\students_480px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="16071" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\RESOURCES\images\16071.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_Maintenance_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\RESOURCES\images\icons8_Maintenance_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="airport-bus-aaa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\RESOURCES\images\airport-bus-aaa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="66" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\RESOURCES\images\66.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,8 +130,8 @@
   <data name="icons8_Add_User_Group_Man_Man_25px_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\RESOURCES\images\icons8_Add_User_Group_Man_Man_25px_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="441" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\RESOURCES\images\441.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_Maintenance_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\RESOURCES\images\icons8_Maintenance_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="44" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\RESOURCES\images\44.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,11 +145,14 @@
   <data name="rsz_dollaraaaa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\RESOURCES\images\rsz_dollaraaaa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="calendar_4_208px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\RESOURCES\images\calendar_4_208px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Add User Group Man Man_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\RESOURCES\images\Add User Group Man Man_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="agt_back-256" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\RESOURCES\images\agt_back-256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="441" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\RESOURCES\images\441.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="User_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\RESOURCES\images\User_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\RESOURCES\images\refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,8 +166,14 @@
   <data name="teachEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\RESOURCES\images\teachEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Add User Group Man Man_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\RESOURCES\images\Add User Group Man Man_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="agt_back-256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\RESOURCES\images\agt_back-256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calendar_4_208px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\RESOURCES\images\calendar_4_208px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="installing_updates_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\RESOURCES\images\installing_updates_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_Search_48px_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\RESOURCES\images\icons8_Search_48px_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -177,6 +183,9 @@
   </data>
   <data name="icons8_School_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\RESOURCES\images\icons8_School_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add_480px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\RESOURCES\images\add_480px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="subject" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\RESOURCES\images\subject.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,14 +202,11 @@
   <data name="agt_forward-256" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\RESOURCES\images\agt_forward-256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="installing_updates_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\RESOURCES\images\installing_updates_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="16071" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\RESOURCES\images\16071.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="management_480px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\RESOURCES\images\management_480px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="rsz_1116071" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\RESOURCES\images\rsz_1116071.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_Training_32px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\RESOURCES\images\icons8_Training_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,8 +214,8 @@
   <data name="teachAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\RESOURCES\images\teachAdd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="User_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\RESOURCES\images\User_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rsz_1116071" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\RESOURCES\images\rsz_1116071.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_Training_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\RESOURCES\images\icons8_Training_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -232,9 +238,6 @@
   <data name="teachDelete" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\RESOURCES\images\teachDelete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="airport-bus-aaa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\RESOURCES\images\airport-bus-aaa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="money_bag_512px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\RESOURCES\images\money_bag_512px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -244,7 +247,7 @@
   <data name="dollaraaaa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\RESOURCES\images\dollaraaaa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="add_480px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\RESOURCES\images\add_480px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="printicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\RESOURCES\images\printicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

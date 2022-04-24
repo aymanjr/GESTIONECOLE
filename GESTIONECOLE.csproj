@@ -446,6 +446,7 @@
     <Content Include="RESOURCES\images\Ok_100px.png" />
     <Content Include="RESOURCES\images\Paper Money_100px.png" />
     <None Include="RESOURCES\images\payment_history_512px.png" />
+    <None Include="RESOURCES\images\printicon.png" />
     <Content Include="RESOURCES\images\Record_32px.png" />
     <Content Include="RESOURCES\images\Record_96px.png" />
     <Content Include="RESOURCES\images\rsz_1116071.png" />
