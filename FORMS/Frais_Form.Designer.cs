@@ -81,6 +81,7 @@
             this.precedentBTN = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewcetteANNEE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagridviewCETTEMOIS)).BeginInit();
             this.panel3.SuspendLayout();
@@ -93,6 +94,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.refreshBTN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.precedentBTN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -772,12 +774,26 @@
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(757, 107);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(34, 30);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 158;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            // 
             // Frais_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.ClientSize = new System.Drawing.Size(1184, 504);
+            this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.bunifuCustomLabel5);
             this.Controls.Add(this.extras_frais_btn);
             this.Controls.Add(this.panel_date);
@@ -824,6 +840,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.refreshBTN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.precedentBTN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -874,5 +891,6 @@
         private System.Windows.Forms.RichTextBox description_richtext;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
         private Bunifu.Framework.UI.BunifuFlatButton extras_frais_btn;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
     }
 }
