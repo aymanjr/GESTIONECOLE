@@ -338,7 +338,7 @@ namespace GESTIONECOLE.FORMS
 
         private void datagrid_Recherche_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            Printbutton.Visible = true;
         }
     }
 }
