@@ -338,6 +338,10 @@ namespace GESTIONECOLE.FORMS
 
         private void datagrid_Recherche_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+        }
+
+        private void datagrid_Recherche_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
             Printbutton.Visible = true;
         }
     }
