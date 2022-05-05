@@ -116,7 +116,7 @@ namespace GESTIONECOLE.FORMS
             frais_cette_mois();
             frais_recherch();
             fill_combo_type();
-            show_recent();
+           // show_recent();
         }
         public void fill_combo_type()
         {
