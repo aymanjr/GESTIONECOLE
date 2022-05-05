@@ -116,7 +116,7 @@ namespace GESTIONECOLE.FORMS
             frais_cette_mois();
             frais_recherch();
             fill_combo_type();
-           // show_recent();
+         
         }
         public void fill_combo_type()
         {
@@ -269,51 +269,6 @@ namespace GESTIONECOLE.FORMS
 
         }
 
-        int count = 0;
-        public void show_recent()
-        {
-            r.connecter();
-            r.command = new SqlCommand("select f.EF_type,f.EF_description,f.EF_date,f.EF_cost from Extra_Frais f order by f.EF_date desc ", r.connection);
-            r.reader = r.command.ExecuteReader();
-            ddt.Load(r.reader);
-
-            Type_label.Text = ddt.Rows[count]["ef_type"].ToString();
-            description_richtext.Text = ddt.Rows[count]["EF_description"].ToString();
-            cost_label.Text = ddt.Rows[count]["EF_cost"].ToString();
-            dateLABEL.Text = ddt.Rows[count]["EF_date"].ToString();
-
-
-
-            r.deconnecter();
-        }
-
-        private void bunifuImageButton2_Click(object sender, EventArgs e)
-        {
-            if (count >= ddt.Rows.Count - 1)
-            {
-                count--;
-                show_recent();
-            }
-            else
-            {
-                count++;
-                show_recent();
-            }
-        }
-
-        private void precedentBTN_Click(object sender, EventArgs e)
-        {
-            if (count == 0)
-            {
-                count = ddt.Rows.Count - 1;
-                show_recent();
-            }
-            else
-            {
-                count--;
-                show_recent();
-            }
-        }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
@@ -357,9 +312,9 @@ namespace GESTIONECOLE.FORMS
         {
             datagrid_Recherche.CurrentRow.Selected = true;
             Type_label.Text = datagrid_Recherche.Rows[e.RowIndex].Cells["ef_type"].Value.ToString();
-            description_richtext.Text = datagrid_Recherche.Rows[e.RowIndex].Cells["ef_type"].Value.ToString();
-            cost_label.Text = datagrid_Recherche.Rows[e.RowIndex].Cells["ef_type"].Value.ToString();
-            dateLABEL.Text = datagrid_Recherche.Rows[e.RowIndex].Cells["ef_type"].Value.ToString();
+            description_richtext.Text = datagrid_Recherche.Rows[e.RowIndex].Cells["EF_description"].Value.ToString();
+            cost_label.Text = datagrid_Recherche.Rows[e.RowIndex].Cells["EF_cost"].Value.ToString();
+            dateLABEL.Text = datagrid_Recherche.Rows[e.RowIndex].Cells["EF_date"].Value.ToString();
 
 
         }
