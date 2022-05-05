@@ -82,6 +82,7 @@
             this.precedentBTN = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewcetteANNEE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagridviewCETTEMOIS)).BeginInit();
             this.panel3.SuspendLayout();
@@ -290,9 +291,9 @@
             this.label8.ForeColor = System.Drawing.Color.Silver;
             this.label8.Location = new System.Drawing.Point(940, 95);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(191, 25);
+            this.label8.Size = new System.Drawing.Size(91, 25);
             this.label8.TabIndex = 143;
-            this.label8.Text = "LES Plus Recents : ";
+            this.label8.Text = "Details :";
             // 
             // panel3
             // 
@@ -478,6 +479,7 @@
             this.datagrid_Recherche.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.datagrid_Recherche.HeaderForeColor = System.Drawing.Color.Silver;
             this.datagrid_Recherche.Location = new System.Drawing.Point(343, 166);
+            this.datagrid_Recherche.MultiSelect = false;
             this.datagrid_Recherche.Name = "datagrid_Recherche";
             this.datagrid_Recherche.ReadOnly = true;
             this.datagrid_Recherche.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -498,6 +500,7 @@
             this.datagrid_Recherche.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.datagrid_Recherche.Size = new System.Drawing.Size(443, 268);
             this.datagrid_Recherche.TabIndex = 150;
+            this.datagrid_Recherche.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagrid_Recherche_CellClick);
             this.datagrid_Recherche.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagrid_Recherche_CellContentClick);
             this.datagrid_Recherche.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagrid_Recherche_RowEnter);
             // 
@@ -665,7 +668,7 @@
             this.Printbutton.BackColor = System.Drawing.Color.Transparent;
             this.Printbutton.Image = global::GESTIONECOLE.Properties.Resources.printicon;
             this.Printbutton.ImageActive = null;
-            this.Printbutton.Location = new System.Drawing.Point(792, 161);
+            this.Printbutton.Location = new System.Drawing.Point(1196, 71);
             this.Printbutton.Name = "Printbutton";
             this.Printbutton.Size = new System.Drawing.Size(39, 47);
             this.Printbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -790,12 +793,24 @@
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Silver;
+            this.label9.Location = new System.Drawing.Point(1126, 70);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(67, 25);
+            this.label9.TabIndex = 159;
+            this.label9.Text = "PRINT";
+            // 
             // Frais_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.ClientSize = new System.Drawing.Size(1241, 504);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.Printbutton);
             this.Controls.Add(this.bunifuCustomLabel5);
             this.Controls.Add(this.extras_frais_btn);
@@ -895,5 +910,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
         private Bunifu.Framework.UI.BunifuFlatButton extras_frais_btn;
         private Bunifu.Framework.UI.BunifuImageButton Printbutton;
+        private System.Windows.Forms.Label label9;
     }
 }

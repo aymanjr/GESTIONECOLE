@@ -338,11 +338,30 @@ namespace GESTIONECOLE.FORMS
 
         private void datagrid_Recherche_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            //if (e.RowIndex >= 0)
+            //{
+            //    DataGridViewRow row = this.datagrid_Recherche.Rows[e.RowIndex];
+            //    Type_label.Text = row.Cells["ef_type"].ToString();
+            //    description_richtext.Text = row.Cells["EF_description"].ToString();
+            //    cost_label.Text = row.Cells["EF_cost"].ToString();
+            //    dateLABEL.Text = row.Cells["EF_date"].ToString();
+            //}
         }
 
         private void datagrid_Recherche_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
             Printbutton.Visible = true;
+        }
+
+        private void datagrid_Recherche_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            datagrid_Recherche.CurrentRow.Selected = true;
+            Type_label.Text = datagrid_Recherche.Rows[e.RowIndex].Cells["ef_type"].Value.ToString();
+            description_richtext.Text = datagrid_Recherche.Rows[e.RowIndex].Cells["ef_type"].Value.ToString();
+            cost_label.Text = datagrid_Recherche.Rows[e.RowIndex].Cells["ef_type"].Value.ToString();
+            dateLABEL.Text = datagrid_Recherche.Rows[e.RowIndex].Cells["ef_type"].Value.ToString();
+
+
         }
     }
 }
