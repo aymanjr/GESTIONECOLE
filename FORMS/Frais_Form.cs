@@ -329,6 +329,10 @@ namespace GESTIONECOLE.FORMS
         private void Printbutton_Click(object sender, EventArgs e)
         {
             Print_FraisForm fr = new Print_FraisForm();
+            fr.type = Type_label.Text;
+            fr.description = description_richtext.Text;
+            fr.cost = cost_label.Text;
+            fr.datefrais = dateLABEL.Text;
             fr.ShowDialog();
         }
     }

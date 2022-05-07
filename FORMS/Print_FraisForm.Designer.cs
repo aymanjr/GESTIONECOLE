@@ -39,15 +39,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.datefraislabel = new System.Windows.Forms.Label();
+            this.descriptionlabel = new System.Windows.Forms.Label();
+            this.typelabel = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.costlabel = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -66,13 +66,13 @@
             this.panelprint.Controls.Add(this.datetimelabel);
             this.panelprint.Controls.Add(this.label18);
             this.panelprint.Controls.Add(this.label17);
-            this.panelprint.Controls.Add(this.label15);
+            this.panelprint.Controls.Add(this.costlabel);
             this.panelprint.Controls.Add(this.label16);
             this.panelprint.Controls.Add(this.label14);
             this.panelprint.Controls.Add(this.pictureBox2);
-            this.panelprint.Controls.Add(this.label8);
-            this.panelprint.Controls.Add(this.label9);
-            this.panelprint.Controls.Add(this.label10);
+            this.panelprint.Controls.Add(this.datefraislabel);
+            this.panelprint.Controls.Add(this.descriptionlabel);
+            this.panelprint.Controls.Add(this.typelabel);
             this.panelprint.Controls.Add(this.label11);
             this.panelprint.Controls.Add(this.label12);
             this.panelprint.Controls.Add(this.label13);
@@ -193,38 +193,38 @@
             this.label7.TabIndex = 5;
             this.label7.Text = "+21252123123";
             // 
-            // label8
+            // datefraislabel
             // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(434, 457);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(16, 17);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "?";
+            this.datefraislabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.datefraislabel.AutoSize = true;
+            this.datefraislabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datefraislabel.Location = new System.Drawing.Point(434, 457);
+            this.datefraislabel.Name = "datefraislabel";
+            this.datefraislabel.Size = new System.Drawing.Size(16, 17);
+            this.datefraislabel.TabIndex = 13;
+            this.datefraislabel.Text = "?";
             // 
-            // label9
+            // descriptionlabel
             // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(472, 395);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(16, 17);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "?";
+            this.descriptionlabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.descriptionlabel.AutoSize = true;
+            this.descriptionlabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descriptionlabel.Location = new System.Drawing.Point(472, 395);
+            this.descriptionlabel.Name = "descriptionlabel";
+            this.descriptionlabel.Size = new System.Drawing.Size(16, 17);
+            this.descriptionlabel.TabIndex = 12;
+            this.descriptionlabel.Text = "?";
             // 
-            // label10
+            // typelabel
             // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(472, 359);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(16, 17);
-            this.label10.TabIndex = 11;
-            this.label10.Text = "?";
+            this.typelabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.typelabel.AutoSize = true;
+            this.typelabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.typelabel.Location = new System.Drawing.Point(472, 359);
+            this.typelabel.Name = "typelabel";
+            this.typelabel.Size = new System.Drawing.Size(16, 17);
+            this.typelabel.TabIndex = 11;
+            this.typelabel.Text = "?";
             // 
             // label11
             // 
@@ -281,16 +281,16 @@
             this.label14.TabIndex = 15;
             this.label14.Text = "Extra Frais ";
             // 
-            // label15
+            // costlabel
             // 
-            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(434, 497);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(16, 17);
-            this.label15.TabIndex = 17;
-            this.label15.Text = "?";
+            this.costlabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.costlabel.AutoSize = true;
+            this.costlabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.costlabel.Location = new System.Drawing.Point(434, 497);
+            this.costlabel.Name = "costlabel";
+            this.costlabel.Size = new System.Drawing.Size(16, 17);
+            this.costlabel.TabIndex = 17;
+            this.costlabel.Text = "?";
             // 
             // label16
             // 
@@ -371,9 +371,9 @@
         private Bunifu.Framework.UI.BunifuImageButton Printbutton;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label datefraislabel;
+        private System.Windows.Forms.Label descriptionlabel;
+        private System.Windows.Forms.Label typelabel;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
@@ -387,7 +387,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label costlabel;
         private System.Windows.Forms.Label label16;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;

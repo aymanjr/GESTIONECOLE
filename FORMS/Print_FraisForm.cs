@@ -12,7 +12,7 @@ namespace GESTIONECOLE.FORMS
 {
     public partial class Print_FraisForm : Form
     {
-        private string Date;
+        public  string Date,type,description,cost,datefrais;
         public Print_FraisForm()
         {
             InitializeComponent();
@@ -25,9 +25,18 @@ namespace GESTIONECOLE.FORMS
             a.SetToolTip(Printbutton, "Print");
         }
 
+        private void print(Panel p1)
+        {
+
+        }
+
         private void Print_FraisForm_Load(object sender, EventArgs e)
         {
             datetimelabel.Text = Date;
+            typelabel.Text = type;
+            descriptionlabel.Text = description;
+            costlabel.Text = cost;
+            datefraislabel.Text = datefrais;
         }
     }
 }
