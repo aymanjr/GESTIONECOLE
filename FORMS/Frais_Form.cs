@@ -325,5 +325,11 @@ namespace GESTIONECOLE.FORMS
             ToolTip a = new ToolTip();
             a.SetToolTip(Printbutton, "Print");
         }
+
+        private void Printbutton_Click(object sender, EventArgs e)
+        {
+            Print_FraisForm fr = new Print_FraisForm();
+            fr.ShowDialog();
+        }
     }
 }

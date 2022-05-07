@@ -113,6 +113,16 @@ namespace GESTIONECOLE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap a_bunch_of_kids_5a28b30137a392_2006039015126167052279 {
+            get {
+                object obj = ResourceManager.GetObject("a-bunch-of-kids-5a28b30137a392.2006039015126167052279", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add_480px {
             get {
                 object obj = ResourceManager.GetObject("add_480px", resourceCulture);
