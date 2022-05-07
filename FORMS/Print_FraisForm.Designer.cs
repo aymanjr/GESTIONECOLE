@@ -53,6 +53,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.datetimelabel = new System.Windows.Forms.Label();
             this.panelprint.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Printbutton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -62,6 +63,7 @@
             // panelprint
             // 
             this.panelprint.BackColor = System.Drawing.Color.White;
+            this.panelprint.Controls.Add(this.datetimelabel);
             this.panelprint.Controls.Add(this.label18);
             this.panelprint.Controls.Add(this.label17);
             this.panelprint.Controls.Add(this.label15);
@@ -333,6 +335,17 @@
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
             // 
+            // datetimelabel
+            // 
+            this.datetimelabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.datetimelabel.AutoSize = true;
+            this.datetimelabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datetimelabel.Location = new System.Drawing.Point(22, 32);
+            this.datetimelabel.Name = "datetimelabel";
+            this.datetimelabel.Size = new System.Drawing.Size(16, 18);
+            this.datetimelabel.TabIndex = 20;
+            this.datetimelabel.Text = "?";
+            // 
             // Print_FraisForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -342,6 +355,7 @@
             this.Controls.Add(this.panelprint);
             this.Name = "Print_FraisForm";
             this.Text = "Print_FraisForm";
+            this.Load += new System.EventHandler(this.Print_FraisForm_Load);
             this.panelprint.ResumeLayout(false);
             this.panelprint.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Printbutton)).EndInit();
@@ -377,5 +391,6 @@
         private System.Windows.Forms.Label label16;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Windows.Forms.Label datetimelabel;
     }
 }

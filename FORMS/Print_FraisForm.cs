@@ -12,15 +12,22 @@ namespace GESTIONECOLE.FORMS
 {
     public partial class Print_FraisForm : Form
     {
+        private string Date;
         public Print_FraisForm()
         {
             InitializeComponent();
+            Date = DateTime.Now.ToString("M/d/yyyy");
         }
 
         private void Printbutton_MouseHover(object sender, EventArgs e)
         {
             ToolTip a = new ToolTip();
             a.SetToolTip(Printbutton, "Print");
+        }
+
+        private void Print_FraisForm_Load(object sender, EventArgs e)
+        {
+            datetimelabel.Text = Date;
         }
     }
 }
