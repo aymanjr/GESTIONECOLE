@@ -310,6 +310,7 @@ namespace GESTIONECOLE.FORMS
 
         private void datagrid_Recherche_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+
             datagrid_Recherche.CurrentRow.Selected = true;
             Type_label.Text = datagrid_Recherche.Rows[e.RowIndex].Cells["ef_type"].Value.ToString();
             description_richtext.Text = datagrid_Recherche.Rows[e.RowIndex].Cells["EF_description"].Value.ToString();
@@ -317,6 +318,12 @@ namespace GESTIONECOLE.FORMS
             dateLABEL.Text = datagrid_Recherche.Rows[e.RowIndex].Cells["EF_date"].Value.ToString();
 
 
+        }
+
+        private void Printbutton_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip a = new ToolTip();
+            a.SetToolTip(Printbutton, "Print");
         }
     }
 }
