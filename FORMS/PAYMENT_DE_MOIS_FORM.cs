@@ -119,6 +119,12 @@ namespace GESTIONECOLE.FORMS
             r.deconnecter();
         }
 
+        public void printthelastpayment()
+        {
+            print_Paymentdemois PD = new print_Paymentdemois();
+            PD.ShowDialog();
+        }
+
         public void lastpayment()
         {
 
@@ -139,7 +145,10 @@ namespace GESTIONECOLE.FORMS
 
             }
 
+         
 
+
+            
             r.deconnecter();
 
 
@@ -374,9 +383,20 @@ namespace GESTIONECOLE.FORMS
                         r.command.ExecuteNonQuery();
                         MessageBox.Show("payment a ete ajouter ");
 
+                        
+
                         r.deconnecter();
 
                         lastpayment();
+                        print_Paymentdemois PD = new print_Paymentdemois();
+                        PD.cost = MontantLABEL.Text;
+                        PD.class_ = classnomLABEL.Text;
+                        PD.mois = moislabel.Text;
+                        PD.nomcomplet = nomcompleteleveLABEL.Text;
+                        PD.transporttype = TrsprtTYPENOM.Text;
+                        PD.annescolaire = annescolaire;
+                        PD.DatePayment = datepaymentlabel.Text;
+                        printthelastpayment();
                         clean();
 
                     }
