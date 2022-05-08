@@ -87,7 +87,7 @@
             this.panelprint.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelprint.Location = new System.Drawing.Point(0, 65);
             this.panelprint.Name = "panelprint";
-            this.panelprint.Size = new System.Drawing.Size(800, 599);
+            this.panelprint.Size = new System.Drawing.Size(912, 599);
             this.panelprint.TabIndex = 0;
             // 
             // datetimelabel
@@ -95,7 +95,7 @@
             this.datetimelabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.datetimelabel.AutoSize = true;
             this.datetimelabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datetimelabel.Location = new System.Drawing.Point(22, 32);
+            this.datetimelabel.Location = new System.Drawing.Point(10, 33);
             this.datetimelabel.Name = "datetimelabel";
             this.datetimelabel.Size = new System.Drawing.Size(16, 18);
             this.datetimelabel.TabIndex = 20;
@@ -105,7 +105,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(570, 574);
+            this.label18.Location = new System.Drawing.Point(466, 574);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(126, 16);
             this.label18.TabIndex = 19;
@@ -115,7 +115,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(587, 530);
+            this.label17.Location = new System.Drawing.Point(466, 528);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(82, 16);
             this.label17.TabIndex = 18;
@@ -125,7 +125,7 @@
             // 
             this.costlabel.AutoSize = true;
             this.costlabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.costlabel.Location = new System.Drawing.Point(434, 497);
+            this.costlabel.Location = new System.Drawing.Point(366, 498);
             this.costlabel.Name = "costlabel";
             this.costlabel.Size = new System.Drawing.Size(16, 17);
             this.costlabel.TabIndex = 17;
@@ -135,7 +135,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(355, 497);
+            this.label16.Location = new System.Drawing.Point(287, 498);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(49, 16);
             this.label16.TabIndex = 16;
@@ -145,7 +145,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(353, 306);
+            this.label14.Location = new System.Drawing.Point(285, 307);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(135, 28);
             this.label14.TabIndex = 15;
@@ -154,7 +154,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(125, 356);
+            this.pictureBox2.Location = new System.Drawing.Point(57, 357);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(103, 89);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -165,7 +165,7 @@
             // 
             this.datefraislabel.AutoSize = true;
             this.datefraislabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datefraislabel.Location = new System.Drawing.Point(434, 457);
+            this.datefraislabel.Location = new System.Drawing.Point(366, 458);
             this.datefraislabel.Name = "datefraislabel";
             this.datefraislabel.Size = new System.Drawing.Size(16, 17);
             this.datefraislabel.TabIndex = 13;
@@ -175,7 +175,7 @@
             // 
             this.descriptionlabel.AutoSize = true;
             this.descriptionlabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.descriptionlabel.Location = new System.Drawing.Point(472, 395);
+            this.descriptionlabel.Location = new System.Drawing.Point(404, 396);
             this.descriptionlabel.Name = "descriptionlabel";
             this.descriptionlabel.Size = new System.Drawing.Size(16, 17);
             this.descriptionlabel.TabIndex = 12;
@@ -185,7 +185,7 @@
             // 
             this.typelabel.AutoSize = true;
             this.typelabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.typelabel.Location = new System.Drawing.Point(472, 359);
+            this.typelabel.Location = new System.Drawing.Point(404, 360);
             this.typelabel.Name = "typelabel";
             this.typelabel.Size = new System.Drawing.Size(16, 17);
             this.typelabel.TabIndex = 11;
@@ -195,7 +195,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(355, 457);
+            this.label11.Location = new System.Drawing.Point(287, 458);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(51, 16);
             this.label11.TabIndex = 10;
@@ -205,7 +205,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(355, 396);
+            this.label12.Location = new System.Drawing.Point(287, 397);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(98, 16);
             this.label12.TabIndex = 9;
@@ -215,7 +215,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(355, 359);
+            this.label13.Location = new System.Drawing.Point(287, 360);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(43, 16);
             this.label13.TabIndex = 8;
@@ -225,7 +225,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(201, 266);
+            this.label5.Location = new System.Drawing.Point(133, 267);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(152, 17);
             this.label5.TabIndex = 7;
@@ -235,7 +235,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(201, 229);
+            this.label6.Location = new System.Drawing.Point(133, 230);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(180, 17);
             this.label6.TabIndex = 6;
@@ -245,7 +245,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(201, 192);
+            this.label7.Location = new System.Drawing.Point(133, 193);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(94, 17);
             this.label7.TabIndex = 5;
@@ -255,7 +255,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(122, 266);
+            this.label4.Location = new System.Drawing.Point(54, 267);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 16);
             this.label4.TabIndex = 4;
@@ -265,7 +265,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(122, 229);
+            this.label3.Location = new System.Drawing.Point(54, 230);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 16);
             this.label3.TabIndex = 3;
@@ -275,7 +275,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(122, 192);
+            this.label2.Location = new System.Drawing.Point(54, 193);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 16);
             this.label2.TabIndex = 2;
@@ -285,7 +285,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(307, 124);
+            this.label1.Location = new System.Drawing.Point(239, 125);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(200, 28);
             this.label1.TabIndex = 1;
@@ -294,7 +294,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(673, 17);
+            this.pictureBox1.Location = new System.Drawing.Point(489, 15);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(103, 89);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -307,7 +307,7 @@
             this.Printbutton.BackColor = System.Drawing.Color.Transparent;
             this.Printbutton.Image = global::GESTIONECOLE.Properties.Resources.printicon;
             this.Printbutton.ImageActive = null;
-            this.Printbutton.Location = new System.Drawing.Point(749, 12);
+            this.Printbutton.Location = new System.Drawing.Point(805, 12);
             this.Printbutton.Name = "Printbutton";
             this.Printbutton.Size = new System.Drawing.Size(39, 47);
             this.Printbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -335,7 +335,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 664);
+            this.ClientSize = new System.Drawing.Size(912, 664);
             this.Controls.Add(this.Printbutton);
             this.Controls.Add(this.panelprint);
             this.Name = "Print_FraisForm";
