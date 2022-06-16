@@ -36,12 +36,13 @@ namespace GESTIONECOLE.FORMS
             {
 
                 eleveid = int.Parse(r.ds.Tables["eleve"].Rows[0]["el_id"].ToString());
+               // TrsprtTYPENOM.Text = eleveid.ToString();
                 nomcompleteleveLABEL.Text = r.ds.Tables["eleve"].Rows[0]["el_nom"].ToString() + "  " + r.ds.Tables["eleve"].Rows[0]["el_prenom"].ToString();
                 moisshow();
                 showpayedmois();
                 classrecherche();
                 inscriptionrech();
-                lastpayment();
+                showlastpayment();
 
             }
 
@@ -124,35 +125,55 @@ namespace GESTIONECOLE.FORMS
             print_Paymentdemois PD = new print_Paymentdemois();
             PD.ShowDialog();
         }
-
-        public void lastpayment()
+        public void showlastpayment()
         {
 
-            SqlDataReader dr ;
+            //TrsprtTYPENOM.Text = "ssssss";
             r.connecter();
-            r.command = new SqlCommand("select top 1 ft.FRTRSP_type,m.Mois_nom,f.FR_TOTAL,f.FR_datepayment from INSCRIPTION i , ELEVE e , FRAIS_MOIS_ELEVE f,FRAIS_MOIS_TRSP ft,MOIS m ,CLASS c where e.EL_ID = i.INS_id and i.INS_id = f.FR_INSID# and f.FR_FRTRSPID# = ft.FRTRSP_id and f.FR_MOISID# = m.Mois_id and c.CL_id = i.INS_classID# and i.INS_eleveID# = '"+eleveid+"'  order by f.FR_datepayment desc ", r.connection);
 
 
-            dr = r.command.ExecuteReader();
-            while (dr.Read())
-            {
-
-                TrsprtTYPENOM.Text = dr.GetValue(0).ToString();
-                moislabel.Text = dr.GetValue(1).ToString();
-                MontantLABEL.Text = dr.GetValue(2).ToString();
-                datepaymentlabel.Text = dr.GetValue(3).ToString();
+            r.command = new SqlCommand(" exec showlastpayment '"+eleveid+"'", r.connection);
+            r.reader = r.command.ExecuteReader();
+            while (r.reader.Read())
+            {   
+              //  TrsprtTYPENOM.Text = r.reader.GetValue(0).ToString();
+                TrsprtTYPENOM.Text = r.reader["FRTRSP_type"].ToString();
 
 
             }
+
+            r.deconnecter();
+        }
+
+
+        //public void lastpayment()
+        //{
+
+        //    SqlDataReader dr ;
+        //    r.connecter();
+        //    r.command = new SqlCommand("select top 1 ft.FRTRSP_type,m.Mois_nom,f.FR_TOTAL,f.FR_datepayment from INSCRIPTION i , ELEVE e , FRAIS_MOIS_ELEVE f,FRAIS_MOIS_TRSP ft,MOIS m ,CLASS c where e.EL_ID = i.INS_id and i.INS_id = f.FR_INSID# and f.FR_FRTRSPID# = ft.FRTRSP_id and f.FR_MOISID# = m.Mois_id and c.CL_id = i.INS_classID# and i.INS_eleveID# = '"+eleveid+"'  order by f.FR_datepayment desc ", r.connection);
+
+
+        //    dr = r.command.ExecuteReader();
+        //    while (dr.Read())
+        //    {
+
+        //        TrsprtTYPENOM.Text = dr.GetValue(0).ToString();
+        //        moislabel.Text = dr.GetValue(1).ToString();
+        //        MontantLABEL.Text = dr.GetValue(2).ToString();
+        //        datepaymentlabel.Text = dr.GetValue(3).ToString();
+
+
+        //    }
 
          
 
 
             
-            r.deconnecter();
+        //    r.deconnecter();
 
 
-        }
+        //}
         public void trsptypeshow()
         {
             combo_typetrsp.Clear();
@@ -387,7 +408,7 @@ namespace GESTIONECOLE.FORMS
 
                         r.deconnecter();
 
-                        lastpayment();
+                        showlastpayment();
                         print_Paymentdemois PD = new print_Paymentdemois();
                         PD.cost = MontantLABEL.Text;
                         PD.class_ = classnomLABEL.Text;
