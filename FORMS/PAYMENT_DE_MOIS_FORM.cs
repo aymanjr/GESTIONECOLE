@@ -135,9 +135,12 @@ namespace GESTIONECOLE.FORMS
             r.command = new SqlCommand(" exec showlastpayment '"+eleveid+"'", r.connection);
             r.reader = r.command.ExecuteReader();
             while (r.reader.Read())
-            {   
-              //  TrsprtTYPENOM.Text = r.reader.GetValue(0).ToString();
+            {
+                //  TrsprtTYPENOM.Text = r.reader.GetValue(0).ToString();
                 TrsprtTYPENOM.Text = r.reader["FRTRSP_type"].ToString();
+                moislabel.Text = r.reader["Mois_nom"].ToString();
+                MontantLABEL.Text = r.reader["FR_TOTAL"].ToString();
+                datepaymentlabel.Text = r.reader["FR_datepayment"].ToString();
 
 
             }
