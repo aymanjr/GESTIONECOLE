@@ -13,18 +13,13 @@ namespace GESTIONECOLE.FORMS
 {
     public partial class print_Paymentdemois : Form
     {
-        public string DatePayment, nomcomplet, class_, cost, transporttype, mois, Date,annescolaire;
+
 
         private void print_Paymentdemois_Load(object sender, EventArgs e)
         {
-            nomcompletlabel.Text = nomcomplet;
-            datetimelabel.Text = Date;
-            classlabel.Text = class_;
-            transporttypelabel.Text = transporttype;
-            moislabel.Text = mois;
-            datepaymentlabel.Text = DatePayment;
-            costlabel.Text = cost;
-            anneescolairelabel.Text = annescolaire;
+
+
+
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
@@ -51,10 +46,18 @@ namespace GESTIONECOLE.FORMS
 
         }
 
-        public print_Paymentdemois()
+        public print_Paymentdemois(string nomcomplet, string montant, string classl,string mois,string trsp,string annee,string datepayment)
         {
             InitializeComponent();
-            Date = DateTime.Now.ToString("M/d/yyyy");
+            string Date = DateTime.Now.ToString("M/d/yyyy");
+            nomcompletlabel.Text = nomcomplet;
+            costlabel.Text = montant;
+            classlabel.Text = classl;
+            moislabel.Text = mois;
+            transporttypelabel.Text = trsp;
+            anneescolairelabel.Text = annee;
+            datepaymentlabel.Text = datepayment;
+            datetimelabel.Text = Date;
 
         }
 

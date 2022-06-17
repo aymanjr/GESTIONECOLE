@@ -9,7 +9,7 @@ namespace GESTIONECOLE.FORMS
 
 
         RESOURCES.SQLRESOURCES r = new RESOURCES.SQLRESOURCES();
-
+        
         public PAYMENT_DE_MOIS_FORM()
         {
             InitializeComponent();
@@ -120,11 +120,7 @@ namespace GESTIONECOLE.FORMS
             r.deconnecter();
         }
 
-        public void printthelastpayment()
-        {
-            print_Paymentdemois PD = new print_Paymentdemois();
-            PD.ShowDialog();
-        }
+    
         public void showlastpayment()
         {
 
@@ -407,26 +403,33 @@ namespace GESTIONECOLE.FORMS
                         r.command.ExecuteNonQuery();
                         MessageBox.Show("payment a ete ajouter ");
 
-                        
+
 
                         r.deconnecter();
 
                         showlastpayment();
-                        print_Paymentdemois PD = new print_Paymentdemois();
-                        PD.cost = MontantLABEL.Text;
-                        PD.class_ = classnomLABEL.Text;
-                        PD.mois = moislabel.Text;
-                        PD.nomcomplet = nomcompleteleveLABEL.Text;
-                        PD.transporttype = TrsprtTYPENOM.Text;
-                        PD.annescolaire = annescolaire;
-                        PD.DatePayment = datepaymentlabel.Text;
+
+
+                        //   PD.cost = MontantLABEL.Text;
+                        //  PD.class_ = classnomLABEL.Text;
+                        // PD.mois = moislabel.Text;
+                        // PD.nomcomplet = nomcompleteleveLABEL.Text;
+                        // PD.transporttype = TrsprtTYPENOM.Text;
+                        //PD.annescolaire = annescolaire;
+                        //PD.DatePayment = datepaymentlabel.Text;
                         printthelastpayment();
-                        clean();
+
 
                     }
 
                 }
             }
+        }
+        public void printthelastpayment()
+        {
+            print_Paymentdemois PD = new print_Paymentdemois(nomcompleteleveLABEL.Text,MontantLABEL.Text,classnomLABEL.Text, moislabel.Text, TrsprtTYPENOM.Text, annescolaire, datepaymentlabel.Text);
+            PD.ShowDialog();
+
         }
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
