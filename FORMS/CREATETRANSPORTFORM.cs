@@ -71,7 +71,7 @@ namespace GESTIONECOLE.FORMS
 
             if (string.IsNullOrEmpty(txtmatricule.Text) || string.IsNullOrEmpty(txtcapaciter.Text) || string.IsNullOrEmpty(txtmodule.Text) || string.IsNullOrEmpty(txtstaut.Text) || chauffeurcombo.SelectedItem == null || accompcombo.SelectedItem == null)
             {
-                MessageBox.Show("");
+                MessageBox.Show("les case est vide");
             }
             else
             {

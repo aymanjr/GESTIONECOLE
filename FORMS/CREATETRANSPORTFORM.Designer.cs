@@ -47,111 +47,111 @@
             // 
             // txtmatricule
             // 
-            this.txtmatricule.Location = new System.Drawing.Point(305, 12);
+            this.txtmatricule.Location = new System.Drawing.Point(277, 16);
             this.txtmatricule.Name = "txtmatricule";
-            this.txtmatricule.Size = new System.Drawing.Size(100, 20);
+            this.txtmatricule.Size = new System.Drawing.Size(197, 20);
             this.txtmatricule.TabIndex = 0;
             // 
             // txtstaut
             // 
-            this.txtstaut.Location = new System.Drawing.Point(305, 194);
+            this.txtstaut.Location = new System.Drawing.Point(277, 191);
             this.txtstaut.Name = "txtstaut";
-            this.txtstaut.Size = new System.Drawing.Size(100, 20);
+            this.txtstaut.Size = new System.Drawing.Size(197, 20);
             this.txtstaut.TabIndex = 1;
             // 
             // txtcapaciter
             // 
-            this.txtcapaciter.Location = new System.Drawing.Point(305, 127);
+            this.txtcapaciter.Location = new System.Drawing.Point(277, 131);
             this.txtcapaciter.Name = "txtcapaciter";
-            this.txtcapaciter.Size = new System.Drawing.Size(100, 20);
+            this.txtcapaciter.Size = new System.Drawing.Size(197, 20);
             this.txtcapaciter.TabIndex = 4;
             // 
             // txtmodule
             // 
-            this.txtmodule.Location = new System.Drawing.Point(305, 71);
+            this.txtmodule.Location = new System.Drawing.Point(277, 75);
             this.txtmodule.Name = "txtmodule";
-            this.txtmodule.Size = new System.Drawing.Size(100, 20);
+            this.txtmodule.Size = new System.Drawing.Size(197, 20);
             this.txtmodule.TabIndex = 5;
             // 
             // accompcombo
             // 
             this.accompcombo.FormattingEnabled = true;
-            this.accompcombo.Location = new System.Drawing.Point(305, 288);
+            this.accompcombo.Location = new System.Drawing.Point(277, 293);
             this.accompcombo.Name = "accompcombo";
-            this.accompcombo.Size = new System.Drawing.Size(100, 21);
+            this.accompcombo.Size = new System.Drawing.Size(197, 21);
             this.accompcombo.TabIndex = 6;
             // 
             // chauffeurcombo
             // 
             this.chauffeurcombo.FormattingEnabled = true;
-            this.chauffeurcombo.Location = new System.Drawing.Point(305, 241);
+            this.chauffeurcombo.Location = new System.Drawing.Point(277, 243);
             this.chauffeurcombo.Name = "chauffeurcombo";
-            this.chauffeurcombo.Size = new System.Drawing.Size(100, 21);
+            this.chauffeurcombo.Size = new System.Drawing.Size(197, 21);
             this.chauffeurcombo.TabIndex = 7;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Silver;
             this.label1.Location = new System.Drawing.Point(12, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(194, 19);
+            this.label1.Size = new System.Drawing.Size(237, 20);
             this.label1.TabIndex = 9;
             this.label1.Text = "TRANSPORT MATRICULE : ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Silver;
             this.label2.Location = new System.Drawing.Point(12, 73);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(170, 19);
+            this.label2.Size = new System.Drawing.Size(205, 20);
             this.label2.TabIndex = 10;
             this.label2.Text = "TRANSPORT MODULE :";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Silver;
             this.label4.Location = new System.Drawing.Point(12, 189);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(158, 19);
+            this.label4.Size = new System.Drawing.Size(197, 20);
             this.label4.TabIndex = 12;
             this.label4.Text = "TRANSPORT STATUT :";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Silver;
             this.label6.Location = new System.Drawing.Point(12, 129);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(192, 19);
+            this.label6.Size = new System.Drawing.Size(230, 20);
             this.label6.TabIndex = 14;
             this.label6.Text = "TRANSPORT CAPACITER :";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Silver;
             this.label7.Location = new System.Drawing.Point(12, 241);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(195, 19);
+            this.label7.Size = new System.Drawing.Size(240, 20);
             this.label7.TabIndex = 15;
             this.label7.Text = "TRANSPORT CHAUFFEUR :";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Silver;
             this.label8.Location = new System.Drawing.Point(12, 291);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(183, 19);
+            this.label8.Size = new System.Drawing.Size(209, 20);
             this.label8.TabIndex = 16;
             this.label8.Text = "TRANSPORT ACCOMP : ";
             // 
@@ -178,7 +178,7 @@
             this.AjouterBtn.IconVisible = false;
             this.AjouterBtn.IconZoom = 0D;
             this.AjouterBtn.IsTab = true;
-            this.AjouterBtn.Location = new System.Drawing.Point(193, 348);
+            this.AjouterBtn.Location = new System.Drawing.Point(277, 345);
             this.AjouterBtn.Margin = new System.Windows.Forms.Padding(0);
             this.AjouterBtn.Name = "AjouterBtn";
             this.AjouterBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
@@ -216,7 +216,7 @@
             this.cancelbtn.IconVisible = false;
             this.cancelbtn.IconZoom = 0D;
             this.cancelbtn.IsTab = true;
-            this.cancelbtn.Location = new System.Drawing.Point(354, 348);
+            this.cancelbtn.Location = new System.Drawing.Point(394, 345);
             this.cancelbtn.Margin = new System.Windows.Forms.Padding(0);
             this.cancelbtn.Name = "cancelbtn";
             this.cancelbtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
@@ -235,8 +235,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
-            this.ClientSize = new System.Drawing.Size(443, 403);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(50)))), ((int)(((byte)(52)))));
+            this.ClientSize = new System.Drawing.Size(491, 386);
             this.Controls.Add(this.cancelbtn);
             this.Controls.Add(this.AjouterBtn);
             this.Controls.Add(this.label8);

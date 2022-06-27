@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CREATEINSCRIPTIONFORM));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.NIVEAUCOMBO = new System.Windows.Forms.ComboBox();
             this.CLASSCOMBO = new System.Windows.Forms.ComboBox();
             this.TXTCOST = new System.Windows.Forms.TextBox();
@@ -80,7 +80,7 @@
             // NIVEAUCOMBO
             // 
             this.NIVEAUCOMBO.FormattingEnabled = true;
-            this.NIVEAUCOMBO.Location = new System.Drawing.Point(183, 223);
+            this.NIVEAUCOMBO.Location = new System.Drawing.Point(183, 110);
             this.NIVEAUCOMBO.Name = "NIVEAUCOMBO";
             this.NIVEAUCOMBO.Size = new System.Drawing.Size(179, 21);
             this.NIVEAUCOMBO.TabIndex = 0;
@@ -89,7 +89,7 @@
             // CLASSCOMBO
             // 
             this.CLASSCOMBO.FormattingEnabled = true;
-            this.CLASSCOMBO.Location = new System.Drawing.Point(183, 259);
+            this.CLASSCOMBO.Location = new System.Drawing.Point(183, 176);
             this.CLASSCOMBO.Name = "CLASSCOMBO";
             this.CLASSCOMBO.Size = new System.Drawing.Size(179, 21);
             this.CLASSCOMBO.TabIndex = 1;
@@ -97,7 +97,7 @@
             // 
             // TXTCOST
             // 
-            this.TXTCOST.Location = new System.Drawing.Point(183, 313);
+            this.TXTCOST.Location = new System.Drawing.Point(183, 326);
             this.TXTCOST.Name = "TXTCOST";
             this.TXTCOST.Size = new System.Drawing.Size(179, 20);
             this.TXTCOST.TabIndex = 3;
@@ -105,7 +105,7 @@
             // elevecombo
             // 
             this.elevecombo.FormattingEnabled = true;
-            this.elevecombo.Location = new System.Drawing.Point(183, 286);
+            this.elevecombo.Location = new System.Drawing.Point(183, 251);
             this.elevecombo.Name = "elevecombo";
             this.elevecombo.Size = new System.Drawing.Size(179, 21);
             this.elevecombo.TabIndex = 10;
@@ -116,7 +116,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Silver;
-            this.label5.Location = new System.Drawing.Point(45, 259);
+            this.label5.Location = new System.Drawing.Point(12, 171);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(78, 24);
             this.label5.TabIndex = 94;
@@ -127,7 +127,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Silver;
-            this.label6.Location = new System.Drawing.Point(45, 221);
+            this.label6.Location = new System.Drawing.Point(12, 105);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(93, 24);
             this.label6.TabIndex = 94;
@@ -138,7 +138,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Silver;
-            this.label7.Location = new System.Drawing.Point(44, 284);
+            this.label7.Location = new System.Drawing.Point(12, 246);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(81, 24);
             this.label7.TabIndex = 95;
@@ -150,7 +150,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Silver;
-            this.label8.Location = new System.Drawing.Point(12, 313);
+            this.label8.Location = new System.Drawing.Point(12, 324);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(113, 24);
             this.label8.TabIndex = 96;
@@ -178,7 +178,7 @@
             this.AJOUTERBTN.IconVisible = false;
             this.AJOUTERBTN.IconZoom = 0D;
             this.AJOUTERBTN.IsTab = true;
-            this.AJOUTERBTN.Location = new System.Drawing.Point(209, 396);
+            this.AJOUTERBTN.Location = new System.Drawing.Point(239, 409);
             this.AJOUTERBTN.Margin = new System.Windows.Forms.Padding(0);
             this.AJOUTERBTN.Name = "AJOUTERBTN";
             this.AJOUTERBTN.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
@@ -196,43 +196,43 @@
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.ColumnHeadersHeight = 30;
             this.dataGridView1.DoubleBuffered = true;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.dataGridView1.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.dataGridView1.HeaderForeColor = System.Drawing.Color.Silver;
-            this.dataGridView1.Location = new System.Drawing.Point(416, 72);
+            this.dataGridView1.Location = new System.Drawing.Point(405, 53);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.dataGridView1.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridView1.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Silver;
@@ -240,7 +240,7 @@
             this.dataGridView1.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(430, 362);
+            this.dataGridView1.Size = new System.Drawing.Size(438, 379);
             this.dataGridView1.TabIndex = 102;
             // 
             // refreshBTN
@@ -248,9 +248,9 @@
             this.refreshBTN.BackColor = System.Drawing.Color.Transparent;
             this.refreshBTN.Image = ((System.Drawing.Image)(resources.GetObject("refreshBTN.Image")));
             this.refreshBTN.ImageActive = null;
-            this.refreshBTN.Location = new System.Drawing.Point(800, 32);
+            this.refreshBTN.Location = new System.Drawing.Point(809, 15);
             this.refreshBTN.Name = "refreshBTN";
-            this.refreshBTN.Size = new System.Drawing.Size(27, 32);
+            this.refreshBTN.Size = new System.Drawing.Size(34, 32);
             this.refreshBTN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.refreshBTN.TabIndex = 114;
             this.refreshBTN.TabStop = false;
@@ -262,9 +262,9 @@
             this.rechercherBTN.BackColor = System.Drawing.Color.Transparent;
             this.rechercherBTN.Image = ((System.Drawing.Image)(resources.GetObject("rechercherBTN.Image")));
             this.rechercherBTN.ImageActive = null;
-            this.rechercherBTN.Location = new System.Drawing.Point(710, 34);
+            this.rechercherBTN.Location = new System.Drawing.Point(769, 15);
             this.rechercherBTN.Name = "rechercherBTN";
-            this.rechercherBTN.Size = new System.Drawing.Size(34, 30);
+            this.rechercherBTN.Size = new System.Drawing.Size(34, 32);
             this.rechercherBTN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.rechercherBTN.TabIndex = 113;
             this.rechercherBTN.TabStop = false;
@@ -276,11 +276,11 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Silver;
-            this.label4.Location = new System.Drawing.Point(430, 36);
+            this.label4.Location = new System.Drawing.Point(419, 17);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(125, 20);
+            this.label4.Size = new System.Drawing.Size(117, 20);
             this.label4.TabIndex = 112;
-            this.label4.Text = "Annee Scolaire :";
+            this.label4.Text = "Annee Scolaire";
             // 
             // combo_annescolaire
             // 
@@ -289,12 +289,12 @@
             this.combo_annescolaire.DisabledColor = System.Drawing.Color.Gray;
             this.combo_annescolaire.ForeColor = System.Drawing.Color.Silver;
             this.combo_annescolaire.items = new string[0];
-            this.combo_annescolaire.Location = new System.Drawing.Point(571, 34);
+            this.combo_annescolaire.Location = new System.Drawing.Point(569, 15);
             this.combo_annescolaire.Name = "combo_annescolaire";
             this.combo_annescolaire.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.combo_annescolaire.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.combo_annescolaire.selectedIndex = -1;
-            this.combo_annescolaire.Size = new System.Drawing.Size(133, 30);
+            this.combo_annescolaire.Size = new System.Drawing.Size(194, 30);
             this.combo_annescolaire.TabIndex = 111;
             // 
             // bunifuFlatButton1
@@ -319,7 +319,7 @@
             this.bunifuFlatButton1.IconVisible = false;
             this.bunifuFlatButton1.IconZoom = 0D;
             this.bunifuFlatButton1.IsTab = true;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(-1, 3);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(-9, 0);
             this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(0);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
@@ -339,7 +339,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Silver;
-            this.label9.Location = new System.Drawing.Point(204, 9);
+            this.label9.Location = new System.Drawing.Point(194, 7);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(162, 25);
             this.label9.TabIndex = 116;
@@ -448,7 +448,7 @@
             this.label13.ForeColor = System.Drawing.Color.Silver;
             this.label13.Location = new System.Drawing.Point(3, 337);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(128, 16);
+            this.label13.Size = new System.Drawing.Size(127, 16);
             this.label13.TabIndex = 128;
             this.label13.Text = "Date Inscription : ";
             // 
@@ -459,7 +459,7 @@
             this.label12.ForeColor = System.Drawing.Color.Silver;
             this.label12.Location = new System.Drawing.Point(3, 212);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(56, 16);
+            this.label12.Size = new System.Drawing.Size(55, 16);
             this.label12.TabIndex = 127;
             this.label12.Text = "Tele  : ";
             // 
@@ -470,7 +470,7 @@
             this.label11.ForeColor = System.Drawing.Color.Silver;
             this.label11.Location = new System.Drawing.Point(3, 172);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(159, 16);
+            this.label11.Size = new System.Drawing.Size(158, 16);
             this.label11.TabIndex = 126;
             this.label11.Text = "Nom complet Tuteur : ";
             // 
@@ -481,7 +481,7 @@
             this.label10.ForeColor = System.Drawing.Color.Silver;
             this.label10.Location = new System.Drawing.Point(3, 290);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(117, 16);
+            this.label10.Size = new System.Drawing.Size(116, 16);
             this.label10.TabIndex = 125;
             this.label10.Text = "Anne Scolaire : ";
             // 
@@ -492,7 +492,7 @@
             this.label3.ForeColor = System.Drawing.Color.Silver;
             this.label3.Location = new System.Drawing.Point(3, 250);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 16);
+            this.label3.Size = new System.Drawing.Size(94, 16);
             this.label3.TabIndex = 124;
             this.label3.Text = "Class Nom : ";
             // 
@@ -503,7 +503,7 @@
             this.label2.ForeColor = System.Drawing.Color.Silver;
             this.label2.Location = new System.Drawing.Point(3, 131);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 16);
+            this.label2.Size = new System.Drawing.Size(110, 16);
             this.label2.TabIndex = 123;
             this.label2.Text = "Nom complet : ";
             // 
@@ -512,7 +512,7 @@
             this.bunifuImageButton4.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton4.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton4.Image")));
             this.bunifuImageButton4.ImageActive = null;
-            this.bunifuImageButton4.Location = new System.Drawing.Point(87, 3);
+            this.bunifuImageButton4.Location = new System.Drawing.Point(105, 3);
             this.bunifuImageButton4.Name = "bunifuImageButton4";
             this.bunifuImageButton4.Size = new System.Drawing.Size(102, 76);
             this.bunifuImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -527,16 +527,16 @@
             this.label1.ForeColor = System.Drawing.Color.Silver;
             this.label1.Location = new System.Drawing.Point(955, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(222, 25);
+            this.label1.Size = new System.Drawing.Size(203, 25);
             this.label1.TabIndex = 120;
-            this.label1.Text = "LES Plus Recents : ";
+            this.label1.Text = "Les Plus Recents ";
             // 
             // bunifuImageButton2
             // 
             this.bunifuImageButton2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
             this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(1201, 240);
+            this.bunifuImageButton2.Location = new System.Drawing.Point(1208, 240);
             this.bunifuImageButton2.Name = "bunifuImageButton2";
             this.bunifuImageButton2.Size = new System.Drawing.Size(33, 45);
             this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -581,7 +581,7 @@
             this.print1.IconVisible = false;
             this.print1.IconZoom = 0D;
             this.print1.IsTab = true;
-            this.print1.Location = new System.Drawing.Point(24, 396);
+            this.print1.Location = new System.Drawing.Point(16, 409);
             this.print1.Margin = new System.Windows.Forms.Padding(0);
             this.print1.Name = "print1";
             this.print1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
@@ -601,7 +601,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
-            this.ClientSize = new System.Drawing.Size(1236, 446);
+            this.ClientSize = new System.Drawing.Size(1244, 446);
             this.Controls.Add(this.print1);
             this.Controls.Add(this.precedentBTN);
             this.Controls.Add(this.bunifuImageButton2);

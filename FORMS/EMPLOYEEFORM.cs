@@ -133,8 +133,7 @@ namespace GESTIONECOLE
 
             }
             r.connecter();
-            SqlCommand command = new SqlCommand("exec delete_emp '" + empid + "'", r.
-                connection);
+            SqlCommand command = new SqlCommand("exec delete_emp '" + empid + "'", r.connection);
             command.ExecuteNonQuery();
             r.deconnecter();
 
@@ -214,7 +213,7 @@ namespace GESTIONECOLE
 
                 panel_ville.Visible = true;
             }
-            else if (combo_filter.selectedValue == "Sex")
+            else if (combo_filter.selectedValue == "Genre")
             {
                 panel_post.Visible = false;
                   panel_ville.Visible = false;

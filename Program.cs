@@ -15,7 +15,7 @@ namespace GESTIONECOLE
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LOGINFORM());
+            Application.Run(new THEMAINFORM());
         }
     }
 }

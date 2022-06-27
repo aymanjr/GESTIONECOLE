@@ -53,7 +53,7 @@ namespace GESTIONECOLE.FORMS
         }
         public void niveaushow()
         {
-
+            
             r.connecter();
             r.command = new SqlCommand("select niv_nom from niveau", r.connection);
             r.reader = r.command.ExecuteReader();
@@ -68,6 +68,11 @@ namespace GESTIONECOLE.FORMS
         string id_niveau;
         public void niveauid()
         {
+            if (NIVEAUCOMBO.Text == "")
+            {
+                MessageBox.Show("Veuillez Selectioner Niveau");
+                return;
+            }
             r.connecter();
             r.command = new SqlCommand("select niv_id from niveau where niv_nom = '" + NIVEAUCOMBO.SelectedItem.ToString() + "'", r.connection);
             r.reader = r.command.ExecuteReader();
@@ -99,6 +104,12 @@ namespace GESTIONECOLE.FORMS
         string idclass;
         public void classid()
         {
+
+            if (CLASSCOMBO.Text == "" )
+            {
+                MessageBox.Show("Veuillez Selectioner class");
+                return;
+            }
             r.connecter();
             r.command = new SqlCommand("select cl_id from class where cl_nom = '" + CLASSCOMBO.SelectedItem.ToString() + "'", r.connection);
             r.reader = r.command.ExecuteReader();
@@ -130,6 +141,11 @@ namespace GESTIONECOLE.FORMS
         string id_etd;
         public void etd_id()
         {
+            if (elevecombo.Text == "")
+            {
+                MessageBox.Show("Veuillez Selectioner eleve");
+                return;
+            }
             r.connecter();
             r.command = new SqlCommand("select EL_ID from eleve where (EL_NOM+SPACE(4)+EL_PRENOM)  =  '" + elevecombo.SelectedItem.ToString() + "'", r.connection);
             r.reader = r.command.ExecuteReader();
@@ -172,31 +188,40 @@ namespace GESTIONECOLE.FORMS
             classid();
             etd_id();
             etd_recherche();
-            if (count_etd == "1")
-            {
-                MessageBox.Show("cette etd a ete deja INSCRIER");
 
-            }
-            else
-            {
-                r.connecter();
-                r.command = new SqlCommand("insert into inscription values('" + idclass + "','" + id_etd + "','" + DateTime.Now.ToShortDateString().ToString() + "','" + TXTCOST.Text + "')", r.connection);
-                r.command.ExecuteNonQuery();
+                 if (NIVEAUCOMBO.Text == "" && CLASSCOMBO.Text == "" && elevecombo.Text == "")
+            {    
+                MessageBox.Show("Veuillez saisir"); return;
+
+         
+               if (count_etd == "1")
+                {
+                    MessageBox.Show("cette etd a ete deja INSCRIER");
+
+                }
+                else
+                {
+                    r.connecter();
+                    r.command = new SqlCommand("insert into inscription values('" + idclass + "','" + id_etd + "','" + DateTime.Now.ToShortDateString().ToString() + "','" + TXTCOST.Text + "')", r.connection);
+                    r.command.ExecuteNonQuery();
 
 
-                MessageBox.Show("Bien ajouter");
+                    MessageBox.Show("Bien ajouter");
 
-                r.deconnecter();
-                TXTCOST.Clear();
+                    r.deconnecter();
+                    TXTCOST.Clear();
 
-                NIVEAUCOMBO.Text = "";
-                CLASSCOMBO.Text = "";
-                elevecombo.Text = "";
+                    NIVEAUCOMBO.Text = "";
+                    CLASSCOMBO.Text = "";
+                    elevecombo.Text = "";
 
-                gridfill();
-                showrecents();
+                    gridfill();
+                    showrecents();
 
-            }
+                } 
+               }
+           
+            
         }
         private void print1_Click(object sender, EventArgs e)
         {

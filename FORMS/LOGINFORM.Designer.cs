@@ -41,11 +41,11 @@
             // 
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Andalus", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Silver;
             this.label16.Location = new System.Drawing.Point(47, 185);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(105, 30);
+            this.label16.Size = new System.Drawing.Size(112, 24);
             this.label16.TabIndex = 131;
             this.label16.Text = "Password :";
             // 
@@ -56,7 +56,7 @@
             this.txtpass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(44)))));
             this.txtpass.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtpass.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtpass.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtpass.ForeColor = System.Drawing.Color.White;
             this.txtpass.HintForeColor = System.Drawing.Color.Empty;
             this.txtpass.HintText = "";
@@ -71,6 +71,7 @@
             this.txtpass.Name = "txtpass";
             this.txtpass.Size = new System.Drawing.Size(226, 34);
             this.txtpass.TabIndex = 130;
+            this.txtpass.Text = "123";
             this.txtpass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtpass.OnValueChanged += new System.EventHandler(this.txtpass_OnValueChanged);
             // 
@@ -81,7 +82,7 @@
             this.Txtusername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(44)))));
             this.Txtusername.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.Txtusername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Txtusername.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.Txtusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.Txtusername.ForeColor = System.Drawing.Color.White;
             this.Txtusername.HintForeColor = System.Drawing.Color.Empty;
             this.Txtusername.HintText = "";
@@ -103,11 +104,11 @@
             // 
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Andalus", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Silver;
             this.label15.Location = new System.Drawing.Point(47, 111);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(117, 30);
+            this.label15.Size = new System.Drawing.Size(123, 24);
             this.label15.TabIndex = 128;
             this.label15.Text = "Username : ";
             // 
@@ -122,7 +123,7 @@
             this.BtnLogin.ButtonText = "LOGIN";
             this.BtnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnLogin.DisabledColor = System.Drawing.Color.Transparent;
-            this.BtnLogin.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLogin.ForeColor = System.Drawing.Color.LightGray;
             this.BtnLogin.Iconcolor = System.Drawing.Color.Transparent;
             this.BtnLogin.Iconimage = null;
@@ -162,7 +163,7 @@
             this.bunifuFlatButton1.ButtonText = "Quiter";
             this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton1.ForeColor = System.Drawing.Color.DarkRed;
             this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton1.Iconimage = null;

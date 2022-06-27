@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EMPLOYEEFORM));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.ModifierBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ajouterBTN = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -48,10 +48,10 @@
             this.combo_filter = new Bunifu.Framework.UI.BunifuDropdown();
             this.panel_post = new System.Windows.Forms.Panel();
             this.combo_post = new Bunifu.Framework.UI.BunifuDropdown();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel_ville = new System.Windows.Forms.Panel();
             this.combo_ville = new Bunifu.Framework.UI.BunifuDropdown();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel_sex = new System.Windows.Forms.Panel();
             this.combo_sex = new Bunifu.Framework.UI.BunifuDropdown();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -122,7 +122,7 @@
             this.ajouterBTN.IconVisible = false;
             this.ajouterBTN.IconZoom = 0D;
             this.ajouterBTN.IsTab = true;
-            this.ajouterBTN.Location = new System.Drawing.Point(339, 15);
+            this.ajouterBTN.Location = new System.Drawing.Point(282, 15);
             this.ajouterBTN.Margin = new System.Windows.Forms.Padding(0);
             this.ajouterBTN.Name = "ajouterBTN";
             this.ajouterBTN.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
@@ -140,11 +140,11 @@
             // bunifuCustomLabel8
             // 
             this.bunifuCustomLabel8.AutoSize = true;
-            this.bunifuCustomLabel8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel8.ForeColor = System.Drawing.Color.Gray;
             this.bunifuCustomLabel8.Location = new System.Drawing.Point(933, 103);
             this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
-            this.bunifuCustomLabel8.Size = new System.Drawing.Size(54, 16);
+            this.bunifuCustomLabel8.Size = new System.Drawing.Size(61, 16);
             this.bunifuCustomLabel8.TabIndex = 93;
             this.bunifuCustomLabel8.Text = "Refresh";
             // 
@@ -168,7 +168,7 @@
             this.txtprenom.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtprenom.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtprenom.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtprenom.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtprenom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtprenom.ForeColor = System.Drawing.Color.Silver;
             this.txtprenom.HintForeColor = System.Drawing.Color.Empty;
             this.txtprenom.HintText = "";
@@ -206,7 +206,7 @@
             this.txt_nom.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txt_nom.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txt_nom.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_nom.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_nom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txt_nom.ForeColor = System.Drawing.Color.Silver;
             this.txt_nom.HintForeColor = System.Drawing.Color.Empty;
             this.txt_nom.HintText = "";
@@ -227,61 +227,61 @@
             // bunifuCustomLabel4
             // 
             this.bunifuCustomLabel4.AutoSize = true;
-            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.Silver;
             this.bunifuCustomLabel4.Location = new System.Drawing.Point(279, 75);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(130, 16);
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(137, 16);
             this.bunifuCustomLabel4.TabIndex = 88;
             this.bunifuCustomLabel4.Text = "Nom d\'employee : ";
             // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.dataGridView1.ColumnHeadersHeight = 30;
             this.dataGridView1.DoubleBuffered = true;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.dataGridView1.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.dataGridView1.HeaderForeColor = System.Drawing.Color.Silver;
-            this.dataGridView1.Location = new System.Drawing.Point(278, 126);
+            this.dataGridView1.Location = new System.Drawing.Point(282, 126);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridView1.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.dataGridView1.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridView1.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Silver;
             this.dataGridView1.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Silver;
             this.dataGridView1.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(705, 305);
+            this.dataGridView1.Size = new System.Drawing.Size(709, 305);
             this.dataGridView1.TabIndex = 87;
             this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick);
             // 
@@ -307,14 +307,14 @@
             this.bunifuFlatButton1.IconVisible = false;
             this.bunifuFlatButton1.IconZoom = 0D;
             this.bunifuFlatButton1.IsTab = true;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(27, 9);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(-4, -3);
             this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(0);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.bunifuFlatButton1.selected = true;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(168, 34);
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(131, 34);
             this.bunifuFlatButton1.TabIndex = 86;
             this.bunifuFlatButton1.Text = "Dashboard";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -325,11 +325,11 @@
             // bunifuCustomLabel3
             // 
             this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.Silver;
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(12, 98);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(12, 63);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(52, 19);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(60, 20);
             this.bunifuCustomLabel3.TabIndex = 85;
             this.bunifuCustomLabel3.Text = "Filter :";
             // 
@@ -363,7 +363,7 @@
             this.SupprimerBtn.IconVisible = false;
             this.SupprimerBtn.IconZoom = 0D;
             this.SupprimerBtn.IsTab = true;
-            this.SupprimerBtn.Location = new System.Drawing.Point(812, 15);
+            this.SupprimerBtn.Location = new System.Drawing.Point(820, 15);
             this.SupprimerBtn.Margin = new System.Windows.Forms.Padding(0);
             this.SupprimerBtn.Name = "SupprimerBtn";
             this.SupprimerBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
@@ -387,8 +387,8 @@
             this.combo_filter.items = new string[] {
         "Post",
         "Ville",
-        "Sex"};
-            this.combo_filter.Location = new System.Drawing.Point(12, 139);
+        "Genre"};
+            this.combo_filter.Location = new System.Drawing.Point(16, 95);
             this.combo_filter.Name = "combo_filter";
             this.combo_filter.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.combo_filter.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
@@ -401,7 +401,7 @@
             // 
             this.panel_post.Controls.Add(this.combo_post);
             this.panel_post.Controls.Add(this.bunifuCustomLabel1);
-            this.panel_post.Location = new System.Drawing.Point(12, 184);
+            this.panel_post.Location = new System.Drawing.Point(6, 140);
             this.panel_post.Name = "panel_post";
             this.panel_post.Size = new System.Drawing.Size(241, 87);
             this.panel_post.TabIndex = 148;
@@ -414,20 +414,31 @@
             this.combo_post.DisabledColor = System.Drawing.Color.Gray;
             this.combo_post.ForeColor = System.Drawing.Color.Silver;
             this.combo_post.items = new string[0];
-            this.combo_post.Location = new System.Drawing.Point(43, 40);
+            this.combo_post.Location = new System.Drawing.Point(7, 40);
             this.combo_post.Name = "combo_post";
             this.combo_post.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.combo_post.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.combo_post.selectedIndex = -1;
-            this.combo_post.Size = new System.Drawing.Size(185, 30);
+            this.combo_post.Size = new System.Drawing.Size(221, 30);
             this.combo_post.TabIndex = 149;
             this.combo_post.onItemSelected += new System.EventHandler(this.combo_post_onItemSelected);
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.Silver;
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(3, 4);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(60, 20);
+            this.bunifuCustomLabel1.TabIndex = 149;
+            this.bunifuCustomLabel1.Text = "Post : ";
             // 
             // panel_ville
             // 
             this.panel_ville.Controls.Add(this.combo_ville);
             this.panel_ville.Controls.Add(this.bunifuCustomLabel2);
-            this.panel_ville.Location = new System.Drawing.Point(9, 239);
+            this.panel_ville.Location = new System.Drawing.Point(6, 233);
             this.panel_ville.Name = "panel_ville";
             this.panel_ville.Size = new System.Drawing.Size(241, 87);
             this.panel_ville.TabIndex = 150;
@@ -441,42 +452,31 @@
             this.combo_ville.DisabledColor = System.Drawing.Color.Gray;
             this.combo_ville.ForeColor = System.Drawing.Color.Silver;
             this.combo_ville.items = new string[0];
-            this.combo_ville.Location = new System.Drawing.Point(43, 40);
+            this.combo_ville.Location = new System.Drawing.Point(7, 40);
             this.combo_ville.Name = "combo_ville";
             this.combo_ville.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.combo_ville.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.combo_ville.selectedIndex = -1;
-            this.combo_ville.Size = new System.Drawing.Size(185, 30);
+            this.combo_ville.Size = new System.Drawing.Size(221, 30);
             this.combo_ville.TabIndex = 149;
             this.combo_ville.onItemSelected += new System.EventHandler(this.combo_ville_onItemSelected);
             // 
             // bunifuCustomLabel2
             // 
             this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.Silver;
             this.bunifuCustomLabel2.Location = new System.Drawing.Point(3, 4);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(42, 19);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(43, 20);
             this.bunifuCustomLabel2.TabIndex = 149;
             this.bunifuCustomLabel2.Text = "Ville";
-            // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.Silver;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(3, 4);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(50, 19);
-            this.bunifuCustomLabel1.TabIndex = 149;
-            this.bunifuCustomLabel1.Text = "Post : ";
             // 
             // panel_sex
             // 
             this.panel_sex.Controls.Add(this.combo_sex);
             this.panel_sex.Controls.Add(this.bunifuCustomLabel5);
-            this.panel_sex.Location = new System.Drawing.Point(15, 303);
+            this.panel_sex.Location = new System.Drawing.Point(6, 326);
             this.panel_sex.Name = "panel_sex";
             this.panel_sex.Size = new System.Drawing.Size(241, 87);
             this.panel_sex.TabIndex = 151;
@@ -491,25 +491,25 @@
             this.combo_sex.items = new string[] {
         "homme",
         "femme"};
-            this.combo_sex.Location = new System.Drawing.Point(43, 40);
+            this.combo_sex.Location = new System.Drawing.Point(7, 40);
             this.combo_sex.Name = "combo_sex";
             this.combo_sex.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.combo_sex.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.combo_sex.selectedIndex = -1;
-            this.combo_sex.Size = new System.Drawing.Size(185, 30);
+            this.combo_sex.Size = new System.Drawing.Size(221, 30);
             this.combo_sex.TabIndex = 149;
             this.combo_sex.onItemSelected += new System.EventHandler(this.combo_sex_onItemSelected);
             // 
             // bunifuCustomLabel5
             // 
             this.bunifuCustomLabel5.AutoSize = true;
-            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.Silver;
             this.bunifuCustomLabel5.Location = new System.Drawing.Point(3, 4);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(36, 19);
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(72, 20);
             this.bunifuCustomLabel5.TabIndex = 149;
-            this.bunifuCustomLabel5.Text = "Sex";
+            this.bunifuCustomLabel5.Text = "GENRE";
             // 
             // EMPLOYEEFORM
             // 
