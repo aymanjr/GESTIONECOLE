@@ -16,6 +16,7 @@ namespace GESTIONECOLE.FORMS
         }
 
         int eleveid;
+        bool validElev = false;
 
         public void rechercheleve()
         {
@@ -34,7 +35,7 @@ namespace GESTIONECOLE.FORMS
             }
             else
             {
-
+                validElev = true;
                 eleveid = int.Parse(r.ds.Tables["eleve"].Rows[0]["el_id"].ToString());
                // TrsprtTYPENOM.Text = eleveid.ToString();
                 nomcompleteleveLABEL.Text = r.ds.Tables["eleve"].Rows[0]["el_nom"].ToString() + "  " + r.ds.Tables["eleve"].Rows[0]["el_prenom"].ToString();
@@ -247,6 +248,7 @@ namespace GESTIONECOLE.FORMS
         }
 
 
+
         private void eleverechercherBTN_Click(object sender, EventArgs e)
         {
             //nomcompleteleveLABEL.Text = "";
@@ -364,14 +366,19 @@ namespace GESTIONECOLE.FORMS
 
         private void PyerBTN_Click(object sender, EventArgs e)
         {
+
             if (txtprenom.Text == "Prenom" || txt_nomeleve.Text == "Nom")
             {
 
                 MessageBox.Show("Enter un eleve ");
 
+            }  else if(validElev == false)
+            {
+                MessageBox.Show("Enter un eleve ");
             }
             else
             {
+
                 if (comboBox_mois.selectedValue == "")
                 {
                     MessageBox.Show("Entrer un Mois  ");
@@ -438,6 +445,48 @@ namespace GESTIONECOLE.FORMS
             this.Hide();
             ee.ShowDialog();
             this.Close();
+        }
+
+        private void txt_nomeleve_OnValueChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txtprenom_OnValueChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void txt_nomeleve_MouseClick(object sender, MouseEventArgs e)
+        {
+          
+
+        }
+
+        private void txt_nomeleve_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void txt_nomeleve_Enter(object sender, EventArgs e)
+        {
+            if (txt_nomeleve.Text.Trim() != "" || txt_nomeleve.Text != null)
+
+            {
+
+                txt_nomeleve.Text = "";
+
+            }
+        }
+
+        private void txtprenom_Enter(object sender, EventArgs e)
+        {
+            if (txtprenom.Text.Trim() != "" || txtprenom.Text != null)
+
+            {
+
+                txtprenom.Text = "";
+
+            }
         }
     }
 }

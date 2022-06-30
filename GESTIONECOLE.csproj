@@ -192,23 +192,11 @@
     <Compile Include="FORMS\EVENTSFORM.Designer.cs">
       <DependentUpon>EVENTSFORM.cs</DependentUpon>
     </Compile>
-    <Compile Include="FORMS\Frm_Print.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FORMS\Frm_Print.Designer.cs">
-      <DependentUpon>Frm_Print.cs</DependentUpon>
-    </Compile>
     <Compile Include="FORMS\Print_FraisForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FORMS\Print_FraisForm.Designer.cs">
       <DependentUpon>Print_FraisForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FORMS\PRINT_IN_OUT.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FORMS\PRINT_IN_OUT.Designer.cs">
-      <DependentUpon>PRINT_IN_OUT.cs</DependentUpon>
     </Compile>
     <Compile Include="FORMS\print_Paymentdemois.cs">
       <SubType>Form</SubType>
@@ -314,14 +302,8 @@
     <EmbeddedResource Include="FORMS\EVENTSFORM.resx">
       <DependentUpon>EVENTSFORM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FORMS\Frm_Print.resx">
-      <DependentUpon>Frm_Print.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FORMS\Print_FraisForm.resx">
       <DependentUpon>Print_FraisForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FORMS\PRINT_IN_OUT.resx">
-      <DependentUpon>PRINT_IN_OUT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORMS\print_Paymentdemois.resx">
       <DependentUpon>print_Paymentdemois.cs</DependentUpon>

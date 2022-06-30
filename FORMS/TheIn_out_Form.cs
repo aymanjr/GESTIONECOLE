@@ -374,7 +374,7 @@ namespace GESTIONECOLE.FORMS
 
         private void Printbutton_Click(object sender, EventArgs e)
         {
-            PRINT_IN_OUT io = new PRINT_IN_OUT();
+            //PRINT_IN_OUT io = new PRINT_IN_OUT();
 
 
             //if (Combo_section.selectedValue == "Payment Mois")

@@ -50,7 +50,7 @@ namespace GESTIONECOLE.FORMS
 
 
             r.connecter();
-            r.adapter = new SqlDataAdapter("select f.EF_type,f.EF_description,f.EF_date,f.EF_cost from Extra_Frais f", r.connection);
+            r.adapter = new SqlDataAdapter("select f.EF_type,f.EF_description,f.EF_date,f.EF_cost from Extra_Frais f order by f.EF_date desc", r.connection);
             r.adapter.Fill(r.ds, "ef");
 
             datagrid_Recherche.DataSource = r.ds.Tables["ef"];
@@ -334,6 +334,7 @@ namespace GESTIONECOLE.FORMS
             fr.cost = cost_label.Text;
             fr.datefrais = dateLABEL.Text;
             fr.ShowDialog();
+
         }
     }
 }

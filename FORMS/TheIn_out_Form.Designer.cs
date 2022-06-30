@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TheIn_out_Form));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_descr_outfrais = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -68,7 +68,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.refreshBTN = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.Printbutton = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel2.SuspendLayout();
             this.Panel_Type.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rechercheBTN_type)).BeginInit();
@@ -76,7 +75,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.recherchbtn_date)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_Recherche)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.refreshBTN)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Printbutton)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -410,12 +408,12 @@
             // datagrid_Recherche
             // 
             this.datagrid_Recherche.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.datagrid_Recherche.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.datagrid_Recherche.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.datagrid_Recherche.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -423,14 +421,14 @@
             this.datagrid_Recherche.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.datagrid_Recherche.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.datagrid_Recherche.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagrid_Recherche.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagrid_Recherche.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.datagrid_Recherche.ColumnHeadersHeight = 30;
             this.datagrid_Recherche.DoubleBuffered = true;
             this.datagrid_Recherche.EnableHeadersVisualStyles = false;
@@ -440,14 +438,14 @@
             this.datagrid_Recherche.Location = new System.Drawing.Point(302, 125);
             this.datagrid_Recherche.Name = "datagrid_Recherche";
             this.datagrid_Recherche.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagrid_Recherche.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagrid_Recherche.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.datagrid_Recherche.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.datagrid_Recherche.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datagrid_Recherche.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Silver;
@@ -580,21 +578,6 @@
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
-            // Printbutton
-            // 
-            this.Printbutton.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Printbutton.Image = global::GESTIONECOLE.Properties.Resources.printicon;
-            this.Printbutton.ImageActive = null;
-            this.Printbutton.Location = new System.Drawing.Point(1117, 30);
-            this.Printbutton.Name = "Printbutton";
-            this.Printbutton.Size = new System.Drawing.Size(35, 33);
-            this.Printbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Printbutton.TabIndex = 173;
-            this.Printbutton.TabStop = false;
-            this.Printbutton.Visible = false;
-            this.Printbutton.Zoom = 10;
-            this.Printbutton.Click += new System.EventHandler(this.Printbutton_Click);
-            // 
             // TheIn_out_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -602,7 +585,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1164, 712);
-            this.Controls.Add(this.Printbutton);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel_date);
             this.Controls.Add(this.label6);
@@ -644,7 +626,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.recherchbtn_date)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_Recherche)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.refreshBTN)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Printbutton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -688,6 +669,5 @@
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuDropdown Combo_section;
         private System.Windows.Forms.Label label10;
-        private Bunifu.Framework.UI.BunifuImageButton Printbutton;
     }
 }
