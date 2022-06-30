@@ -56,7 +56,6 @@
             this.txtprenom = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.eleverechercherBTN = new Bunifu.Framework.UI.BunifuImageButton();
             this.txt_nomeleve = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtfraisCLASS = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.classnomLABEL = new System.Windows.Forms.Label();
             this.trspCHECKBOX = new Bunifu.UI.WinForms.BunifuCheckBox();
@@ -80,11 +79,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Silver;
-            this.label1.Location = new System.Drawing.Point(852, 9);
+            this.label1.Location = new System.Drawing.Point(839, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(247, 25);
+            this.label1.Size = new System.Drawing.Size(260, 25);
             this.label1.TabIndex = 128;
             this.label1.Text = "Eleve Dernier Payment ";
             // 
@@ -111,7 +110,7 @@
             // datepaymentlabel
             // 
             this.datepaymentlabel.AutoSize = true;
-            this.datepaymentlabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datepaymentlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datepaymentlabel.ForeColor = System.Drawing.Color.Silver;
             this.datepaymentlabel.Location = new System.Drawing.Point(164, 374);
             this.datepaymentlabel.Name = "datepaymentlabel";
@@ -121,18 +120,18 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Silver;
             this.label9.Location = new System.Drawing.Point(4, 374);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(110, 16);
+            this.label9.Size = new System.Drawing.Size(116, 16);
             this.label9.TabIndex = 140;
             this.label9.Text = "Date Payment : ";
             // 
             // MontantLABEL
             // 
             this.MontantLABEL.AutoSize = true;
-            this.MontantLABEL.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MontantLABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MontantLABEL.ForeColor = System.Drawing.Color.Silver;
             this.MontantLABEL.Location = new System.Drawing.Point(164, 322);
             this.MontantLABEL.Name = "MontantLABEL";
@@ -142,7 +141,7 @@
             // moislabel
             // 
             this.moislabel.AutoSize = true;
-            this.moislabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.moislabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moislabel.ForeColor = System.Drawing.Color.Silver;
             this.moislabel.Location = new System.Drawing.Point(164, 264);
             this.moislabel.Name = "moislabel";
@@ -152,7 +151,7 @@
             // TrsprtTYPENOM
             // 
             this.TrsprtTYPENOM.AutoSize = true;
-            this.TrsprtTYPENOM.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TrsprtTYPENOM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TrsprtTYPENOM.ForeColor = System.Drawing.Color.Silver;
             this.TrsprtTYPENOM.Location = new System.Drawing.Point(164, 205);
             this.TrsprtTYPENOM.Name = "TrsprtTYPENOM";
@@ -162,7 +161,7 @@
             // NOMCLASSLABEL2
             // 
             this.NOMCLASSLABEL2.AutoSize = true;
-            this.NOMCLASSLABEL2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NOMCLASSLABEL2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NOMCLASSLABEL2.ForeColor = System.Drawing.Color.Silver;
             this.NOMCLASSLABEL2.Location = new System.Drawing.Point(164, 156);
             this.NOMCLASSLABEL2.Name = "NOMCLASSLABEL2";
@@ -172,7 +171,7 @@
             // nomcompleteleveLABEL
             // 
             this.nomcompleteleveLABEL.AutoSize = true;
-            this.nomcompleteleveLABEL.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nomcompleteleveLABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nomcompleteleveLABEL.ForeColor = System.Drawing.Color.Silver;
             this.nomcompleteleveLABEL.Location = new System.Drawing.Point(164, 108);
             this.nomcompleteleveLABEL.Name = "nomcompleteleveLABEL";
@@ -182,29 +181,29 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Silver;
             this.label12.Location = new System.Drawing.Point(3, 205);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(113, 16);
+            this.label12.Size = new System.Drawing.Size(120, 16);
             this.label12.TabIndex = 127;
             this.label12.Text = "Transport type : ";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Silver;
             this.label11.Location = new System.Drawing.Point(4, 156);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(51, 16);
+            this.label11.Size = new System.Drawing.Size(54, 16);
             this.label11.TabIndex = 126;
             this.label11.Text = "Class :";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Silver;
             this.label10.Location = new System.Drawing.Point(4, 322);
             this.label10.Name = "label10";
@@ -215,22 +214,22 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Silver;
             this.label3.Location = new System.Drawing.Point(4, 265);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 16);
+            this.label3.Size = new System.Drawing.Size(52, 16);
             this.label3.TabIndex = 124;
             this.label3.Text = "Mois : ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Silver;
             this.label2.Location = new System.Drawing.Point(3, 108);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 16);
+            this.label2.Size = new System.Drawing.Size(110, 16);
             this.label2.TabIndex = 123;
             this.label2.Text = "Nom complet : ";
             // 
@@ -239,7 +238,7 @@
             this.bunifuImageButton4.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton4.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton4.Image")));
             this.bunifuImageButton4.ImageActive = null;
-            this.bunifuImageButton4.Location = new System.Drawing.Point(87, 3);
+            this.bunifuImageButton4.Location = new System.Drawing.Point(101, 12);
             this.bunifuImageButton4.Name = "bunifuImageButton4";
             this.bunifuImageButton4.Size = new System.Drawing.Size(102, 76);
             this.bunifuImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -258,11 +257,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Silver;
-            this.label4.Location = new System.Drawing.Point(237, 9);
+            this.label4.Location = new System.Drawing.Point(379, 6);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(193, 25);
+            this.label4.Size = new System.Drawing.Size(200, 25);
             this.label4.TabIndex = 130;
             this.label4.Text = "Payment de Mois ";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -289,7 +288,7 @@
             this.bunifuFlatButton1.IconVisible = false;
             this.bunifuFlatButton1.IconZoom = 0D;
             this.bunifuFlatButton1.IsTab = true;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(9, 9);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(-8, -3);
             this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(0);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
@@ -307,35 +306,35 @@
             // moispayerlist
             // 
             this.moispayerlist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.moispayerlist.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.moispayerlist.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moispayerlist.ForeColor = System.Drawing.Color.Silver;
             this.moispayerlist.FormattingEnabled = true;
-            this.moispayerlist.ItemHeight = 19;
+            this.moispayerlist.ItemHeight = 18;
             this.moispayerlist.Location = new System.Drawing.Point(9, 90);
             this.moispayerlist.Name = "moispayerlist";
-            this.moispayerlist.Size = new System.Drawing.Size(165, 156);
+            this.moispayerlist.Size = new System.Drawing.Size(165, 148);
             this.moispayerlist.TabIndex = 131;
             // 
             // moisnonpayerlist
             // 
             this.moisnonpayerlist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.moisnonpayerlist.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.moisnonpayerlist.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moisnonpayerlist.ForeColor = System.Drawing.Color.Silver;
             this.moisnonpayerlist.FormattingEnabled = true;
-            this.moisnonpayerlist.ItemHeight = 19;
+            this.moisnonpayerlist.ItemHeight = 18;
             this.moisnonpayerlist.Location = new System.Drawing.Point(9, 310);
             this.moisnonpayerlist.Name = "moisnonpayerlist";
-            this.moisnonpayerlist.Size = new System.Drawing.Size(165, 156);
+            this.moisnonpayerlist.Size = new System.Drawing.Size(165, 148);
             this.moisnonpayerlist.TabIndex = 132;
             // 
             // trsplabel
             // 
             this.trsplabel.AutoSize = true;
-            this.trsplabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.trsplabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.trsplabel.ForeColor = System.Drawing.Color.Silver;
             this.trsplabel.Location = new System.Drawing.Point(3, 13);
             this.trsplabel.Name = "trsplabel";
-            this.trsplabel.Size = new System.Drawing.Size(147, 20);
+            this.trsplabel.Size = new System.Drawing.Size(140, 18);
             this.trsplabel.TabIndex = 136;
             this.trsplabel.Text = "Type de Transport : ";
             this.trsplabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -343,11 +342,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Silver;
             this.label6.Location = new System.Drawing.Point(244, 306);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(131, 20);
+            this.label6.Size = new System.Drawing.Size(120, 18);
             this.label6.TabIndex = 137;
             this.label6.Text = "Avec Transport : ";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -355,11 +354,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Silver;
             this.label7.Location = new System.Drawing.Point(243, 250);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(132, 20);
+            this.label7.Size = new System.Drawing.Size(127, 18);
             this.label7.TabIndex = 138;
             this.label7.Text = "Frais de la class  :";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -367,11 +366,11 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Silver;
             this.label8.Location = new System.Drawing.Point(243, 202);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 20);
+            this.label8.Size = new System.Drawing.Size(58, 18);
             this.label8.TabIndex = 139;
             this.label8.Text = "Class : ";
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -382,7 +381,7 @@
             this.txtprenom.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtprenom.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtprenom.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtprenom.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtprenom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtprenom.ForeColor = System.Drawing.Color.Silver;
             this.txtprenom.HintForeColor = System.Drawing.Color.Empty;
             this.txtprenom.HintText = "";
@@ -391,7 +390,7 @@
             this.txtprenom.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.txtprenom.LineMouseHoverColor = System.Drawing.Color.Silver;
             this.txtprenom.LineThickness = 4;
-            this.txtprenom.Location = new System.Drawing.Point(488, 69);
+            this.txtprenom.Location = new System.Drawing.Point(484, 69);
             this.txtprenom.Margin = new System.Windows.Forms.Padding(4);
             this.txtprenom.MaxLength = 32767;
             this.txtprenom.Name = "txtprenom";
@@ -405,7 +404,7 @@
             this.eleverechercherBTN.BackColor = System.Drawing.Color.Transparent;
             this.eleverechercherBTN.Image = ((System.Drawing.Image)(resources.GetObject("eleverechercherBTN.Image")));
             this.eleverechercherBTN.ImageActive = null;
-            this.eleverechercherBTN.Location = new System.Drawing.Point(638, 69);
+            this.eleverechercherBTN.Location = new System.Drawing.Point(705, 69);
             this.eleverechercherBTN.Name = "eleverechercherBTN";
             this.eleverechercherBTN.Size = new System.Drawing.Size(47, 37);
             this.eleverechercherBTN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -420,7 +419,7 @@
             this.txt_nomeleve.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txt_nomeleve.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txt_nomeleve.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_nomeleve.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_nomeleve.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txt_nomeleve.ForeColor = System.Drawing.Color.Silver;
             this.txt_nomeleve.HintForeColor = System.Drawing.Color.Empty;
             this.txt_nomeleve.HintText = "";
@@ -429,7 +428,7 @@
             this.txt_nomeleve.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.txt_nomeleve.LineMouseHoverColor = System.Drawing.Color.Silver;
             this.txt_nomeleve.LineThickness = 4;
-            this.txt_nomeleve.Location = new System.Drawing.Point(341, 69);
+            this.txt_nomeleve.Location = new System.Drawing.Point(337, 69);
             this.txt_nomeleve.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nomeleve.MaxLength = 32767;
             this.txt_nomeleve.Name = "txt_nomeleve";
@@ -437,17 +436,6 @@
             this.txt_nomeleve.TabIndex = 141;
             this.txt_nomeleve.Text = "Nom";
             this.txt_nomeleve.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // bunifuCustomLabel4
-            // 
-            this.bunifuCustomLabel4.AutoSize = true;
-            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.Silver;
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(232, 81);
-            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(101, 16);
-            this.bunifuCustomLabel4.TabIndex = 140;
-            this.bunifuCustomLabel4.Text = "Nom d\'eleve : ";
             // 
             // txtfraisCLASS
             // 
@@ -457,10 +445,10 @@
             this.txtfraisCLASS.BorderThickness = 3;
             this.txtfraisCLASS.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtfraisCLASS.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtfraisCLASS.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtfraisCLASS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtfraisCLASS.ForeColor = System.Drawing.Color.Silver;
             this.txtfraisCLASS.isPassword = false;
-            this.txtfraisCLASS.Location = new System.Drawing.Point(475, 249);
+            this.txtfraisCLASS.Location = new System.Drawing.Point(474, 250);
             this.txtfraisCLASS.Margin = new System.Windows.Forms.Padding(4);
             this.txtfraisCLASS.MaxLength = 32767;
             this.txtfraisCLASS.Name = "txtfraisCLASS";
@@ -473,11 +461,11 @@
             // classnomLABEL
             // 
             this.classnomLABEL.AutoSize = true;
-            this.classnomLABEL.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.classnomLABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.classnomLABEL.ForeColor = System.Drawing.Color.Silver;
             this.classnomLABEL.Location = new System.Drawing.Point(475, 205);
             this.classnomLABEL.Name = "classnomLABEL";
-            this.classnomLABEL.Size = new System.Drawing.Size(106, 20);
+            this.classnomLABEL.Size = new System.Drawing.Size(100, 18);
             this.classnomLABEL.TabIndex = 148;
             this.classnomLABEL.Text = "Nom de class";
             this.classnomLABEL.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -539,11 +527,11 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Silver;
             this.label14.Location = new System.Drawing.Point(244, 153);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(51, 20);
+            this.label14.Size = new System.Drawing.Size(49, 18);
             this.label14.TabIndex = 153;
             this.label14.Text = "Mois :";
             this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -556,10 +544,10 @@
             this.txtmontanttotal.BorderThickness = 3;
             this.txtmontanttotal.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtmontanttotal.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtmontanttotal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtmontanttotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtmontanttotal.ForeColor = System.Drawing.Color.Silver;
             this.txtmontanttotal.isPassword = false;
-            this.txtmontanttotal.Location = new System.Drawing.Point(481, 470);
+            this.txtmontanttotal.Location = new System.Drawing.Point(474, 466);
             this.txtmontanttotal.Margin = new System.Windows.Forms.Padding(4);
             this.txtmontanttotal.MaxLength = 32767;
             this.txtmontanttotal.Name = "txtmontanttotal";
@@ -571,11 +559,11 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Silver;
             this.label15.Location = new System.Drawing.Point(249, 471);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(121, 20);
+            this.label15.Size = new System.Drawing.Size(111, 18);
             this.label15.TabIndex = 154;
             this.label15.Text = "Montant Total : ";
             this.label15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -602,7 +590,7 @@
             this.PyerBTN.IconVisible = false;
             this.PyerBTN.IconZoom = 0D;
             this.PyerBTN.IsTab = true;
-            this.PyerBTN.Location = new System.Drawing.Point(664, 466);
+            this.PyerBTN.Location = new System.Drawing.Point(674, 455);
             this.PyerBTN.Margin = new System.Windows.Forms.Padding(0);
             this.PyerBTN.Name = "PyerBTN";
             this.PyerBTN.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
@@ -624,7 +612,7 @@
             this.comboBox_mois.DisabledColor = System.Drawing.Color.Gray;
             this.comboBox_mois.ForeColor = System.Drawing.Color.Silver;
             this.comboBox_mois.items = new string[0];
-            this.comboBox_mois.Location = new System.Drawing.Point(476, 150);
+            this.comboBox_mois.Location = new System.Drawing.Point(474, 153);
             this.comboBox_mois.Name = "comboBox_mois";
             this.comboBox_mois.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.comboBox_mois.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
@@ -640,7 +628,7 @@
             this.combo_typetrsp.DisabledColor = System.Drawing.Color.Gray;
             this.combo_typetrsp.ForeColor = System.Drawing.Color.Silver;
             this.combo_typetrsp.items = new string[0];
-            this.combo_typetrsp.Location = new System.Drawing.Point(233, 7);
+            this.combo_typetrsp.Location = new System.Drawing.Point(232, 6);
             this.combo_typetrsp.Name = "combo_typetrsp";
             this.combo_typetrsp.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.combo_typetrsp.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
@@ -655,7 +643,7 @@
             this.paneltrsp.Controls.Add(this.trsplabel);
             this.paneltrsp.Location = new System.Drawing.Point(242, 347);
             this.paneltrsp.Name = "paneltrsp";
-            this.paneltrsp.Size = new System.Drawing.Size(412, 46);
+            this.paneltrsp.Size = new System.Drawing.Size(402, 46);
             this.paneltrsp.TabIndex = 161;
             // 
             // calculerBTN
@@ -680,7 +668,7 @@
             this.calculerBTN.IconVisible = false;
             this.calculerBTN.IconZoom = 0D;
             this.calculerBTN.IsTab = true;
-            this.calculerBTN.Location = new System.Drawing.Point(253, 409);
+            this.calculerBTN.Location = new System.Drawing.Point(246, 408);
             this.calculerBTN.Margin = new System.Windows.Forms.Padding(0);
             this.calculerBTN.Name = "calculerBTN";
             this.calculerBTN.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
@@ -698,33 +686,33 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Silver;
-            this.label5.Location = new System.Drawing.Point(25, 69);
+            this.label5.Location = new System.Drawing.Point(7, 69);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(149, 16);
+            this.label5.Size = new System.Drawing.Size(151, 16);
             this.label5.TabIndex = 142;
-            this.label5.Text = "Les Mois Deja Payer : ";
+            this.label5.Text = "Les Mois Deja Payer";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Silver;
             this.label16.Location = new System.Drawing.Point(12, 284);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(145, 16);
+            this.label16.Size = new System.Drawing.Size(146, 16);
             this.label16.TabIndex = 164;
-            this.label16.Text = "Les Mois Non Payer : ";
+            this.label16.Text = "Les Mois Non Payer";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Silver;
             this.label13.Location = new System.Drawing.Point(684, 201);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(51, 16);
+            this.label13.Size = new System.Drawing.Size(54, 16);
             this.label13.TabIndex = 142;
             this.label13.Text = "Class :";
             // 
@@ -750,7 +738,6 @@
             this.Controls.Add(this.txtprenom);
             this.Controls.Add(this.eleverechercherBTN);
             this.Controls.Add(this.txt_nomeleve);
-            this.Controls.Add(this.bunifuCustomLabel4);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -804,7 +791,6 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtprenom;
         private Bunifu.Framework.UI.BunifuImageButton eleverechercherBTN;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_nomeleve;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtfraisCLASS;
         private System.Windows.Forms.Label classnomLABEL;
         private Bunifu.UI.WinForms.BunifuCheckBox trspCHECKBOX;

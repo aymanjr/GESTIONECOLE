@@ -297,7 +297,7 @@
             this.createbtn.IconVisible = false;
             this.createbtn.IconZoom = 0D;
             this.createbtn.IsTab = true;
-            this.createbtn.Location = new System.Drawing.Point(487, 340);
+            this.createbtn.Location = new System.Drawing.Point(449, 320);
             this.createbtn.Margin = new System.Windows.Forms.Padding(0);
             this.createbtn.Name = "createbtn";
             this.createbtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
@@ -334,7 +334,7 @@
             this.CANCELBTN.IconVisible = false;
             this.CANCELBTN.IconZoom = 0D;
             this.CANCELBTN.IsTab = true;
-            this.CANCELBTN.Location = new System.Drawing.Point(674, 340);
+            this.CANCELBTN.Location = new System.Drawing.Point(658, 320);
             this.CANCELBTN.Margin = new System.Windows.Forms.Padding(0);
             this.CANCELBTN.Name = "CANCELBTN";
             this.CANCELBTN.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
@@ -372,7 +372,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(50)))), ((int)(((byte)(52)))));
-            this.ClientSize = new System.Drawing.Size(800, 377);
+            this.ClientSize = new System.Drawing.Size(800, 361);
             this.Controls.Add(this.txtnationaliter);
             this.Controls.Add(this.CANCELBTN);
             this.Controls.Add(this.createbtn);

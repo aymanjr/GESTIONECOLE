@@ -80,7 +80,7 @@
             // NIVEAUCOMBO
             // 
             this.NIVEAUCOMBO.FormattingEnabled = true;
-            this.NIVEAUCOMBO.Location = new System.Drawing.Point(183, 110);
+            this.NIVEAUCOMBO.Location = new System.Drawing.Point(138, 110);
             this.NIVEAUCOMBO.Name = "NIVEAUCOMBO";
             this.NIVEAUCOMBO.Size = new System.Drawing.Size(179, 21);
             this.NIVEAUCOMBO.TabIndex = 0;
@@ -89,7 +89,7 @@
             // CLASSCOMBO
             // 
             this.CLASSCOMBO.FormattingEnabled = true;
-            this.CLASSCOMBO.Location = new System.Drawing.Point(183, 176);
+            this.CLASSCOMBO.Location = new System.Drawing.Point(138, 176);
             this.CLASSCOMBO.Name = "CLASSCOMBO";
             this.CLASSCOMBO.Size = new System.Drawing.Size(179, 21);
             this.CLASSCOMBO.TabIndex = 1;
@@ -97,7 +97,7 @@
             // 
             // TXTCOST
             // 
-            this.TXTCOST.Location = new System.Drawing.Point(183, 326);
+            this.TXTCOST.Location = new System.Drawing.Point(138, 326);
             this.TXTCOST.Name = "TXTCOST";
             this.TXTCOST.Size = new System.Drawing.Size(179, 20);
             this.TXTCOST.TabIndex = 3;
@@ -105,7 +105,7 @@
             // elevecombo
             // 
             this.elevecombo.FormattingEnabled = true;
-            this.elevecombo.Location = new System.Drawing.Point(183, 251);
+            this.elevecombo.Location = new System.Drawing.Point(138, 251);
             this.elevecombo.Name = "elevecombo";
             this.elevecombo.Size = new System.Drawing.Size(179, 21);
             this.elevecombo.TabIndex = 10;
@@ -178,14 +178,14 @@
             this.AJOUTERBTN.IconVisible = false;
             this.AJOUTERBTN.IconZoom = 0D;
             this.AJOUTERBTN.IsTab = true;
-            this.AJOUTERBTN.Location = new System.Drawing.Point(239, 409);
+            this.AJOUTERBTN.Location = new System.Drawing.Point(138, 365);
             this.AJOUTERBTN.Margin = new System.Windows.Forms.Padding(0);
             this.AJOUTERBTN.Name = "AJOUTERBTN";
             this.AJOUTERBTN.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.AJOUTERBTN.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.AJOUTERBTN.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.AJOUTERBTN.selected = true;
-            this.AJOUTERBTN.Size = new System.Drawing.Size(127, 28);
+            this.AJOUTERBTN.Size = new System.Drawing.Size(147, 28);
             this.AJOUTERBTN.TabIndex = 100;
             this.AJOUTERBTN.Text = "Ajouter eleve";
             this.AJOUTERBTN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -205,6 +205,7 @@
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -222,7 +223,7 @@
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.dataGridView1.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.dataGridView1.HeaderForeColor = System.Drawing.Color.Silver;
-            this.dataGridView1.Location = new System.Drawing.Point(405, 53);
+            this.dataGridView1.Location = new System.Drawing.Point(353, 53);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -240,7 +241,7 @@
             this.dataGridView1.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(438, 379);
+            this.dataGridView1.Size = new System.Drawing.Size(468, 379);
             this.dataGridView1.TabIndex = 102;
             // 
             // refreshBTN
@@ -248,9 +249,9 @@
             this.refreshBTN.BackColor = System.Drawing.Color.Transparent;
             this.refreshBTN.Image = ((System.Drawing.Image)(resources.GetObject("refreshBTN.Image")));
             this.refreshBTN.ImageActive = null;
-            this.refreshBTN.Location = new System.Drawing.Point(809, 15);
+            this.refreshBTN.Location = new System.Drawing.Point(751, 7);
             this.refreshBTN.Name = "refreshBTN";
-            this.refreshBTN.Size = new System.Drawing.Size(34, 32);
+            this.refreshBTN.Size = new System.Drawing.Size(34, 27);
             this.refreshBTN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.refreshBTN.TabIndex = 114;
             this.refreshBTN.TabStop = false;
@@ -262,9 +263,9 @@
             this.rechercherBTN.BackColor = System.Drawing.Color.Transparent;
             this.rechercherBTN.Image = ((System.Drawing.Image)(resources.GetObject("rechercherBTN.Image")));
             this.rechercherBTN.ImageActive = null;
-            this.rechercherBTN.Location = new System.Drawing.Point(769, 15);
+            this.rechercherBTN.Location = new System.Drawing.Point(711, 9);
             this.rechercherBTN.Name = "rechercherBTN";
-            this.rechercherBTN.Size = new System.Drawing.Size(34, 32);
+            this.rechercherBTN.Size = new System.Drawing.Size(34, 25);
             this.rechercherBTN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.rechercherBTN.TabIndex = 113;
             this.rechercherBTN.TabStop = false;
@@ -276,7 +277,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Silver;
-            this.label4.Location = new System.Drawing.Point(419, 17);
+            this.label4.Location = new System.Drawing.Point(388, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(117, 20);
             this.label4.TabIndex = 112;
@@ -289,7 +290,7 @@
             this.combo_annescolaire.DisabledColor = System.Drawing.Color.Gray;
             this.combo_annescolaire.ForeColor = System.Drawing.Color.Silver;
             this.combo_annescolaire.items = new string[0];
-            this.combo_annescolaire.Location = new System.Drawing.Point(569, 15);
+            this.combo_annescolaire.Location = new System.Drawing.Point(511, 7);
             this.combo_annescolaire.Name = "combo_annescolaire";
             this.combo_annescolaire.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.combo_annescolaire.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
@@ -326,7 +327,7 @@
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.bunifuFlatButton1.selected = true;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(168, 34);
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(134, 34);
             this.bunifuFlatButton1.TabIndex = 115;
             this.bunifuFlatButton1.Text = "Dashboard";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -339,7 +340,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Silver;
-            this.label9.Location = new System.Drawing.Point(194, 7);
+            this.label9.Location = new System.Drawing.Point(155, 5);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(162, 25);
             this.label9.TabIndex = 116;
@@ -348,7 +349,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.panel2.Location = new System.Drawing.Point(852, -8);
+            this.panel2.Location = new System.Drawing.Point(827, -8);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(10, 501);
             this.panel2.TabIndex = 117;
@@ -356,7 +357,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.panel1.Location = new System.Drawing.Point(386, -8);
+            this.panel1.Location = new System.Drawing.Point(334, -8);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(13, 490);
             this.panel1.TabIndex = 118;
@@ -376,9 +377,9 @@
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.bunifuImageButton4);
-            this.panel3.Location = new System.Drawing.Point(895, 40);
+            this.panel3.Location = new System.Drawing.Point(874, 40);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(307, 392);
+            this.panel3.Size = new System.Drawing.Size(335, 392);
             this.panel3.TabIndex = 119;
             // 
             // dateinscLABEL
@@ -386,7 +387,7 @@
             this.dateinscLABEL.AutoSize = true;
             this.dateinscLABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateinscLABEL.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.dateinscLABEL.Location = new System.Drawing.Point(188, 337);
+            this.dateinscLABEL.Location = new System.Drawing.Point(174, 337);
             this.dateinscLABEL.Name = "dateinscLABEL";
             this.dateinscLABEL.Size = new System.Drawing.Size(0, 16);
             this.dateinscLABEL.TabIndex = 134;
@@ -396,7 +397,7 @@
             this.AnnescolaireLABEL.AutoSize = true;
             this.AnnescolaireLABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AnnescolaireLABEL.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.AnnescolaireLABEL.Location = new System.Drawing.Point(188, 290);
+            this.AnnescolaireLABEL.Location = new System.Drawing.Point(174, 290);
             this.AnnescolaireLABEL.Name = "AnnescolaireLABEL";
             this.AnnescolaireLABEL.Size = new System.Drawing.Size(0, 16);
             this.AnnescolaireLABEL.TabIndex = 133;
@@ -406,7 +407,7 @@
             this.classnomLABEL.AutoSize = true;
             this.classnomLABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.classnomLABEL.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.classnomLABEL.Location = new System.Drawing.Point(188, 250);
+            this.classnomLABEL.Location = new System.Drawing.Point(174, 250);
             this.classnomLABEL.Name = "classnomLABEL";
             this.classnomLABEL.Size = new System.Drawing.Size(0, 16);
             this.classnomLABEL.TabIndex = 132;
@@ -416,7 +417,7 @@
             this.telelabel.AutoSize = true;
             this.telelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.telelabel.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.telelabel.Location = new System.Drawing.Point(188, 212);
+            this.telelabel.Location = new System.Drawing.Point(174, 212);
             this.telelabel.Name = "telelabel";
             this.telelabel.Size = new System.Drawing.Size(0, 16);
             this.telelabel.TabIndex = 131;
@@ -426,7 +427,7 @@
             this.tuteurNOMLABEL.AutoSize = true;
             this.tuteurNOMLABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tuteurNOMLABEL.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.tuteurNOMLABEL.Location = new System.Drawing.Point(188, 172);
+            this.tuteurNOMLABEL.Location = new System.Drawing.Point(174, 172);
             this.tuteurNOMLABEL.Name = "tuteurNOMLABEL";
             this.tuteurNOMLABEL.Size = new System.Drawing.Size(0, 16);
             this.tuteurNOMLABEL.TabIndex = 130;
@@ -436,7 +437,7 @@
             this.nomcompletLABEL.AutoSize = true;
             this.nomcompletLABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nomcompletLABEL.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.nomcompletLABEL.Location = new System.Drawing.Point(188, 131);
+            this.nomcompletLABEL.Location = new System.Drawing.Point(174, 131);
             this.nomcompletLABEL.Name = "nomcompletLABEL";
             this.nomcompletLABEL.Size = new System.Drawing.Size(0, 16);
             this.nomcompletLABEL.TabIndex = 129;
@@ -448,9 +449,9 @@
             this.label13.ForeColor = System.Drawing.Color.Silver;
             this.label13.Location = new System.Drawing.Point(3, 337);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(127, 16);
+            this.label13.Size = new System.Drawing.Size(89, 16);
             this.label13.TabIndex = 128;
-            this.label13.Text = "Date Inscription : ";
+            this.label13.Text = "Date Inscr : ";
             // 
             // label12
             // 
@@ -492,9 +493,9 @@
             this.label3.ForeColor = System.Drawing.Color.Silver;
             this.label3.Location = new System.Drawing.Point(3, 250);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 16);
+            this.label3.Size = new System.Drawing.Size(58, 16);
             this.label3.TabIndex = 124;
-            this.label3.Text = "Class Nom : ";
+            this.label3.Text = "Class : ";
             // 
             // label2
             // 
@@ -512,7 +513,7 @@
             this.bunifuImageButton4.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton4.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton4.Image")));
             this.bunifuImageButton4.ImageActive = null;
-            this.bunifuImageButton4.Location = new System.Drawing.Point(105, 3);
+            this.bunifuImageButton4.Location = new System.Drawing.Point(110, 3);
             this.bunifuImageButton4.Name = "bunifuImageButton4";
             this.bunifuImageButton4.Size = new System.Drawing.Size(102, 76);
             this.bunifuImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -525,7 +526,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Silver;
-            this.label1.Location = new System.Drawing.Point(955, 12);
+            this.label1.Location = new System.Drawing.Point(942, 5);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(203, 25);
             this.label1.TabIndex = 120;
@@ -536,9 +537,9 @@
             this.bunifuImageButton2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
             this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(1208, 240);
+            this.bunifuImageButton2.Location = new System.Drawing.Point(1215, 240);
             this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Size = new System.Drawing.Size(33, 45);
+            this.bunifuImageButton2.Size = new System.Drawing.Size(25, 28);
             this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton2.TabIndex = 121;
             this.bunifuImageButton2.TabStop = false;
@@ -550,9 +551,9 @@
             this.precedentBTN.BackColor = System.Drawing.Color.Transparent;
             this.precedentBTN.Image = ((System.Drawing.Image)(resources.GetObject("precedentBTN.Image")));
             this.precedentBTN.ImageActive = null;
-            this.precedentBTN.Location = new System.Drawing.Point(864, 240);
+            this.precedentBTN.Location = new System.Drawing.Point(843, 240);
             this.precedentBTN.Name = "precedentBTN";
-            this.precedentBTN.Size = new System.Drawing.Size(28, 45);
+            this.precedentBTN.Size = new System.Drawing.Size(25, 28);
             this.precedentBTN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.precedentBTN.TabIndex = 122;
             this.precedentBTN.TabStop = false;
@@ -581,14 +582,14 @@
             this.print1.IconVisible = false;
             this.print1.IconZoom = 0D;
             this.print1.IsTab = true;
-            this.print1.Location = new System.Drawing.Point(16, 409);
+            this.print1.Location = new System.Drawing.Point(138, 404);
             this.print1.Margin = new System.Windows.Forms.Padding(0);
             this.print1.Name = "print1";
             this.print1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.print1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.print1.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.print1.selected = true;
-            this.print1.Size = new System.Drawing.Size(143, 28);
+            this.print1.Size = new System.Drawing.Size(147, 28);
             this.print1.TabIndex = 123;
             this.print1.Text = "Imprimer Insciption";
             this.print1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

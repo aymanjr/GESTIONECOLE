@@ -35,7 +35,6 @@
             this.SupprimerBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ModifierBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ajouterBTN = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.dataGridView1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -84,19 +83,19 @@
             this.SupprimerBtn.IconVisible = false;
             this.SupprimerBtn.IconZoom = 0D;
             this.SupprimerBtn.IsTab = true;
-            this.SupprimerBtn.Location = new System.Drawing.Point(351, 424);
+            this.SupprimerBtn.Location = new System.Drawing.Point(323, 423);
             this.SupprimerBtn.Margin = new System.Windows.Forms.Padding(0);
             this.SupprimerBtn.Name = "SupprimerBtn";
             this.SupprimerBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.SupprimerBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.SupprimerBtn.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.SupprimerBtn.selected = true;
-            this.SupprimerBtn.Size = new System.Drawing.Size(169, 28);
+            this.SupprimerBtn.Size = new System.Drawing.Size(135, 28);
             this.SupprimerBtn.TabIndex = 108;
             this.SupprimerBtn.Text = "Supprimer Employee";
             this.SupprimerBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.SupprimerBtn.Textcolor = System.Drawing.Color.Silver;
-            this.SupprimerBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SupprimerBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SupprimerBtn.Click += new System.EventHandler(this.SupprimerBtn_Click);
             // 
             // ModifierBtn
@@ -121,19 +120,19 @@
             this.ModifierBtn.IconVisible = false;
             this.ModifierBtn.IconZoom = 0D;
             this.ModifierBtn.IsTab = true;
-            this.ModifierBtn.Location = new System.Drawing.Point(188, 424);
+            this.ModifierBtn.Location = new System.Drawing.Point(165, 424);
             this.ModifierBtn.Margin = new System.Windows.Forms.Padding(0);
             this.ModifierBtn.Name = "ModifierBtn";
             this.ModifierBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.ModifierBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.ModifierBtn.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.ModifierBtn.selected = true;
-            this.ModifierBtn.Size = new System.Drawing.Size(151, 28);
+            this.ModifierBtn.Size = new System.Drawing.Size(124, 28);
             this.ModifierBtn.TabIndex = 107;
             this.ModifierBtn.Text = "Modifier Employee";
             this.ModifierBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.ModifierBtn.Textcolor = System.Drawing.Color.Silver;
-            this.ModifierBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ModifierBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ModifierBtn.Click += new System.EventHandler(this.ModifierBtn_Click);
             // 
             // ajouterBTN
@@ -165,33 +164,22 @@
             this.ajouterBTN.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.ajouterBTN.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.ajouterBTN.selected = true;
-            this.ajouterBTN.Size = new System.Drawing.Size(149, 28);
+            this.ajouterBTN.Size = new System.Drawing.Size(117, 28);
             this.ajouterBTN.TabIndex = 106;
             this.ajouterBTN.Text = "Ajouter Employee";
             this.ajouterBTN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.ajouterBTN.Textcolor = System.Drawing.Color.Silver;
-            this.ajouterBTN.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ajouterBTN.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ajouterBTN.Click += new System.EventHandler(this.ajouterBTN_Click);
-            // 
-            // bunifuCustomLabel8
-            // 
-            this.bunifuCustomLabel8.AutoSize = true;
-            this.bunifuCustomLabel8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel8.ForeColor = System.Drawing.Color.Gray;
-            this.bunifuCustomLabel8.Location = new System.Drawing.Point(501, 114);
-            this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
-            this.bunifuCustomLabel8.Size = new System.Drawing.Size(55, 16);
-            this.bunifuCustomLabel8.TabIndex = 105;
-            this.bunifuCustomLabel8.Text = "Refresh";
             // 
             // bunifuImageButton1
             // 
             this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(504, 74);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(423, 37);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(47, 37);
+            this.bunifuImageButton1.Size = new System.Drawing.Size(35, 31);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton1.TabIndex = 104;
             this.bunifuImageButton1.TabStop = false;
@@ -210,6 +198,7 @@
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -244,7 +233,7 @@
             this.dataGridView1.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Silver;
             this.dataGridView1.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(452, 331);
+            this.dataGridView1.Size = new System.Drawing.Size(446, 331);
             this.dataGridView1.TabIndex = 99;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -270,7 +259,7 @@
             this.bunifuFlatButton1.IconVisible = false;
             this.bunifuFlatButton1.IconZoom = 0D;
             this.bunifuFlatButton1.IsTab = true;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(9, 9);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(-7, -3);
             this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(0);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
@@ -288,13 +277,13 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Silver;
-            this.label1.Location = new System.Drawing.Point(690, 12);
+            this.label1.Location = new System.Drawing.Point(617, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 25);
+            this.label1.Size = new System.Drawing.Size(159, 25);
             this.label1.TabIndex = 125;
-            this.label1.Text = "Transport info : ";
+            this.label1.Text = "Transport Info";
             // 
             // panel3
             // 
@@ -311,18 +300,18 @@
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.bunifuImageButton4);
-            this.panel3.Location = new System.Drawing.Point(631, 52);
+            this.panel3.Location = new System.Drawing.Point(502, 52);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(307, 383);
+            this.panel3.Size = new System.Drawing.Size(365, 399);
             this.panel3.TabIndex = 124;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // TRSPstatutlabel
             // 
             this.TRSPstatutlabel.AutoSize = true;
-            this.TRSPstatutlabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TRSPstatutlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TRSPstatutlabel.ForeColor = System.Drawing.Color.Silver;
-            this.TRSPstatutlabel.Location = new System.Drawing.Point(164, 337);
+            this.TRSPstatutlabel.Location = new System.Drawing.Point(179, 337);
             this.TRSPstatutlabel.Name = "TRSPstatutlabel";
             this.TRSPstatutlabel.Size = new System.Drawing.Size(0, 16);
             this.TRSPstatutlabel.TabIndex = 140;
@@ -330,9 +319,9 @@
             // accompLABEL
             // 
             this.accompLABEL.AutoSize = true;
-            this.accompLABEL.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accompLABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.accompLABEL.ForeColor = System.Drawing.Color.Silver;
-            this.accompLABEL.Location = new System.Drawing.Point(164, 290);
+            this.accompLABEL.Location = new System.Drawing.Point(179, 290);
             this.accompLABEL.Name = "accompLABEL";
             this.accompLABEL.Size = new System.Drawing.Size(0, 16);
             this.accompLABEL.TabIndex = 139;
@@ -340,9 +329,9 @@
             // CHAUFEURNOMLABEL
             // 
             this.CHAUFEURNOMLABEL.AutoSize = true;
-            this.CHAUFEURNOMLABEL.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CHAUFEURNOMLABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CHAUFEURNOMLABEL.ForeColor = System.Drawing.Color.Silver;
-            this.CHAUFEURNOMLABEL.Location = new System.Drawing.Point(164, 240);
+            this.CHAUFEURNOMLABEL.Location = new System.Drawing.Point(179, 240);
             this.CHAUFEURNOMLABEL.Name = "CHAUFEURNOMLABEL";
             this.CHAUFEURNOMLABEL.Size = new System.Drawing.Size(0, 16);
             this.CHAUFEURNOMLABEL.TabIndex = 138;
@@ -350,9 +339,9 @@
             // capaciterLABEL
             // 
             this.capaciterLABEL.AutoSize = true;
-            this.capaciterLABEL.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.capaciterLABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.capaciterLABEL.ForeColor = System.Drawing.Color.Silver;
-            this.capaciterLABEL.Location = new System.Drawing.Point(164, 201);
+            this.capaciterLABEL.Location = new System.Drawing.Point(179, 201);
             this.capaciterLABEL.Name = "capaciterLABEL";
             this.capaciterLABEL.Size = new System.Drawing.Size(0, 16);
             this.capaciterLABEL.TabIndex = 137;
@@ -360,9 +349,9 @@
             // moduleLABEL
             // 
             this.moduleLABEL.AutoSize = true;
-            this.moduleLABEL.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.moduleLABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moduleLABEL.ForeColor = System.Drawing.Color.Silver;
-            this.moduleLABEL.Location = new System.Drawing.Point(164, 156);
+            this.moduleLABEL.Location = new System.Drawing.Point(179, 156);
             this.moduleLABEL.Name = "moduleLABEL";
             this.moduleLABEL.Size = new System.Drawing.Size(0, 16);
             this.moduleLABEL.TabIndex = 136;
@@ -370,9 +359,9 @@
             // mtriculeLABEL
             // 
             this.mtriculeLABEL.AutoSize = true;
-            this.mtriculeLABEL.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mtriculeLABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mtriculeLABEL.ForeColor = System.Drawing.Color.Silver;
-            this.mtriculeLABEL.Location = new System.Drawing.Point(164, 108);
+            this.mtriculeLABEL.Location = new System.Drawing.Point(179, 108);
             this.mtriculeLABEL.Name = "mtriculeLABEL";
             this.mtriculeLABEL.Size = new System.Drawing.Size(0, 16);
             this.mtriculeLABEL.TabIndex = 135;
@@ -380,18 +369,18 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Silver;
             this.label13.Location = new System.Drawing.Point(3, 337);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(85, 16);
+            this.label13.Size = new System.Drawing.Size(92, 16);
             this.label13.TabIndex = 128;
             this.label13.Text = "Trsp statut : ";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Silver;
             this.label12.Location = new System.Drawing.Point(3, 198);
             this.label12.Name = "label12";
@@ -402,40 +391,40 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Silver;
             this.label11.Location = new System.Drawing.Point(3, 150);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(69, 16);
+            this.label11.Size = new System.Drawing.Size(70, 16);
             this.label11.TabIndex = 126;
             this.label11.Text = "Module : ";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Silver;
             this.label10.Location = new System.Drawing.Point(3, 290);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(105, 16);
+            this.label10.Size = new System.Drawing.Size(107, 16);
             this.label10.TabIndex = 125;
             this.label10.Text = "Accomp Nom :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Silver;
             this.label3.Location = new System.Drawing.Point(3, 240);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 16);
+            this.label3.Size = new System.Drawing.Size(120, 16);
             this.label3.TabIndex = 124;
             this.label3.Text = "Chauffeur Nom : ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Silver;
             this.label2.Location = new System.Drawing.Point(3, 108);
             this.label2.Name = "label2";
@@ -448,7 +437,7 @@
             this.bunifuImageButton4.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton4.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton4.Image")));
             this.bunifuImageButton4.ImageActive = null;
-            this.bunifuImageButton4.Location = new System.Drawing.Point(87, 3);
+            this.bunifuImageButton4.Location = new System.Drawing.Point(136, 8);
             this.bunifuImageButton4.Name = "bunifuImageButton4";
             this.bunifuImageButton4.Size = new System.Drawing.Size(102, 76);
             this.bunifuImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -459,7 +448,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.panel2.Location = new System.Drawing.Point(587, -8);
+            this.panel2.Location = new System.Drawing.Point(472, -8);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(10, 501);
             this.panel2.TabIndex = 123;
@@ -467,11 +456,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Silver;
-            this.label4.Location = new System.Drawing.Point(226, 12);
+            this.label4.Location = new System.Drawing.Point(213, 6);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(110, 25);
+            this.label4.Size = new System.Drawing.Size(120, 25);
             this.label4.TabIndex = 126;
             this.label4.Text = "Transport ";
             // 
@@ -480,7 +469,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
-            this.ClientSize = new System.Drawing.Size(969, 460);
+            this.ClientSize = new System.Drawing.Size(883, 460);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel3);
@@ -489,13 +478,12 @@
             this.Controls.Add(this.SupprimerBtn);
             this.Controls.Add(this.ModifierBtn);
             this.Controls.Add(this.ajouterBTN);
-            this.Controls.Add(this.bunifuCustomLabel8);
             this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(300, 170);
             this.Name = "TRANSPORTFORM";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TRANSPORTFORM";
             this.Load += new System.EventHandler(this.TRANSPORTFORM_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
@@ -513,7 +501,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton SupprimerBtn;
         private Bunifu.Framework.UI.BunifuFlatButton ModifierBtn;
         private Bunifu.Framework.UI.BunifuFlatButton ajouterBTN;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dataGridView1;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;

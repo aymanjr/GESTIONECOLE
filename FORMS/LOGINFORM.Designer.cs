@@ -43,11 +43,11 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Silver;
-            this.label16.Location = new System.Drawing.Point(47, 185);
+            this.label16.Location = new System.Drawing.Point(53, 160);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(112, 24);
+            this.label16.Size = new System.Drawing.Size(100, 24);
             this.label16.TabIndex = 131;
-            this.label16.Text = "Password :";
+            this.label16.Text = "Password";
             // 
             // txtpass
             // 
@@ -65,13 +65,12 @@
             this.txtpass.LineIdleColor = System.Drawing.Color.LightGray;
             this.txtpass.LineMouseHoverColor = System.Drawing.Color.Black;
             this.txtpass.LineThickness = 3;
-            this.txtpass.Location = new System.Drawing.Point(172, 181);
+            this.txtpass.Location = new System.Drawing.Point(178, 150);
             this.txtpass.Margin = new System.Windows.Forms.Padding(4);
             this.txtpass.MaxLength = 32767;
             this.txtpass.Name = "txtpass";
-            this.txtpass.Size = new System.Drawing.Size(226, 34);
+            this.txtpass.Size = new System.Drawing.Size(220, 34);
             this.txtpass.TabIndex = 130;
-            this.txtpass.Text = "123";
             this.txtpass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtpass.OnValueChanged += new System.EventHandler(this.txtpass_OnValueChanged);
             // 
@@ -91,13 +90,12 @@
             this.Txtusername.LineIdleColor = System.Drawing.Color.LightGray;
             this.Txtusername.LineMouseHoverColor = System.Drawing.Color.Black;
             this.Txtusername.LineThickness = 3;
-            this.Txtusername.Location = new System.Drawing.Point(172, 111);
+            this.Txtusername.Location = new System.Drawing.Point(178, 76);
             this.Txtusername.Margin = new System.Windows.Forms.Padding(4);
             this.Txtusername.MaxLength = 32767;
             this.Txtusername.Name = "Txtusername";
-            this.Txtusername.Size = new System.Drawing.Size(226, 34);
+            this.Txtusername.Size = new System.Drawing.Size(220, 34);
             this.Txtusername.TabIndex = 129;
-            this.Txtusername.Text = "Username ";
             this.Txtusername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label15
@@ -106,11 +104,11 @@
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Silver;
-            this.label15.Location = new System.Drawing.Point(47, 111);
+            this.label15.Location = new System.Drawing.Point(53, 86);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(123, 24);
+            this.label15.Size = new System.Drawing.Size(105, 24);
             this.label15.TabIndex = 128;
-            this.label15.Text = "Username : ";
+            this.label15.Text = "Username";
             // 
             // BtnLogin
             // 
@@ -137,7 +135,7 @@
             this.BtnLogin.IconVisible = true;
             this.BtnLogin.IconZoom = 90D;
             this.BtnLogin.IsTab = false;
-            this.BtnLogin.Location = new System.Drawing.Point(172, 266);
+            this.BtnLogin.Location = new System.Drawing.Point(178, 214);
             this.BtnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.BtnLogin.Name = "BtnLogin";
             this.BtnLogin.Normalcolor = System.Drawing.Color.Transparent;
@@ -177,7 +175,7 @@
             this.bunifuFlatButton1.IconVisible = true;
             this.bunifuFlatButton1.IconZoom = 90D;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(311, 266);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(320, 214);
             this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent;
@@ -199,7 +197,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(884, 373);
+            this.ClientSize = new System.Drawing.Size(663, 335);
             this.Controls.Add(this.bunifuFlatButton1);
             this.Controls.Add(this.BtnLogin);
             this.Controls.Add(this.label16);

@@ -50,11 +50,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Silver;
-            this.label4.Location = new System.Drawing.Point(480, 9);
+            this.label4.Location = new System.Drawing.Point(493, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(231, 25);
+            this.label4.Size = new System.Drawing.Size(245, 25);
             this.label4.TabIndex = 133;
             this.label4.Text = "Modification des Frais";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -62,7 +62,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.panel2.Location = new System.Drawing.Point(209, 1);
+            this.panel2.Location = new System.Drawing.Point(209, -7);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(10, 519);
             this.panel2.TabIndex = 134;
@@ -70,11 +70,11 @@
             // bunifuCustomLabel3
             // 
             this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.Silver;
             this.bunifuCustomLabel3.Location = new System.Drawing.Point(12, 98);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(105, 19);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(106, 20);
             this.bunifuCustomLabel3.TabIndex = 135;
             this.bunifuCustomLabel3.Text = "Modification";
             // 
@@ -245,7 +245,7 @@
             this.bunifuFlatButton1.IconVisible = false;
             this.bunifuFlatButton1.IconZoom = 0D;
             this.bunifuFlatButton1.IsTab = true;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(9, 9);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(-3, -3);
             this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(0);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));

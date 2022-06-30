@@ -47,7 +47,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Silver;
-            this.label7.Location = new System.Drawing.Point(12, 323);
+            this.label7.Location = new System.Drawing.Point(12, 307);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(69, 24);
             this.label7.TabIndex = 111;
@@ -58,7 +58,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Silver;
-            this.label5.Location = new System.Drawing.Point(12, 137);
+            this.label5.Location = new System.Drawing.Point(12, 118);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(133, 24);
             this.label5.TabIndex = 110;
@@ -69,7 +69,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Silver;
-            this.label4.Location = new System.Drawing.Point(12, 18);
+            this.label4.Location = new System.Drawing.Point(12, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(127, 24);
             this.label4.TabIndex = 109;
@@ -98,7 +98,7 @@
             this.btnajouter.IconVisible = false;
             this.btnajouter.IconZoom = 0D;
             this.btnajouter.IsTab = true;
-            this.btnajouter.Location = new System.Drawing.Point(319, 413);
+            this.btnajouter.Location = new System.Drawing.Point(345, 349);
             this.btnajouter.Margin = new System.Windows.Forms.Padding(0);
             this.btnajouter.Name = "btnajouter";
             this.btnajouter.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
@@ -120,12 +120,12 @@
             this.combo_type.DisabledColor = System.Drawing.Color.Gray;
             this.combo_type.ForeColor = System.Drawing.Color.Silver;
             this.combo_type.items = new string[0];
-            this.combo_type.Location = new System.Drawing.Point(168, 18);
+            this.combo_type.Location = new System.Drawing.Point(145, 7);
             this.combo_type.Name = "combo_type";
             this.combo_type.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.combo_type.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.combo_type.selectedIndex = -1;
-            this.combo_type.Size = new System.Drawing.Size(242, 30);
+            this.combo_type.Size = new System.Drawing.Size(291, 30);
             this.combo_type.TabIndex = 147;
             this.combo_type.onItemSelected += new System.EventHandler(this.combo_type_onItemSelected);
             // 
@@ -135,9 +135,9 @@
             this.description_richtext.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.description_richtext.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.description_richtext.ForeColor = System.Drawing.Color.Silver;
-            this.description_richtext.Location = new System.Drawing.Point(16, 163);
+            this.description_richtext.Location = new System.Drawing.Point(16, 145);
             this.description_richtext.Name = "description_richtext";
-            this.description_richtext.Size = new System.Drawing.Size(394, 108);
+            this.description_richtext.Size = new System.Drawing.Size(420, 140);
             this.description_richtext.TabIndex = 148;
             this.description_richtext.Text = "";
             // 
@@ -156,11 +156,11 @@
             this.txt_cost.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.txt_cost.LineMouseHoverColor = System.Drawing.Color.Silver;
             this.txt_cost.LineThickness = 4;
-            this.txt_cost.Location = new System.Drawing.Point(113, 310);
+            this.txt_cost.Location = new System.Drawing.Point(88, 299);
             this.txt_cost.Margin = new System.Windows.Forms.Padding(4);
             this.txt_cost.MaxLength = 32767;
             this.txt_cost.Name = "txt_cost";
-            this.txt_cost.Size = new System.Drawing.Size(297, 37);
+            this.txt_cost.Size = new System.Drawing.Size(348, 37);
             this.txt_cost.TabIndex = 149;
             this.txt_cost.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_cost.OnValueChanged += new System.EventHandler(this.txt_cost_OnValueChanged);
@@ -170,9 +170,9 @@
             // 
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txt_type);
-            this.panel1.Location = new System.Drawing.Point(49, 63);
+            this.panel1.Location = new System.Drawing.Point(74, 53);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(314, 51);
+            this.panel1.Size = new System.Drawing.Size(321, 51);
             this.panel1.TabIndex = 150;
             this.panel1.Visible = false;
             // 
@@ -202,11 +202,11 @@
             this.txt_type.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.txt_type.LineMouseHoverColor = System.Drawing.Color.Silver;
             this.txt_type.LineThickness = 4;
-            this.txt_type.Location = new System.Drawing.Point(119, 14);
+            this.txt_type.Location = new System.Drawing.Point(110, 10);
             this.txt_type.Margin = new System.Windows.Forms.Padding(4);
             this.txt_type.MaxLength = 32767;
             this.txt_type.Name = "txt_type";
-            this.txt_type.Size = new System.Drawing.Size(168, 33);
+            this.txt_type.Size = new System.Drawing.Size(200, 33);
             this.txt_type.TabIndex = 151;
             this.txt_type.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -215,7 +215,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(50)))), ((int)(((byte)(52)))));
-            this.ClientSize = new System.Drawing.Size(448, 450);
+            this.ClientSize = new System.Drawing.Size(448, 390);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txt_cost);
             this.Controls.Add(this.description_richtext);
@@ -226,6 +226,7 @@
             this.Controls.Add(this.label4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CreateExtra_Frais";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CreateExtra_Frais";
             this.Load += new System.EventHandler(this.CreateExtra_Frais_Load);
             this.panel1.ResumeLayout(false);

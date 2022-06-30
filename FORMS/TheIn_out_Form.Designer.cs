@@ -65,7 +65,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.Combo_section = new Bunifu.Framework.UI.BunifuDropdown();
-            this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.refreshBTN = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -85,11 +84,11 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Silver;
-            this.label5.Location = new System.Drawing.Point(12, 505);
+            this.label5.Location = new System.Drawing.Point(8, 505);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(138, 20);
+            this.label5.Size = new System.Drawing.Size(123, 20);
             this.label5.TabIndex = 64;
-            this.label5.Text = "Last Out Frais : ";
+            this.label5.Text = "Last Out Frais";
             // 
             // txt_descr_outfrais
             // 
@@ -208,11 +207,11 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Silver;
-            this.label15.Location = new System.Drawing.Point(718, 505);
+            this.label15.Location = new System.Drawing.Point(713, 505);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(125, 20);
+            this.label15.Size = new System.Drawing.Size(110, 20);
             this.label15.TabIndex = 115;
-            this.label15.Text = "Last In Frais : ";
+            this.label15.Text = "Last In Frais";
             // 
             // panel2
             // 
@@ -364,11 +363,11 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Silver;
-            this.label6.Location = new System.Drawing.Point(40, 87);
+            this.label6.Location = new System.Drawing.Point(8, 87);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(126, 20);
+            this.label6.Size = new System.Drawing.Size(118, 20);
             this.label6.TabIndex = 157;
-            this.label6.Text = "Recherche par : ";
+            this.label6.Text = "Recherche par ";
             // 
             // combo_choice
             // 
@@ -378,12 +377,12 @@
             this.combo_choice.ForeColor = System.Drawing.Color.Silver;
             this.combo_choice.items = new string[] {
         "Date "};
-            this.combo_choice.Location = new System.Drawing.Point(44, 125);
+            this.combo_choice.Location = new System.Drawing.Point(44, 110);
             this.combo_choice.Name = "combo_choice";
             this.combo_choice.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.combo_choice.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.combo_choice.selectedIndex = -1;
-            this.combo_choice.Size = new System.Drawing.Size(157, 30);
+            this.combo_choice.Size = new System.Drawing.Size(202, 30);
             this.combo_choice.TabIndex = 156;
             this.combo_choice.onItemSelected += new System.EventHandler(this.combo_choice_onItemSelected);
             // 
@@ -392,7 +391,7 @@
             this.totalrecherchLABEL.AutoSize = true;
             this.totalrecherchLABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalrecherchLABEL.ForeColor = System.Drawing.Color.Silver;
-            this.totalrecherchLABEL.Location = new System.Drawing.Point(723, 450);
+            this.totalrecherchLABEL.Location = new System.Drawing.Point(713, 465);
             this.totalrecherchLABEL.Name = "totalrecherchLABEL";
             this.totalrecherchLABEL.Size = new System.Drawing.Size(0, 24);
             this.totalrecherchLABEL.TabIndex = 165;
@@ -402,7 +401,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Silver;
-            this.label2.Location = new System.Drawing.Point(533, 450);
+            this.label2.Location = new System.Drawing.Point(535, 465);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 24);
             this.label2.TabIndex = 164;
@@ -420,7 +419,7 @@
             this.datagrid_Recherche.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.datagrid_Recherche.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.datagrid_Recherche.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.datagrid_Recherche.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.datagrid_Recherche.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.datagrid_Recherche.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -469,12 +468,12 @@
             this.combo_inoutsearch.items = new string[] {
         "In",
         "Out"};
-            this.combo_inoutsearch.Location = new System.Drawing.Point(44, 238);
+            this.combo_inoutsearch.Location = new System.Drawing.Point(44, 216);
             this.combo_inoutsearch.Name = "combo_inoutsearch";
             this.combo_inoutsearch.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.combo_inoutsearch.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.combo_inoutsearch.selectedIndex = -1;
-            this.combo_inoutsearch.Size = new System.Drawing.Size(157, 30);
+            this.combo_inoutsearch.Size = new System.Drawing.Size(202, 30);
             this.combo_inoutsearch.TabIndex = 167;
             this.combo_inoutsearch.onItemSelected += new System.EventHandler(this.combo_inoutsearch_onItemSelected);
             // 
@@ -483,22 +482,22 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Silver;
-            this.label3.Location = new System.Drawing.Point(40, 197);
+            this.label3.Location = new System.Drawing.Point(8, 193);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 20);
+            this.label3.Size = new System.Drawing.Size(71, 20);
             this.label3.TabIndex = 168;
-            this.label3.Text = "In or Out :";
+            this.label3.Text = "In or Out";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Silver;
-            this.label4.Location = new System.Drawing.Point(40, 338);
+            this.label4.Location = new System.Drawing.Point(8, 336);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 20);
+            this.label4.Size = new System.Drawing.Size(63, 20);
             this.label4.TabIndex = 170;
-            this.label4.Text = "Section :";
+            this.label4.Text = "Section";
             // 
             // Combo_section
             // 
@@ -510,25 +509,14 @@
         "Payment Mois",
         "Inscription",
         "ExtraFrais"};
-            this.Combo_section.Location = new System.Drawing.Point(44, 376);
+            this.Combo_section.Location = new System.Drawing.Point(44, 359);
             this.Combo_section.Name = "Combo_section";
             this.Combo_section.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.Combo_section.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.Combo_section.selectedIndex = -1;
-            this.Combo_section.Size = new System.Drawing.Size(157, 30);
+            this.Combo_section.Size = new System.Drawing.Size(202, 30);
             this.Combo_section.TabIndex = 169;
             this.Combo_section.onItemSelected += new System.EventHandler(this.Combo_section_onItemSelected);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Silver;
-            this.label9.Location = new System.Drawing.Point(946, 39);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(66, 20);
-            this.label9.TabIndex = 171;
-            this.label9.Text = "Refresh";
             // 
             // label10
             // 
@@ -546,7 +534,7 @@
             this.refreshBTN.BackColor = System.Drawing.Color.Transparent;
             this.refreshBTN.Image = ((System.Drawing.Image)(resources.GetObject("refreshBTN.Image")));
             this.refreshBTN.ImageActive = null;
-            this.refreshBTN.Location = new System.Drawing.Point(1018, 31);
+            this.refreshBTN.Location = new System.Drawing.Point(1045, 30);
             this.refreshBTN.Name = "refreshBTN";
             this.refreshBTN.Size = new System.Drawing.Size(35, 32);
             this.refreshBTN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -597,7 +585,7 @@
             this.Printbutton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Printbutton.Image = global::GESTIONECOLE.Properties.Resources.printicon;
             this.Printbutton.ImageActive = null;
-            this.Printbutton.Location = new System.Drawing.Point(1090, 31);
+            this.Printbutton.Location = new System.Drawing.Point(1117, 30);
             this.Printbutton.Name = "Printbutton";
             this.Printbutton.Size = new System.Drawing.Size(35, 33);
             this.Printbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -616,7 +604,6 @@
             this.ClientSize = new System.Drawing.Size(1164, 712);
             this.Controls.Add(this.Printbutton);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.panel_date);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.combo_choice);
@@ -700,7 +687,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuDropdown Combo_section;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private Bunifu.Framework.UI.BunifuImageButton Printbutton;
     }

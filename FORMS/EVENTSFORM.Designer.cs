@@ -76,33 +76,33 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Silver;
-            this.label1.Location = new System.Drawing.Point(7, 114);
+            this.label1.Location = new System.Drawing.Point(7, 68);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 19);
+            this.label1.Size = new System.Drawing.Size(63, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "NOM : ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Silver;
-            this.label2.Location = new System.Drawing.Point(7, 146);
+            this.label2.Location = new System.Drawing.Point(7, 95);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 19);
+            this.label2.Size = new System.Drawing.Size(81, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "DESCR: ";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Silver;
-            this.label3.Location = new System.Drawing.Point(8, 318);
+            this.label3.Location = new System.Drawing.Point(7, 302);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 19);
+            this.label3.Size = new System.Drawing.Size(71, 20);
             this.label3.TabIndex = 4;
             this.label3.Text = "DATE : ";
             // 
@@ -128,7 +128,7 @@
             this.bunifuFlatButton1.IconVisible = false;
             this.bunifuFlatButton1.IconZoom = 0D;
             this.bunifuFlatButton1.IsTab = true;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(9, 9);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(-6, -3);
             this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(0);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
@@ -165,14 +165,14 @@
             this.ajouterBTN.IconVisible = false;
             this.ajouterBTN.IconZoom = 0D;
             this.ajouterBTN.IsTab = true;
-            this.ajouterBTN.Location = new System.Drawing.Point(113, 406);
+            this.ajouterBTN.Location = new System.Drawing.Point(58, 406);
             this.ajouterBTN.Margin = new System.Windows.Forms.Padding(0);
             this.ajouterBTN.Name = "ajouterBTN";
             this.ajouterBTN.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.ajouterBTN.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.ajouterBTN.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.ajouterBTN.selected = true;
-            this.ajouterBTN.Size = new System.Drawing.Size(181, 28);
+            this.ajouterBTN.Size = new System.Drawing.Size(198, 28);
             this.ajouterBTN.TabIndex = 95;
             this.ajouterBTN.Text = "Ajouter Event";
             this.ajouterBTN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -192,6 +192,7 @@
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -209,7 +210,7 @@
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.dataGridView1.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.dataGridView1.HeaderForeColor = System.Drawing.Color.Silver;
-            this.dataGridView1.Location = new System.Drawing.Point(338, 74);
+            this.dataGridView1.Location = new System.Drawing.Point(338, 49);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -227,7 +228,7 @@
             this.dataGridView1.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(429, 322);
+            this.dataGridView1.Size = new System.Drawing.Size(429, 347);
             this.dataGridView1.TabIndex = 96;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -238,22 +239,22 @@
             this.combo_year.DisabledColor = System.Drawing.Color.Gray;
             this.combo_year.ForeColor = System.Drawing.Color.Silver;
             this.combo_year.items = new string[0];
-            this.combo_year.Location = new System.Drawing.Point(498, 36);
+            this.combo_year.Location = new System.Drawing.Point(432, 11);
             this.combo_year.Name = "combo_year";
             this.combo_year.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.combo_year.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.combo_year.selectedIndex = -1;
-            this.combo_year.Size = new System.Drawing.Size(133, 30);
+            this.combo_year.Size = new System.Drawing.Size(208, 30);
             this.combo_year.TabIndex = 97;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Silver;
-            this.label4.Location = new System.Drawing.Point(403, 38);
+            this.label4.Location = new System.Drawing.Point(365, 16);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 21);
+            this.label4.Size = new System.Drawing.Size(64, 20);
             this.label4.TabIndex = 98;
             this.label4.Text = "Annee :";
             // 
@@ -264,9 +265,9 @@
             this.datetimepicker1.ForeColor = System.Drawing.Color.White;
             this.datetimepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.datetimepicker1.FormatCustom = null;
-            this.datetimepicker1.Location = new System.Drawing.Point(115, 317);
+            this.datetimepicker1.Location = new System.Drawing.Point(113, 302);
             this.datetimepicker1.Name = "datetimepicker1";
-            this.datetimepicker1.Size = new System.Drawing.Size(181, 36);
+            this.datetimepicker1.Size = new System.Drawing.Size(198, 36);
             this.datetimepicker1.TabIndex = 99;
             this.datetimepicker1.Value = new System.DateTime(2020, 6, 9, 23, 5, 29, 244);
             // 
@@ -298,31 +299,31 @@
             // datelabelProchaine
             // 
             this.datelabelProchaine.AutoSize = true;
-            this.datelabelProchaine.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datelabelProchaine.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datelabelProchaine.ForeColor = System.Drawing.Color.Silver;
             this.datelabelProchaine.Location = new System.Drawing.Point(117, 125);
             this.datelabelProchaine.Name = "datelabelProchaine";
-            this.datelabelProchaine.Size = new System.Drawing.Size(0, 19);
+            this.datelabelProchaine.Size = new System.Drawing.Size(0, 20);
             this.datelabelProchaine.TabIndex = 113;
             // 
             // nomlabelProchaine
             // 
             this.nomlabelProchaine.AutoSize = true;
-            this.nomlabelProchaine.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nomlabelProchaine.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nomlabelProchaine.ForeColor = System.Drawing.Color.Silver;
             this.nomlabelProchaine.Location = new System.Drawing.Point(117, 8);
             this.nomlabelProchaine.Name = "nomlabelProchaine";
-            this.nomlabelProchaine.Size = new System.Drawing.Size(0, 19);
+            this.nomlabelProchaine.Size = new System.Drawing.Size(0, 20);
             this.nomlabelProchaine.TabIndex = 112;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Silver;
             this.label13.Location = new System.Drawing.Point(8, 125);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(62, 21);
+            this.label13.Size = new System.Drawing.Size(56, 20);
             this.label13.TabIndex = 111;
             this.label13.Text = "Date : ";
             // 
@@ -330,7 +331,7 @@
             // 
             this.richTextBoxProchaine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.richTextBoxProchaine.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.richTextBoxProchaine.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBoxProchaine.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBoxProchaine.ForeColor = System.Drawing.Color.Silver;
             this.richTextBoxProchaine.Location = new System.Drawing.Point(7, 32);
             this.richTextBoxProchaine.Name = "richTextBoxProchaine";
@@ -341,33 +342,33 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Silver;
             this.label14.Location = new System.Drawing.Point(3, 8);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(59, 21);
+            this.label14.Size = new System.Drawing.Size(54, 20);
             this.label14.TabIndex = 109;
             this.label14.Text = "Nom : ";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.LightGray;
-            this.label6.Location = new System.Drawing.Point(15, 230);
+            this.label6.Location = new System.Drawing.Point(11, 230);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(145, 19);
+            this.label6.Size = new System.Drawing.Size(155, 20);
             this.label6.TabIndex = 103;
             this.label6.Text = "Prochaine Event : ";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.LightGray;
-            this.label5.Location = new System.Drawing.Point(15, 9);
+            this.label5.Location = new System.Drawing.Point(7, 9);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(121, 19);
+            this.label5.Size = new System.Drawing.Size(137, 20);
             this.label5.TabIndex = 102;
             this.label5.Text = "Recents Event :";
             // 
@@ -388,31 +389,31 @@
             // datelabelRecent
             // 
             this.datelabelRecent.AutoSize = true;
-            this.datelabelRecent.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datelabelRecent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datelabelRecent.ForeColor = System.Drawing.Color.Silver;
             this.datelabelRecent.Location = new System.Drawing.Point(121, 127);
             this.datelabelRecent.Name = "datelabelRecent";
-            this.datelabelRecent.Size = new System.Drawing.Size(0, 19);
+            this.datelabelRecent.Size = new System.Drawing.Size(0, 20);
             this.datelabelRecent.TabIndex = 113;
             // 
             // nomlabelRecent
             // 
             this.nomlabelRecent.AutoSize = true;
-            this.nomlabelRecent.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nomlabelRecent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nomlabelRecent.ForeColor = System.Drawing.Color.Silver;
             this.nomlabelRecent.Location = new System.Drawing.Point(117, 8);
             this.nomlabelRecent.Name = "nomlabelRecent";
-            this.nomlabelRecent.Size = new System.Drawing.Size(0, 19);
+            this.nomlabelRecent.Size = new System.Drawing.Size(0, 20);
             this.nomlabelRecent.TabIndex = 112;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Silver;
             this.label8.Location = new System.Drawing.Point(8, 125);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 21);
+            this.label8.Size = new System.Drawing.Size(52, 20);
             this.label8.TabIndex = 111;
             this.label8.Text = "Date :";
             // 
@@ -420,7 +421,7 @@
             // 
             this.richTextBoxRecent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.richTextBoxRecent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.richTextBoxRecent.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBoxRecent.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBoxRecent.ForeColor = System.Drawing.Color.Silver;
             this.richTextBoxRecent.Location = new System.Drawing.Point(7, 32);
             this.richTextBoxRecent.Name = "richTextBoxRecent";
@@ -431,11 +432,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Silver;
             this.label7.Location = new System.Drawing.Point(3, 8);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(59, 21);
+            this.label7.Size = new System.Drawing.Size(54, 20);
             this.label7.TabIndex = 109;
             this.label7.Text = "Nom : ";
             // 
@@ -455,14 +456,14 @@
             this.txtnom.BorderThickness = 3;
             this.txtnom.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtnom.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtnom.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtnom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtnom.ForeColor = System.Drawing.Color.Silver;
             this.txtnom.isPassword = false;
-            this.txtnom.Location = new System.Drawing.Point(113, 111);
+            this.txtnom.Location = new System.Drawing.Point(111, 60);
             this.txtnom.Margin = new System.Windows.Forms.Padding(4);
             this.txtnom.MaxLength = 32767;
             this.txtnom.Name = "txtnom";
-            this.txtnom.Size = new System.Drawing.Size(183, 28);
+            this.txtnom.Size = new System.Drawing.Size(200, 28);
             this.txtnom.TabIndex = 105;
             this.txtnom.Text = "Nom ";
             this.txtnom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -471,11 +472,11 @@
             // 
             this.txtdescrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.txtdescrip.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtdescrip.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdescrip.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtdescrip.ForeColor = System.Drawing.Color.Silver;
-            this.txtdescrip.Location = new System.Drawing.Point(113, 156);
+            this.txtdescrip.Location = new System.Drawing.Point(113, 95);
             this.txtdescrip.Name = "txtdescrip";
-            this.txtdescrip.Size = new System.Drawing.Size(181, 139);
+            this.txtdescrip.Size = new System.Drawing.Size(199, 200);
             this.txtdescrip.TabIndex = 106;
             this.txtdescrip.Text = "";
             // 
@@ -566,7 +567,7 @@
             this.rechercherBTN.BackColor = System.Drawing.Color.Transparent;
             this.rechercherBTN.Image = ((System.Drawing.Image)(resources.GetObject("rechercherBTN.Image")));
             this.rechercherBTN.ImageActive = null;
-            this.rechercherBTN.Location = new System.Drawing.Point(637, 36);
+            this.rechercherBTN.Location = new System.Drawing.Point(646, 11);
             this.rechercherBTN.Name = "rechercherBTN";
             this.rechercherBTN.Size = new System.Drawing.Size(34, 30);
             this.rechercherBTN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -580,9 +581,9 @@
             this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(720, 36);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(720, 11);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(27, 32);
+            this.bunifuImageButton1.Size = new System.Drawing.Size(36, 30);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton1.TabIndex = 110;
             this.bunifuImageButton1.TabStop = false;
@@ -592,11 +593,11 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Silver;
-            this.label9.Location = new System.Drawing.Point(209, 9);
+            this.label9.Location = new System.Drawing.Point(192, 4);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(85, 25);
+            this.label9.Size = new System.Drawing.Size(102, 25);
             this.label9.TabIndex = 111;
             this.label9.Text = "EVENTS";
             // 

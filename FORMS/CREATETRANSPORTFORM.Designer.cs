@@ -253,6 +253,7 @@
             this.Controls.Add(this.txtmatricule);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CREATETRANSPORTFORM";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CREATETRANSPORTFORM";
             this.Load += new System.EventHandler(this.CREATETRANSPORTFORM_Load);
             this.ResumeLayout(false);

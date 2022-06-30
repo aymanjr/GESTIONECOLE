@@ -35,6 +35,7 @@ namespace GESTIONECOLE.FORMS
             // 
             this.ClientSize = new System.Drawing.Size(1112, 452);
             this.Name = "Frm_Print";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);
 
         }
