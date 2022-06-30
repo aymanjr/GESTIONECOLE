@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TheIn_out_Form));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_descr_outfrais = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -45,6 +45,10 @@
             this.txt_desc_in = new System.Windows.Forms.RichTextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Panel_Type = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.rechercheBTN_type = new Bunifu.Framework.UI.BunifuImageButton();
+            this.combobox_type = new Bunifu.Framework.UI.BunifuDropdown();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel_date = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
@@ -52,10 +56,6 @@
             this.datetimepicker_TO = new Bunifu.Framework.UI.BunifuDatepicker();
             this.datetimepicker_from = new Bunifu.Framework.UI.BunifuDatepicker();
             this.recherchbtn_date = new Bunifu.Framework.UI.BunifuImageButton();
-            this.Panel_Type = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.rechercheBTN_type = new Bunifu.Framework.UI.BunifuImageButton();
-            this.combobox_type = new Bunifu.Framework.UI.BunifuDropdown();
             this.label6 = new System.Windows.Forms.Label();
             this.combo_choice = new Bunifu.Framework.UI.BunifuDropdown();
             this.totalrecherchLABEL = new System.Windows.Forms.Label();
@@ -69,12 +69,15 @@
             this.label10 = new System.Windows.Forms.Label();
             this.refreshBTN = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.panel_date.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.recherchbtn_date)).BeginInit();
+            this.Printbutton = new Bunifu.Framework.UI.BunifuImageButton();
+            this.panel2.SuspendLayout();
             this.Panel_Type.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rechercheBTN_type)).BeginInit();
+            this.panel_date.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.recherchbtn_date)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_Recherche)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.refreshBTN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Printbutton)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -82,7 +85,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Silver;
-            this.label5.Location = new System.Drawing.Point(5, 504);
+            this.label5.Location = new System.Drawing.Point(12, 505);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(138, 20);
             this.label5.TabIndex = 64;
@@ -205,7 +208,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Silver;
-            this.label15.Location = new System.Drawing.Point(711, 504);
+            this.label15.Location = new System.Drawing.Point(718, 505);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(125, 20);
             this.label15.TabIndex = 115;
@@ -214,17 +217,71 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.panel2.Controls.Add(this.Panel_Type);
             this.panel2.Location = new System.Drawing.Point(281, -4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(11, 503);
             this.panel2.TabIndex = 132;
             // 
+            // Panel_Type
+            // 
+            this.Panel_Type.Controls.Add(this.label1);
+            this.Panel_Type.Controls.Add(this.rechercheBTN_type);
+            this.Panel_Type.Controls.Add(this.combobox_type);
+            this.Panel_Type.Location = new System.Drawing.Point(3, 3);
+            this.Panel_Type.Name = "Panel_Type";
+            this.Panel_Type.Size = new System.Drawing.Size(10, 65);
+            this.Panel_Type.TabIndex = 162;
+            this.Panel_Type.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Silver;
+            this.label1.Location = new System.Drawing.Point(39, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 20);
+            this.label1.TabIndex = 154;
+            this.label1.Text = "Type :";
+            // 
+            // rechercheBTN_type
+            // 
+            this.rechercheBTN_type.BackColor = System.Drawing.Color.Transparent;
+            this.rechercheBTN_type.Image = ((System.Drawing.Image)(resources.GetObject("rechercheBTN_type.Image")));
+            this.rechercheBTN_type.ImageActive = null;
+            this.rechercheBTN_type.Location = new System.Drawing.Point(199, 19);
+            this.rechercheBTN_type.Name = "rechercheBTN_type";
+            this.rechercheBTN_type.Size = new System.Drawing.Size(34, 30);
+            this.rechercheBTN_type.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.rechercheBTN_type.TabIndex = 154;
+            this.rechercheBTN_type.TabStop = false;
+            this.rechercheBTN_type.Zoom = 10;
+            this.rechercheBTN_type.Click += new System.EventHandler(this.rechercheBTN_type_Click);
+            // 
+            // combobox_type
+            // 
+            this.combobox_type.BackColor = System.Drawing.Color.Transparent;
+            this.combobox_type.BorderRadius = 3;
+            this.combobox_type.DisabledColor = System.Drawing.Color.Gray;
+            this.combobox_type.ForeColor = System.Drawing.Color.Silver;
+            this.combobox_type.items = new string[] {
+        "Type",
+        "Date "};
+            this.combobox_type.Location = new System.Drawing.Point(27, 14);
+            this.combobox_type.Name = "combobox_type";
+            this.combobox_type.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.combobox_type.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.combobox_type.selectedIndex = -1;
+            this.combobox_type.Size = new System.Drawing.Size(133, 30);
+            this.combobox_type.TabIndex = 154;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.panel1.Location = new System.Drawing.Point(1, 492);
+            this.panel1.Location = new System.Drawing.Point(-11, 492);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1175, 10);
+            this.panel1.Size = new System.Drawing.Size(1187, 10);
             this.panel1.TabIndex = 133;
             // 
             // panel_date
@@ -302,59 +359,6 @@
             this.recherchbtn_date.Zoom = 10;
             this.recherchbtn_date.Click += new System.EventHandler(this.recherchbtn_date_Click);
             // 
-            // Panel_Type
-            // 
-            this.Panel_Type.Controls.Add(this.label1);
-            this.Panel_Type.Controls.Add(this.rechercheBTN_type);
-            this.Panel_Type.Controls.Add(this.combobox_type);
-            this.Panel_Type.Location = new System.Drawing.Point(298, 12);
-            this.Panel_Type.Name = "Panel_Type";
-            this.Panel_Type.Size = new System.Drawing.Size(10, 65);
-            this.Panel_Type.TabIndex = 162;
-            this.Panel_Type.Visible = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Silver;
-            this.label1.Location = new System.Drawing.Point(39, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
-            this.label1.TabIndex = 154;
-            this.label1.Text = "Type :";
-            // 
-            // rechercheBTN_type
-            // 
-            this.rechercheBTN_type.BackColor = System.Drawing.Color.Transparent;
-            this.rechercheBTN_type.Image = ((System.Drawing.Image)(resources.GetObject("rechercheBTN_type.Image")));
-            this.rechercheBTN_type.ImageActive = null;
-            this.rechercheBTN_type.Location = new System.Drawing.Point(199, 19);
-            this.rechercheBTN_type.Name = "rechercheBTN_type";
-            this.rechercheBTN_type.Size = new System.Drawing.Size(34, 30);
-            this.rechercheBTN_type.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.rechercheBTN_type.TabIndex = 154;
-            this.rechercheBTN_type.TabStop = false;
-            this.rechercheBTN_type.Zoom = 10;
-            this.rechercheBTN_type.Click += new System.EventHandler(this.rechercheBTN_type_Click);
-            // 
-            // combobox_type
-            // 
-            this.combobox_type.BackColor = System.Drawing.Color.Transparent;
-            this.combobox_type.BorderRadius = 3;
-            this.combobox_type.DisabledColor = System.Drawing.Color.Gray;
-            this.combobox_type.ForeColor = System.Drawing.Color.Silver;
-            this.combobox_type.items = new string[] {
-        "Type",
-        "Date "};
-            this.combobox_type.Location = new System.Drawing.Point(27, 14);
-            this.combobox_type.Name = "combobox_type";
-            this.combobox_type.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.combobox_type.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.combobox_type.selectedIndex = -1;
-            this.combobox_type.Size = new System.Drawing.Size(133, 30);
-            this.combobox_type.TabIndex = 154;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -407,12 +411,12 @@
             // datagrid_Recherche
             // 
             this.datagrid_Recherche.AllowUserToAddRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.datagrid_Recherche.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.datagrid_Recherche.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.datagrid_Recherche.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -420,14 +424,14 @@
             this.datagrid_Recherche.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.datagrid_Recherche.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.datagrid_Recherche.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagrid_Recherche.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagrid_Recherche.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.datagrid_Recherche.ColumnHeadersHeight = 30;
             this.datagrid_Recherche.DoubleBuffered = true;
             this.datagrid_Recherche.EnableHeadersVisualStyles = false;
@@ -437,14 +441,14 @@
             this.datagrid_Recherche.Location = new System.Drawing.Point(302, 125);
             this.datagrid_Recherche.Name = "datagrid_Recherche";
             this.datagrid_Recherche.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagrid_Recherche.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagrid_Recherche.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.datagrid_Recherche.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.datagrid_Recherche.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datagrid_Recherche.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Silver;
@@ -452,8 +456,9 @@
             this.datagrid_Recherche.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.datagrid_Recherche.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.datagrid_Recherche.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datagrid_Recherche.Size = new System.Drawing.Size(859, 322);
+            this.datagrid_Recherche.Size = new System.Drawing.Size(850, 322);
             this.datagrid_Recherche.TabIndex = 166;
+            this.datagrid_Recherche.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagrid_Recherche_CellClick);
             // 
             // combo_inoutsearch
             // 
@@ -519,7 +524,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Silver;
-            this.label9.Location = new System.Drawing.Point(995, 39);
+            this.label9.Location = new System.Drawing.Point(946, 39);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(66, 20);
             this.label9.TabIndex = 171;
@@ -541,7 +546,7 @@
             this.refreshBTN.BackColor = System.Drawing.Color.Transparent;
             this.refreshBTN.Image = ((System.Drawing.Image)(resources.GetObject("refreshBTN.Image")));
             this.refreshBTN.ImageActive = null;
-            this.refreshBTN.Location = new System.Drawing.Point(1067, 31);
+            this.refreshBTN.Location = new System.Drawing.Point(1018, 31);
             this.refreshBTN.Name = "refreshBTN";
             this.refreshBTN.Size = new System.Drawing.Size(35, 32);
             this.refreshBTN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -587,14 +592,29 @@
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
+            // Printbutton
+            // 
+            this.Printbutton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Printbutton.Image = global::GESTIONECOLE.Properties.Resources.printicon;
+            this.Printbutton.ImageActive = null;
+            this.Printbutton.Location = new System.Drawing.Point(1090, 31);
+            this.Printbutton.Name = "Printbutton";
+            this.Printbutton.Size = new System.Drawing.Size(35, 33);
+            this.Printbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Printbutton.TabIndex = 173;
+            this.Printbutton.TabStop = false;
+            this.Printbutton.Visible = false;
+            this.Printbutton.Zoom = 10;
+            this.Printbutton.Click += new System.EventHandler(this.Printbutton_Click);
+            // 
             // TheIn_out_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1173, 712);
-            this.Controls.Add(this.Panel_Type);
+            this.ClientSize = new System.Drawing.Size(1164, 712);
+            this.Controls.Add(this.Printbutton);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.panel_date);
@@ -628,14 +648,16 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TheIn_out_Form";
             this.Load += new System.EventHandler(this.TheIn_out_Form_Load);
-            this.panel_date.ResumeLayout(false);
-            this.panel_date.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.recherchbtn_date)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.Panel_Type.ResumeLayout(false);
             this.Panel_Type.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rechercheBTN_type)).EndInit();
+            this.panel_date.ResumeLayout(false);
+            this.panel_date.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.recherchbtn_date)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_Recherche)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.refreshBTN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Printbutton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -680,5 +702,6 @@
         private Bunifu.Framework.UI.BunifuDropdown Combo_section;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private Bunifu.Framework.UI.BunifuImageButton Printbutton;
     }
 }

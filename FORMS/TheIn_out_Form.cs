@@ -248,18 +248,19 @@ namespace GESTIONECOLE.FORMS
             ee.ShowDialog();
             this.Close();
         }
+
         private void recherchbtn_date_Click(object sender, EventArgs e)
         {
-
             //r.ds.Tables["frais"].Clear();
             costrech = 0;
 
             string date1;
             string date2;
+
             date1 = datetimepicker_from.Value.ToString("yyyy-MM-dd");
             date2 = datetimepicker_TO.Value.ToString("yyyy-MM-dd");
-            tbl.Clear();
 
+            tbl.Clear();
 
             r.connecter();
             r.adapter = new SqlDataAdapter("select f.ft_type as Type,f.ft_cout as Cout,f.ft_date as Date,f.ft_description as Description from frais_total f where f.ft_date between'" + date1 + "' and '" + date2 + "' order by f.ft_date desc ", r.connection);
@@ -267,7 +268,7 @@ namespace GESTIONECOLE.FORMS
             datagrid_Recherche.DataSource = r.ds.Tables["frais"];
 
             for (int i = 0; i < r.ds.Tables["frais"].Rows.Count; i++)
-            {
+            {   
                 costrech = costrech + float.Parse(r.ds.Tables["frais"].Rows[i]["Cout"].ToString());
             }
             totalrecherchLABEL.Text = costrech.ToString();
@@ -282,10 +283,9 @@ namespace GESTIONECOLE.FORMS
             {
                 datagrid_Recherche.DataSource = null;
                 datagrid_Recherche.Rows.Clear();
-
-
                 costrech = 0;
                 deja = true;
+
                 eleve_mois_frais_out();
             }
             else if (Combo_section.selectedValue == "Inscription")
@@ -293,6 +293,7 @@ namespace GESTIONECOLE.FORMS
                 datagrid_Recherche.DataSource = null;
                 datagrid_Recherche.Rows.Clear();
                 deja = true;
+
                 inscription_();
             }
             else if (Combo_section.selectedValue == "ExtraFrais")
@@ -311,7 +312,6 @@ namespace GESTIONECOLE.FORMS
                 datagrid_Recherche.DataSource = null;
                 datagrid_Recherche.Rows.Clear();
 
-
                 costrech = 0;
                 deja = true;
                 the_in();
@@ -320,7 +320,6 @@ namespace GESTIONECOLE.FORMS
             {
                 datagrid_Recherche.DataSource = null;
                 datagrid_Recherche.Rows.Clear();
-
 
                 costrech = 0;
                 deja = true;
@@ -334,7 +333,6 @@ namespace GESTIONECOLE.FORMS
             {
                 r.ds.Tables["frais"].Clear();
                 costrech = 0;
-
             }
             deja = true;
             
@@ -374,6 +372,40 @@ namespace GESTIONECOLE.FORMS
             }
         }
 
+        private void Printbutton_Click(object sender, EventArgs e)
+        {
+            PRINT_IN_OUT io = new PRINT_IN_OUT();
 
+
+            //if (Combo_section.selectedValue == "Payment Mois")
+            //{
+
+            //}
+            //else if (Combo_section.selectedValue == "Inscription")
+            //{
+
+            //}
+            //else if (Combo_section.selectedValue == "ExtraFrais")
+            //{
+
+            //} 
+            //else if(combo_choice.selectedValue == "Date")
+            //{
+
+            //}
+            //else if (combo_choice.selectedValue == "In")
+            //{
+
+            //}
+            //else if (combo_choice.selectedValue == "Out")
+            //{
+            //}
+
+        }
+
+        private void datagrid_Recherche_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

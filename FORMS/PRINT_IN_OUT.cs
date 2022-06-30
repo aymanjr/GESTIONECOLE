@@ -9,35 +9,45 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace GESTIONECOLE.FORMS
 {
-    public partial class Print_FraisForm : Form
+    public partial class PRINT_IN_OUT : Form
     {
-        public  string Date,type,description,cost,datefrais;
-        
+        public string type, count, date, description, annesclr;
+        private Bitmap memorying;
 
-        public Print_FraisForm()
+
+        public PRINT_IN_OUT()
         {
             InitializeComponent();
-            Date = DateTime.Now.ToString("M/d/yyyy");
+            date = DateTime.Now.ToString("M/d/yyyy");
         }
 
+        
+        
+        
         private void Printbutton_MouseHover(object sender, EventArgs e)
         {
             ToolTip a = new ToolTip();
             a.SetToolTip(Printbutton, "Print");
         }
 
-        private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
+
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             Rectangle pagearea = e.PageBounds;
             e.Graphics.DrawImage(memorying, (pagearea.Height / 2) - (this.panelprint.Width / 2), this.panelprint.Location.Y);
         }
 
-        private void Printbutton_Click(object sender, EventArgs e)
+        private void getprintarea(Panel p1)
         {
-            print(this.panelprint);
+            memorying = new Bitmap(p1.Width, p1.Height);
+            p1.DrawToBitmap(memorying, new Rectangle(0, 0, p1.Width, p1.Height));
+
         }
+
 
         private void print(Panel p1)
         {
@@ -50,22 +60,25 @@ namespace GESTIONECOLE.FORMS
 
         }
 
-        private Bitmap memorying;
 
-        private void getprintarea(Panel p1)
+
+        private void Printbutton_Click(object sender, EventArgs e)
         {
-            memorying = new Bitmap(p1.Width, p1.Height);
-            p1.DrawToBitmap(memorying, new Rectangle(0, 0, p1.Width, p1.Height));
-
+            print(this.panelprint);
         }
 
-        private void Print_FraisForm_Load(object sender, EventArgs e)
+        private void PRINT_IN_OUT_Load(object sender, EventArgs e)
         {
-            datetimelabel.Text = Date;
-            typelabel.Text = type;
-            descriptionlabel.Text = description;
-            costlabel.Text = cost;
-            datefraislabel.Text = datefrais;
+
+            datetimelabel.Text = date;
+
+
+
+            typelabel.Text = "";
+            anneescolaire.Text = "";
+            datefraislabel.Text = "";
+            costlabel.Text = "";
+            descriptionlabel.Text = "";
         }
     }
 }
