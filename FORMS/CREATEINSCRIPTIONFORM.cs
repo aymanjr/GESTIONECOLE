@@ -188,41 +188,40 @@ namespace GESTIONECOLE.FORMS
             classid();
             etd_id();
             etd_recherche();
-
-                 if (NIVEAUCOMBO.Text == "" && CLASSCOMBO.Text == "" && elevecombo.Text == "")
-            {    
-                MessageBox.Show("Veuillez saisir"); return;
-
-         
-               if (count_etd == "1")
-                {
+            if (count_etd == "1")
+            {
                     MessageBox.Show("cette etd a ete deja INSCRIER");
 
-                }
-                else
-                {
-                    r.connecter();
-                    r.command = new SqlCommand("insert into inscription values('" + idclass + "','" + id_etd + "','" + DateTime.Now.ToShortDateString().ToString() + "','" + TXTCOST.Text + "')", r.connection);
-                    r.command.ExecuteNonQuery();
+            }
+
+            if (NIVEAUCOMBO.Text == "" && CLASSCOMBO.Text == "" && elevecombo.Text == "")
+            {
+                MessageBox.Show("Veuillez saisir"); return;
 
 
-                    MessageBox.Show("Bien ajouter");
+            }
+            else
+            {
+                r.connecter();
+                r.command = new SqlCommand("insert into inscription values('" + idclass + "','" + id_etd + "','" + DateTime.Now.ToShortDateString().ToString() + "','" + TXTCOST.Text + "')", r.connection);
+                r.command.ExecuteNonQuery();
 
-                    r.deconnecter();
-                    TXTCOST.Clear();
 
-                    NIVEAUCOMBO.Text = "";
-                    CLASSCOMBO.Text = "";
-                    elevecombo.Text = "";
+                MessageBox.Show("Bien ajouter");
 
-                    gridfill();
-                    showrecents();
+                r.deconnecter();
+                TXTCOST.Clear();
 
-                } 
-               }
-           
-            
+                NIVEAUCOMBO.Text = "";
+                CLASSCOMBO.Text = "";
+                elevecombo.Text = "";
+
+                gridfill();
+                showrecents();
+
+            } 
         }
+
         private void print1_Click(object sender, EventArgs e)
         {
 
