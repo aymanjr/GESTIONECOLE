@@ -198,6 +198,12 @@
     <Compile Include="FORMS\Print_FraisForm.Designer.cs">
       <DependentUpon>Print_FraisForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FORMS\Print_Inscription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\Print_Inscription.Designer.cs">
+      <DependentUpon>Print_Inscription.cs</DependentUpon>
+    </Compile>
     <Compile Include="FORMS\print_Paymentdemois.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -304,6 +310,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FORMS\Print_FraisForm.resx">
       <DependentUpon>Print_FraisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\Print_Inscription.resx">
+      <DependentUpon>Print_Inscription.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORMS\print_Paymentdemois.resx">
       <DependentUpon>print_Paymentdemois.cs</DependentUpon>
