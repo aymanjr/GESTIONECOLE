@@ -30,6 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Print_Inscription));
             this.panelprint = new System.Windows.Forms.Panel();
+            this.anneescolairelabel = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.classlabel = new System.Windows.Forms.Label();
+            this.nomcompletlabel = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.datetimelabel = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -41,25 +47,27 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.Printbutton = new Bunifu.Framework.UI.BunifuImageButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.moislabel = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.classlabel = new System.Windows.Forms.Label();
-            this.nomcompletlabel = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.Printbutton = new Bunifu.Framework.UI.BunifuImageButton();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.niveaulabel = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.coutlabel = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.panelprint.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Printbutton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Printbutton)).BeginInit();
             this.SuspendLayout();
             // 
             // panelprint
             // 
             this.panelprint.BackColor = System.Drawing.Color.White;
-            this.panelprint.Controls.Add(this.moislabel);
+            this.panelprint.Controls.Add(this.coutlabel);
+            this.panelprint.Controls.Add(this.label15);
+            this.panelprint.Controls.Add(this.niveaulabel);
+            this.panelprint.Controls.Add(this.label10);
+            this.panelprint.Controls.Add(this.anneescolairelabel);
             this.panelprint.Controls.Add(this.label9);
             this.panelprint.Controls.Add(this.classlabel);
             this.panelprint.Controls.Add(this.nomcompletlabel);
@@ -82,6 +90,66 @@
             this.panelprint.Name = "panelprint";
             this.panelprint.Size = new System.Drawing.Size(816, 574);
             this.panelprint.TabIndex = 160;
+            // 
+            // anneescolairelabel
+            // 
+            this.anneescolairelabel.AutoSize = true;
+            this.anneescolairelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.anneescolairelabel.Location = new System.Drawing.Point(179, 328);
+            this.anneescolairelabel.Name = "anneescolairelabel";
+            this.anneescolairelabel.Size = new System.Drawing.Size(14, 16);
+            this.anneescolairelabel.TabIndex = 28;
+            this.anneescolairelabel.Text = "?";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(21, 328);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(110, 16);
+            this.label9.TabIndex = 27;
+            this.label9.Text = "Anne scolaire :";
+            // 
+            // classlabel
+            // 
+            this.classlabel.AutoSize = true;
+            this.classlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.classlabel.Location = new System.Drawing.Point(181, 293);
+            this.classlabel.Name = "classlabel";
+            this.classlabel.Size = new System.Drawing.Size(14, 16);
+            this.classlabel.TabIndex = 26;
+            this.classlabel.Text = "?";
+            // 
+            // nomcompletlabel
+            // 
+            this.nomcompletlabel.AutoSize = true;
+            this.nomcompletlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nomcompletlabel.Location = new System.Drawing.Point(181, 257);
+            this.nomcompletlabel.Name = "nomcompletlabel";
+            this.nomcompletlabel.Size = new System.Drawing.Size(14, 16);
+            this.nomcompletlabel.TabIndex = 25;
+            this.nomcompletlabel.Text = "?";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(21, 293);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(54, 16);
+            this.label12.TabIndex = 24;
+            this.label12.Text = "Class :";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(23, 257);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(110, 16);
+            this.label13.TabIndex = 23;
+            this.label13.Text = "Nom complet : ";
             // 
             // datetimelabel
             // 
@@ -194,6 +262,16 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "SCHOOL SYSTEM";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(371, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(103, 89);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // Printbutton
             // 
             this.Printbutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -209,76 +287,6 @@
             this.Printbutton.Zoom = 10;
             this.Printbutton.Click += new System.EventHandler(this.Printbutton_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(371, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(103, 89);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // moislabel
-            // 
-            this.moislabel.AutoSize = true;
-            this.moislabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.moislabel.Location = new System.Drawing.Point(179, 328);
-            this.moislabel.Name = "moislabel";
-            this.moislabel.Size = new System.Drawing.Size(14, 16);
-            this.moislabel.TabIndex = 28;
-            this.moislabel.Text = "?";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(21, 328);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(110, 16);
-            this.label9.TabIndex = 27;
-            this.label9.Text = "Anne scolaire :";
-            // 
-            // classlabel
-            // 
-            this.classlabel.AutoSize = true;
-            this.classlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.classlabel.Location = new System.Drawing.Point(181, 293);
-            this.classlabel.Name = "classlabel";
-            this.classlabel.Size = new System.Drawing.Size(14, 16);
-            this.classlabel.TabIndex = 26;
-            this.classlabel.Text = "?";
-            // 
-            // nomcompletlabel
-            // 
-            this.nomcompletlabel.AutoSize = true;
-            this.nomcompletlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nomcompletlabel.Location = new System.Drawing.Point(181, 257);
-            this.nomcompletlabel.Name = "nomcompletlabel";
-            this.nomcompletlabel.Size = new System.Drawing.Size(14, 16);
-            this.nomcompletlabel.TabIndex = 25;
-            this.nomcompletlabel.Text = "?";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(21, 293);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(54, 16);
-            this.label12.TabIndex = 24;
-            this.label12.Text = "Class :";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(23, 257);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(110, 16);
-            this.label13.TabIndex = 23;
-            this.label13.Text = "Nom complet : ";
-            // 
             // printPreviewDialog1
             // 
             this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
@@ -288,6 +296,46 @@
             this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
+            // 
+            // niveaulabel
+            // 
+            this.niveaulabel.AutoSize = true;
+            this.niveaulabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.niveaulabel.Location = new System.Drawing.Point(599, 257);
+            this.niveaulabel.Name = "niveaulabel";
+            this.niveaulabel.Size = new System.Drawing.Size(14, 16);
+            this.niveaulabel.TabIndex = 30;
+            this.niveaulabel.Text = "?";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(441, 257);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(64, 16);
+            this.label10.TabIndex = 29;
+            this.label10.Text = "Niveau :";
+            // 
+            // coutlabel
+            // 
+            this.coutlabel.AutoSize = true;
+            this.coutlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coutlabel.Location = new System.Drawing.Point(600, 304);
+            this.coutlabel.Name = "coutlabel";
+            this.coutlabel.Size = new System.Drawing.Size(14, 16);
+            this.coutlabel.TabIndex = 32;
+            this.coutlabel.Text = "?";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(442, 304);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(46, 16);
+            this.label15.TabIndex = 31;
+            this.label15.Text = "Cout :";
             // 
             // Print_Inscription
             // 
@@ -300,8 +348,8 @@
             this.Text = "Print_Inscription";
             this.panelprint.ResumeLayout(false);
             this.panelprint.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Printbutton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Printbutton)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -322,7 +370,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label moislabel;
+        private System.Windows.Forms.Label anneescolairelabel;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label classlabel;
         private System.Windows.Forms.Label nomcompletlabel;
@@ -330,5 +378,9 @@
         private System.Windows.Forms.Label label13;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Windows.Forms.Label coutlabel;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label niveaulabel;
+        private System.Windows.Forms.Label label10;
     }
 }
