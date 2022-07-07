@@ -51,6 +51,21 @@ namespace GESTIONECOLE.FORMS
             r.deconnecter();
         }
 
+        public void FRAIS_MOIS_ELEVE()
+        {
+            r.connecter();
+            r.command = new SqlCommand("", r.connection);
+            r.reader = r.command.ExecuteReader();
+            while (r.reader.Read())
+            {
+
+                moispayerlist.Items.Add(r.reader.GetValue(0).ToString());
+
+            }
+
+            r.deconnecter();
+        }
+
         public void moisshow()
         {
             comboBox_mois.Clear();
@@ -122,28 +137,7 @@ namespace GESTIONECOLE.FORMS
         }
 
     
-        public void showlastpayment()
-        {
-
-            //TrsprtTYPENOM.Text = "ssssss";
-            r.connecter();
-
-
-            r.command = new SqlCommand(" exec showlastpayment '"+eleveid+"'", r.connection);
-            r.reader = r.command.ExecuteReader();
-            while (r.reader.Read())
-            {
-                //  TrsprtTYPENOM.Text = r.reader.GetValue(0).ToString();
-                TrsprtTYPENOM.Text = r.reader["FRTRSP_type"].ToString();
-                moislabel.Text = r.reader["Mois_nom"].ToString();
-                MontantLABEL.Text = r.reader["FR_TOTAL"].ToString();
-                datepaymentlabel.Text = r.reader["FR_datepayment"].ToString();
-
-
-            }
-
-            r.deconnecter();
-        }
+        
 
 
         //public void lastpayment()
@@ -364,12 +358,66 @@ namespace GESTIONECOLE.FORMS
         }
 
 
+        public void showlastpayment()
+        {
+
+            //TrsprtTYPENOM.Text = "ssssss";
+            //r.connecter();
+            //r.command = new SqlCommand(" exec showlastpayment '" + eleveid + "'", r.connection);
+            //r.reader = r.command.ExecuteReader();
+            //while (r.reader.Read())
+            //{
+            //    //  TrsprtTYPENOM.Text = r.reader.GetValue(0).ToString();
+            //    TrsprtTYPENOM.Text = r.reader["FRTRSP_type"].ToString();
+            //    moislabel.Text = r.reader["Mois_nom"].ToString();
+            //    MontantLABEL.Text = r.reader["FR_TOTAL"].ToString();
+            //    datepaymentlabel.Text = r.reader["FR_datepayment"].ToString();
+            //}
+            //r.deconnecter();
+
+
+            r.connecter();
+
+            r.command = new SqlCommand(" 	" +
+                "select  fme.FR_MOISID# ,  fme.FR_TOTAL ,  fme.FR_datepayment , fme.FR_FRTRSPID#, fme.FR_INSID# " +
+                "from FRAIS_MOIS_ELEVE fme , INSCRIPTION ins, ELEVE el " +
+                "where ins.INS_id = fme.FR_INSID# and ins.INS_eleveID# = el.EL_ID and   el.EL_ID = '" + eleveid + "'", r.connection);
+            r.reader = r.command.ExecuteReader();
+            while (r.reader.Read())
+            {
+                moislabel.Text = r.reader.GetValue(0).ToString();
+                MontantLABEL.Text = r.reader.GetValue(1).ToString();
+                datepaymentlabel.Text = r.reader.GetValue(2).ToString();
+                TrsprtTYPENOM.Text = r.reader.GetValue(3).ToString();
+            }
+
+
+            r.deconnecter();
+        }
+
+
+        public void showtrp()
+        {
+            r.connecter();
+            r.command = new SqlCommand(" select f.FRTRSP_id,f.FRTRSP_montant from FRAIS_MOIS_TRSP f where f.FRTRSP_type  = '" + combo_typetrsp.selectedValue.ToString() + "'  ", r.connection);
+
+            r.reader = r.command.ExecuteReader();
+            while (r.reader.Read())
+            {
+
+                trsptypeid = int.Parse(r.reader.GetValue(0).ToString());
+                trspmontant = float.Parse(r.reader.GetValue(1).ToString());
+
+            }
+
+            r.deconnecter();
+        }
+
         private void PyerBTN_Click(object sender, EventArgs e)
         {
 
             if (txtprenom.Text == "Prenom" || txt_nomeleve.Text == "Nom")
             {
-
                 MessageBox.Show("Enter un eleve ");
 
             }  else if(validElev == false)
@@ -378,7 +426,6 @@ namespace GESTIONECOLE.FORMS
             }
             else
             {
-
                 if (comboBox_mois.selectedValue == "")
                 {
                     MessageBox.Show("Entrer un Mois  ");
@@ -386,19 +433,12 @@ namespace GESTIONECOLE.FORMS
                 }
                 else
                 {
-
-
-
                     if (clickcalcul == false)
                     {
                         MessageBox.Show("Calculer le montant depuis payer ");
-
                     }
                     else
                     {
-
-
-
 
                         if (!trspCHECKBOX.Checked)
                         {
