@@ -401,7 +401,7 @@
             this.bunifuImageButton4.ImageActive = null;
             this.bunifuImageButton4.Location = new System.Drawing.Point(150, 6);
             this.bunifuImageButton4.Name = "bunifuImageButton4";
-            this.bunifuImageButton4.Size = new System.Drawing.Size(77, 62);
+            this.bunifuImageButton4.Size = new System.Drawing.Size(77, 54);
             this.bunifuImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton4.TabIndex = 123;
             this.bunifuImageButton4.TabStop = false;

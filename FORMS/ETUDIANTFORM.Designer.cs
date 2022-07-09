@@ -158,7 +158,7 @@
             this.dataGridView1.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Silver;
             this.dataGridView1.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(731, 541);
+            this.dataGridView1.Size = new System.Drawing.Size(731, 383);
             this.dataGridView1.TabIndex = 56;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -264,7 +264,7 @@
             this.bunifuFlatButton2.IconVisible = false;
             this.bunifuFlatButton2.IconZoom = 0D;
             this.bunifuFlatButton2.IsTab = true;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(489, 609);
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(479, 466);
             this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(0);
             this.bunifuFlatButton2.Name = "bunifuFlatButton2";
             this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
@@ -328,7 +328,7 @@
             this.bunifuFlatButton3.IconVisible = false;
             this.bunifuFlatButton3.IconZoom = 0D;
             this.bunifuFlatButton3.IsTab = true;
-            this.bunifuFlatButton3.Location = new System.Drawing.Point(628, 609);
+            this.bunifuFlatButton3.Location = new System.Drawing.Point(642, 466);
             this.bunifuFlatButton3.Margin = new System.Windows.Forms.Padding(0);
             this.bunifuFlatButton3.Name = "bunifuFlatButton3";
             this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
@@ -348,7 +348,7 @@
             this.panel1.Controls.Add(this.bunifuCustomLabel3);
             this.panel1.Controls.Add(this.txt_recherche);
             this.panel1.Controls.Add(this.bunifuCustomLabel2);
-            this.panel1.Location = new System.Drawing.Point(12, 325);
+            this.panel1.Location = new System.Drawing.Point(12, 294);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(220, 133);
             this.panel1.TabIndex = 149;
@@ -404,7 +404,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
-            this.ClientSize = new System.Drawing.Size(1000, 646);
+            this.ClientSize = new System.Drawing.Size(1000, 503);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.bunifuFlatButton3);
             this.Controls.Add(this.PANEL_ANNESCOLAIRE);
