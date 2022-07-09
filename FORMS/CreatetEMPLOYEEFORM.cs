@@ -45,7 +45,7 @@ namespace GESTIONECOLE.FORMS
                 SEXcombo.SelectedItem == null ||
                 (!checkBoxCNSS_OUI.Checked && !checkBoxCNSS_NON.Checked))
             {
-                MessageBox.Show("DES COLUMNS EST VIDE");
+                MessageBox.Show("Les colonnes sont vides");
             }
             else
             {
@@ -57,7 +57,7 @@ namespace GESTIONECOLE.FORMS
                 r.command.ExecuteNonQuery();
                 r.deconnecter();
 
-                MessageBox.Show("EMPLOYEE A ETE CREE ");
+                MessageBox.Show("Employee a éte crée ");
 
                 EMPLOYEEFORM ee = new EMPLOYEEFORM();
                this.Hide();
@@ -70,7 +70,7 @@ namespace GESTIONECOLE.FORMS
 
         private void CANCELBTN_Click_1(object sender, EventArgs e)
         {
-            if (MessageBox.Show("TU VEUX EXIT ? ", "ALERT", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            if (MessageBox.Show("Tu veux sortir ? ", "Questione", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
             {
                  EMPLOYEEFORM ee = new EMPLOYEEFORM();
 

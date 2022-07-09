@@ -28,7 +28,7 @@ namespace GESTIONECOLE.FORMS
             if (r.ds.Tables["eleve"].Rows.Count == 0)
             {
 
-                MessageBox.Show("aucun eleve de ce nom et prenom");
+                MessageBox.Show("Aucune éleve avec ce nom et ce prénom", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Hand);
                 txt_nomeleve.Text = "";
                 txtprenom.Text = "";
 
@@ -255,7 +255,7 @@ namespace GESTIONECOLE.FORMS
 
             if (string.IsNullOrWhiteSpace(txt_nomeleve.Text) || string.IsNullOrWhiteSpace(txtprenom.Text))
             {
-                MessageBox.Show("Entre le nom et le prenom de eleve");
+                MessageBox.Show("Entrer le nom et le prénom d'éleve", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Hand);
 
             }
             else
@@ -418,24 +418,24 @@ namespace GESTIONECOLE.FORMS
 
             if (txtprenom.Text == "Prenom" || txt_nomeleve.Text == "Nom")
             {
-                MessageBox.Show("Enter un eleve ");
+                MessageBox.Show("Enter un éleve ", "Information", MessageBoxButtons.OK,MessageBoxIcon.Information) ;
 
             }  else if(validElev == false)
             {
-                MessageBox.Show("Enter un eleve ");
+                MessageBox.Show("Enter un éleve ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
                 if (comboBox_mois.selectedValue == "")
                 {
-                    MessageBox.Show("Entrer un Mois  ");
+                    MessageBox.Show("Selctioner un mois  ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
                 else
                 {
                     if (clickcalcul == false)
                     {
-                        MessageBox.Show("Calculer le montant depuis payer ");
+                        MessageBox.Show("Calculer le montant depuis payer ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
@@ -448,7 +448,7 @@ namespace GESTIONECOLE.FORMS
                         r.command = new SqlCommand(" exec ajouterfraismois '" + insid + "','" + annescolaire + "','" + trsptypeid + "','" + moisid + "','" + txtmontanttotal.Text + "','" + DateTime.Now.ToShortDateString() + "' ", r.connection);
 
                         r.command.ExecuteNonQuery();
-                        MessageBox.Show("payment a ete ajouter ");
+                        MessageBox.Show("Paiment a été ajouter ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
 

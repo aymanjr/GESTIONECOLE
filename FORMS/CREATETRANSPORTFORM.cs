@@ -52,7 +52,7 @@ namespace GESTIONECOLE.FORMS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("TU VEUX EXIT ? ", "ALERT", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            if (MessageBox.Show("Tu veux sortir ? ", "Questione", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
             {
                 TRANSPORTFORM ee = new TRANSPORTFORM();
                 this.Hide();
@@ -71,14 +71,14 @@ namespace GESTIONECOLE.FORMS
 
             if (string.IsNullOrEmpty(txtmatricule.Text) || string.IsNullOrEmpty(txtcapaciter.Text) || string.IsNullOrEmpty(txtmodule.Text) || string.IsNullOrEmpty(txtstaut.Text) || chauffeurcombo.SelectedItem == null || accompcombo.SelectedItem == null)
             {
-                MessageBox.Show("les case est vide");
+                MessageBox.Show("Les cases sont vides !");
             }
             else
             {
                 r.connecter();
                 r.command = new SqlCommand(" INSERT INTO TRANSPORT VALUES('" + txtmatricule.Text + "','" + txtmodule.Text + "','" + txtcapaciter.Text + "','" + chauffeurcombo.SelectedValue.ToString() + "','" + accompcombo.SelectedValue.ToString() + "','" + txtstaut.Text + "')", r.connection);
 
-                MessageBox.Show("TRANSPORT A ETE CRIER");
+                MessageBox.Show("Le transport a été crée");
                 r.command.ExecuteNonQuery();
                 r.deconnecter();
 

@@ -72,7 +72,7 @@ namespace GESTIONECOLE.FORMS
 
                 r.command = new SqlCommand(" insert into extra_frais values('" + description_richtext.Text + "','" + thetype + "','" + txt_cost.Text + "','" + DateTime.Now.ToShortDateString() + "') ", r.connection);
                 r.command.ExecuteNonQuery();
-                MessageBox.Show("bien ajouter");
+                MessageBox.Show("Bien ajouter", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 r.deconnecter();
 
                 Frais_Form ee = new Frais_Form();
@@ -96,7 +96,7 @@ namespace GESTIONECOLE.FORMS
 
                 if (char.IsLetter(txt_cost.Text[i]))
                 {
-                    MessageBox.Show("just les digits");
+                    MessageBox.Show("Juste les digits", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txt_cost.Text = "";
                 }
 

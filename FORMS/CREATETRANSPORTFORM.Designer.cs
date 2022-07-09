@@ -96,9 +96,9 @@
             this.label1.ForeColor = System.Drawing.Color.Silver;
             this.label1.Location = new System.Drawing.Point(12, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(237, 20);
+            this.label1.Size = new System.Drawing.Size(174, 20);
             this.label1.TabIndex = 9;
-            this.label1.Text = "TRANSPORT MATRICULE : ";
+            this.label1.Text = "Transport Matricule :";
             // 
             // label2
             // 
@@ -107,9 +107,9 @@
             this.label2.ForeColor = System.Drawing.Color.Silver;
             this.label2.Location = new System.Drawing.Point(12, 73);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(205, 20);
+            this.label2.Size = new System.Drawing.Size(159, 20);
             this.label2.TabIndex = 10;
-            this.label2.Text = "TRANSPORT MODULE :";
+            this.label2.Text = "Transport module :";
             // 
             // label4
             // 
@@ -118,9 +118,9 @@
             this.label4.ForeColor = System.Drawing.Color.Silver;
             this.label4.Location = new System.Drawing.Point(12, 189);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(197, 20);
+            this.label4.Size = new System.Drawing.Size(148, 20);
             this.label4.TabIndex = 12;
-            this.label4.Text = "TRANSPORT STATUT :";
+            this.label4.Text = "Transport statut :";
             // 
             // label6
             // 
@@ -129,9 +129,9 @@
             this.label6.ForeColor = System.Drawing.Color.Silver;
             this.label6.Location = new System.Drawing.Point(12, 129);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(230, 20);
+            this.label6.Size = new System.Drawing.Size(175, 20);
             this.label6.TabIndex = 14;
-            this.label6.Text = "TRANSPORT CAPACITER :";
+            this.label6.Text = "Transport capaciter :";
             // 
             // label7
             // 
@@ -140,9 +140,9 @@
             this.label7.ForeColor = System.Drawing.Color.Silver;
             this.label7.Location = new System.Drawing.Point(12, 241);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(240, 20);
+            this.label7.Size = new System.Drawing.Size(178, 20);
             this.label7.TabIndex = 15;
-            this.label7.Text = "TRANSPORT CHAUFFEUR :";
+            this.label7.Text = "Transport chauffeur :";
             // 
             // label8
             // 
@@ -151,9 +151,9 @@
             this.label8.ForeColor = System.Drawing.Color.Silver;
             this.label8.Location = new System.Drawing.Point(12, 291);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(209, 20);
+            this.label8.Size = new System.Drawing.Size(168, 20);
             this.label8.TabIndex = 16;
-            this.label8.Text = "TRANSPORT ACCOMP : ";
+            this.label8.Text = "Accompagnement : ";
             // 
             // AjouterBtn
             // 
@@ -201,7 +201,7 @@
             this.cancelbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.cancelbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.cancelbtn.BorderRadius = 5;
-            this.cancelbtn.ButtonText = "Cancel";
+            this.cancelbtn.ButtonText = "Annuler";
             this.cancelbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cancelbtn.DisabledColor = System.Drawing.Color.Gray;
             this.cancelbtn.Iconcolor = System.Drawing.Color.Transparent;
@@ -225,7 +225,7 @@
             this.cancelbtn.selected = true;
             this.cancelbtn.Size = new System.Drawing.Size(80, 28);
             this.cancelbtn.TabIndex = 107;
-            this.cancelbtn.Text = "Cancel";
+            this.cancelbtn.Text = "Annuler";
             this.cancelbtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.cancelbtn.Textcolor = System.Drawing.Color.Silver;
             this.cancelbtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

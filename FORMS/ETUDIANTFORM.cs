@@ -94,7 +94,7 @@ namespace GESTIONECOLE
             r.command.ExecuteNonQuery();
             r.deconnecter();
 
-            if (MessageBox.Show("eleve est supprimé ", "Terminer", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
+            if (MessageBox.Show("l'eleve a été supprimé ", "Terminer", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
             {
                 list_ETUDIANT();
 
@@ -106,7 +106,7 @@ namespace GESTIONECOLE
 
             r.cmdb = new SqlCommandBuilder(r.adapter);
             r.adapter.Update(r.ds, "eleve");
-            if (MessageBox.Show("eleve est Modifer ", "Terminer", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
+            if (MessageBox.Show("l'eleve a été Modifié ", "Terminer", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
             {
                 list_ETUDIANT();
 
@@ -194,7 +194,7 @@ namespace GESTIONECOLE
             r.adapter.Fill(r.ds, "eleve");
             if (r.ds.Tables["eleve"].Rows.Count == 0)
             {
-                MessageBox.Show("aucun eleve de ce nom et prenom");
+                MessageBox.Show("Aucun L'eleve avec ce nom et prenom");
                 txt_nomeleve.Text = "";
                 txtprenom.Text = "";
             }
@@ -211,7 +211,7 @@ namespace GESTIONECOLE
         {
             if (string.IsNullOrWhiteSpace(txt_nomeleve.Text) || string.IsNullOrWhiteSpace(txtprenom.Text))
             {
-                MessageBox.Show("Entre le nom et le prenom de eleve");
+                MessageBox.Show("Entre le nom et le prénom de éleve","Information", MessageBoxButtons.OK,MessageBoxIcon.Information);
 
             }
             else
@@ -238,7 +238,7 @@ namespace GESTIONECOLE
             {
                 if (char.IsDigit(txt_nomeleve.Text[i]))
                 {
-                    MessageBox.Show("just letter ");
+                    MessageBox.Show("Juste les lettres ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txt_nomeleve.Text = "";
                 }
             }

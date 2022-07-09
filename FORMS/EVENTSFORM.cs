@@ -73,7 +73,7 @@ namespace GESTIONECOLE.FORMS
             if (string.IsNullOrWhiteSpace(txtnom.Text) || string.IsNullOrWhiteSpace(txtdescrip.Text))
             {
 
-                MessageBox.Show("Remplir tout les champs ", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                MessageBox.Show("Remplir tous les champes ", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Hand);
             }
             else
             {
@@ -82,7 +82,7 @@ namespace GESTIONECOLE.FORMS
                 r.command = new SqlCommand("insert into EVENTES values('" + txtnom.Text + "','" + txtdescrip.Text + "','" + datetimepicker1.Value.ToShortDateString().ToString() + "' ) ", r.connection);
 
                 r.command.ExecuteNonQuery();
-                if (MessageBox.Show("Eevent bien cree  ", " DONE ", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
+                if (MessageBox.Show("L'événement a été crée", "terminer", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
                 {
                     txtnom.Text = "Nom";
                     txtdescrip.Text = "";
@@ -128,7 +128,7 @@ namespace GESTIONECOLE.FORMS
         {
             if (dataGridView1.SelectedRows.Count == 0)
             {
-                MessageBox.Show("Selectionner une Row dans la liste ", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                MessageBox.Show("Sélectionner une ligne dans la liste ", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Hand);
 
             }
             else
@@ -137,7 +137,7 @@ namespace GESTIONECOLE.FORMS
                 r.command = new SqlCommand(" delete EVENTES where EV_ID  = '" + eventid.ToString() + "'", r.connection);
                 r.command.ExecuteNonQuery();
                 r.deconnecter();
-                if (MessageBox.Show("Event bien Supprimer ", "DONE ", MessageBoxButtons.OK, MessageBoxIcon.Hand) == DialogResult.OK)
+                if (MessageBox.Show("L'événement a été Supprimer ", "Terminer ", MessageBoxButtons.OK, MessageBoxIcon.Hand) == DialogResult.OK)
                 {
                     eventsshow();
                 }
@@ -157,7 +157,7 @@ namespace GESTIONECOLE.FORMS
         {
             r.cmdb = new SqlCommandBuilder(r.adapter);
             r.adapter.Update(r.ds, "events");
-            if (MessageBox.Show("Event is updated ", "DONE", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
+            if (MessageBox.Show("L'événement a été modife ", "Terminer", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
             {
                 eventsshow();
 
@@ -205,9 +205,9 @@ namespace GESTIONECOLE.FORMS
             r.dt1.Load(r.reader);
                if (r.dt1.Rows.Count == 0 )
             {
-                nomlabelProchaine.Text = "Auncun Prochain Events";
-                richTextBoxProchaine.Text = "Auncun Prochain Events";
-                datelabelProchaine.Text="Auncun Prochain Events";
+                nomlabelProchaine.Text = "Auncun Prochain événement ";
+                richTextBoxProchaine.Text = "Auncun Prochain événement";
+                datelabelProchaine.Text= "Auncun Prochain événement";
             }
             else
             {

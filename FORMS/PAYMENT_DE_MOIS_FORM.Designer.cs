@@ -80,12 +80,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Silver;
-            this.label1.Location = new System.Drawing.Point(1258, 14);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(839, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(372, 37);
+            this.label1.Size = new System.Drawing.Size(270, 25);
             this.label1.TabIndex = 128;
-            this.label1.Text = "Eleve Dernier Payment ";
+            this.label1.Text = "L\'éleve Dernier Paiment ";
             // 
             // panel3
             // 
@@ -102,10 +101,9 @@
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.bunifuImageButton4);
-            this.panel3.Location = new System.Drawing.Point(1191, 69);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel3.Location = new System.Drawing.Point(794, 45);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(513, 697);
+            this.panel3.Size = new System.Drawing.Size(342, 453);
             this.panel3.TabIndex = 127;
             // 
             // datepaymentlabel
@@ -113,10 +111,9 @@
             this.datepaymentlabel.AutoSize = true;
             this.datepaymentlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datepaymentlabel.ForeColor = System.Drawing.Color.Silver;
-            this.datepaymentlabel.Location = new System.Drawing.Point(246, 575);
-            this.datepaymentlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.datepaymentlabel.Location = new System.Drawing.Point(164, 374);
             this.datepaymentlabel.Name = "datepaymentlabel";
-            this.datepaymentlabel.Size = new System.Drawing.Size(0, 25);
+            this.datepaymentlabel.Size = new System.Drawing.Size(0, 16);
             this.datepaymentlabel.TabIndex = 141;
             // 
             // label9
@@ -124,10 +121,9 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Silver;
-            this.label9.Location = new System.Drawing.Point(6, 575);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(4, 374);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(166, 25);
+            this.label9.Size = new System.Drawing.Size(116, 16);
             this.label9.TabIndex = 140;
             this.label9.Text = "Date Payment : ";
             // 
@@ -136,10 +132,9 @@
             this.MontantLABEL.AutoSize = true;
             this.MontantLABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MontantLABEL.ForeColor = System.Drawing.Color.Silver;
-            this.MontantLABEL.Location = new System.Drawing.Point(246, 495);
-            this.MontantLABEL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.MontantLABEL.Location = new System.Drawing.Point(164, 322);
             this.MontantLABEL.Name = "MontantLABEL";
-            this.MontantLABEL.Size = new System.Drawing.Size(0, 25);
+            this.MontantLABEL.Size = new System.Drawing.Size(0, 16);
             this.MontantLABEL.TabIndex = 139;
             // 
             // moislabel
@@ -147,10 +142,9 @@
             this.moislabel.AutoSize = true;
             this.moislabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moislabel.ForeColor = System.Drawing.Color.Silver;
-            this.moislabel.Location = new System.Drawing.Point(246, 406);
-            this.moislabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.moislabel.Location = new System.Drawing.Point(164, 264);
             this.moislabel.Name = "moislabel";
-            this.moislabel.Size = new System.Drawing.Size(0, 25);
+            this.moislabel.Size = new System.Drawing.Size(0, 16);
             this.moislabel.TabIndex = 138;
             // 
             // TrsprtTYPENOM
@@ -158,10 +152,9 @@
             this.TrsprtTYPENOM.AutoSize = true;
             this.TrsprtTYPENOM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TrsprtTYPENOM.ForeColor = System.Drawing.Color.Silver;
-            this.TrsprtTYPENOM.Location = new System.Drawing.Point(246, 315);
-            this.TrsprtTYPENOM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.TrsprtTYPENOM.Location = new System.Drawing.Point(164, 205);
             this.TrsprtTYPENOM.Name = "TrsprtTYPENOM";
-            this.TrsprtTYPENOM.Size = new System.Drawing.Size(0, 25);
+            this.TrsprtTYPENOM.Size = new System.Drawing.Size(0, 16);
             this.TrsprtTYPENOM.TabIndex = 137;
             // 
             // NOMCLASSLABEL2
@@ -169,10 +162,9 @@
             this.NOMCLASSLABEL2.AutoSize = true;
             this.NOMCLASSLABEL2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NOMCLASSLABEL2.ForeColor = System.Drawing.Color.Silver;
-            this.NOMCLASSLABEL2.Location = new System.Drawing.Point(246, 240);
-            this.NOMCLASSLABEL2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.NOMCLASSLABEL2.Location = new System.Drawing.Point(164, 156);
             this.NOMCLASSLABEL2.Name = "NOMCLASSLABEL2";
-            this.NOMCLASSLABEL2.Size = new System.Drawing.Size(0, 25);
+            this.NOMCLASSLABEL2.Size = new System.Drawing.Size(0, 16);
             this.NOMCLASSLABEL2.TabIndex = 136;
             // 
             // nomcompleteleveLABEL
@@ -180,10 +172,9 @@
             this.nomcompleteleveLABEL.AutoSize = true;
             this.nomcompleteleveLABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nomcompleteleveLABEL.ForeColor = System.Drawing.Color.Silver;
-            this.nomcompleteleveLABEL.Location = new System.Drawing.Point(246, 166);
-            this.nomcompleteleveLABEL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.nomcompleteleveLABEL.Location = new System.Drawing.Point(164, 108);
             this.nomcompleteleveLABEL.Name = "nomcompleteleveLABEL";
-            this.nomcompleteleveLABEL.Size = new System.Drawing.Size(0, 25);
+            this.nomcompleteleveLABEL.Size = new System.Drawing.Size(0, 16);
             this.nomcompleteleveLABEL.TabIndex = 135;
             // 
             // label12
@@ -191,10 +182,9 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Silver;
-            this.label12.Location = new System.Drawing.Point(4, 315);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Location = new System.Drawing.Point(3, 205);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(171, 25);
+            this.label12.Size = new System.Drawing.Size(120, 16);
             this.label12.TabIndex = 127;
             this.label12.Text = "Transport type : ";
             // 
@@ -203,10 +193,9 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Silver;
-            this.label11.Location = new System.Drawing.Point(6, 240);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(4, 156);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(80, 25);
+            this.label11.Size = new System.Drawing.Size(54, 16);
             this.label11.TabIndex = 126;
             this.label11.Text = "Class :";
             // 
@@ -215,10 +204,9 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Silver;
-            this.label10.Location = new System.Drawing.Point(6, 495);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(4, 322);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(109, 25);
+            this.label10.Size = new System.Drawing.Size(73, 16);
             this.label10.TabIndex = 125;
             this.label10.Text = "Montant : ";
             // 
@@ -227,10 +215,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Silver;
-            this.label3.Location = new System.Drawing.Point(6, 408);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(4, 265);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 25);
+            this.label3.Size = new System.Drawing.Size(52, 16);
             this.label3.TabIndex = 124;
             this.label3.Text = "Mois : ";
             // 
@@ -239,10 +226,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Silver;
-            this.label2.Location = new System.Drawing.Point(4, 166);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(3, 108);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 25);
+            this.label2.Size = new System.Drawing.Size(110, 16);
             this.label2.TabIndex = 123;
             this.label2.Text = "Nom complet : ";
             // 
@@ -251,10 +237,9 @@
             this.bunifuImageButton4.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton4.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton4.Image")));
             this.bunifuImageButton4.ImageActive = null;
-            this.bunifuImageButton4.Location = new System.Drawing.Point(188, 20);
-            this.bunifuImageButton4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuImageButton4.Location = new System.Drawing.Point(125, 13);
             this.bunifuImageButton4.Name = "bunifuImageButton4";
-            this.bunifuImageButton4.Size = new System.Drawing.Size(153, 117);
+            this.bunifuImageButton4.Size = new System.Drawing.Size(102, 76);
             this.bunifuImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton4.TabIndex = 123;
             this.bunifuImageButton4.TabStop = false;
@@ -263,10 +248,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.panel2.Location = new System.Drawing.Point(1162, -23);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel2.Location = new System.Drawing.Point(775, -15);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(15, 812);
+            this.panel2.Size = new System.Drawing.Size(10, 528);
             this.panel2.TabIndex = 126;
             // 
             // label4
@@ -274,12 +258,11 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Silver;
-            this.label4.Location = new System.Drawing.Point(568, 9);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(379, 6);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(287, 37);
+            this.label4.Size = new System.Drawing.Size(236, 25);
             this.label4.TabIndex = 130;
-            this.label4.Text = "Payment de Mois ";
+            this.label4.Text = "Les paiment de mois ";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // bunifuFlatButton1
@@ -304,14 +287,14 @@
             this.bunifuFlatButton1.IconVisible = false;
             this.bunifuFlatButton1.IconZoom = 0D;
             this.bunifuFlatButton1.IsTab = true;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(-12, -5);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(-8, -3);
             this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(0);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.bunifuFlatButton1.selected = true;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(252, 52);
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(168, 34);
             this.bunifuFlatButton1.TabIndex = 129;
             this.bunifuFlatButton1.Text = "Accueil";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -325,11 +308,10 @@
             this.moispayerlist.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moispayerlist.ForeColor = System.Drawing.Color.Silver;
             this.moispayerlist.FormattingEnabled = true;
-            this.moispayerlist.ItemHeight = 29;
-            this.moispayerlist.Location = new System.Drawing.Point(14, 138);
-            this.moispayerlist.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.moispayerlist.ItemHeight = 18;
+            this.moispayerlist.Location = new System.Drawing.Point(9, 90);
             this.moispayerlist.Name = "moispayerlist";
-            this.moispayerlist.Size = new System.Drawing.Size(246, 178);
+            this.moispayerlist.Size = new System.Drawing.Size(165, 112);
             this.moispayerlist.TabIndex = 131;
             // 
             // moisnonpayerlist
@@ -338,11 +320,10 @@
             this.moisnonpayerlist.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moisnonpayerlist.ForeColor = System.Drawing.Color.Silver;
             this.moisnonpayerlist.FormattingEnabled = true;
-            this.moisnonpayerlist.ItemHeight = 29;
-            this.moisnonpayerlist.Location = new System.Drawing.Point(14, 477);
-            this.moisnonpayerlist.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.moisnonpayerlist.ItemHeight = 18;
+            this.moisnonpayerlist.Location = new System.Drawing.Point(9, 310);
             this.moisnonpayerlist.Name = "moisnonpayerlist";
-            this.moisnonpayerlist.Size = new System.Drawing.Size(246, 178);
+            this.moisnonpayerlist.Size = new System.Drawing.Size(165, 112);
             this.moisnonpayerlist.TabIndex = 132;
             // 
             // trsplabel
@@ -350,10 +331,9 @@
             this.trsplabel.AutoSize = true;
             this.trsplabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.trsplabel.ForeColor = System.Drawing.Color.Silver;
-            this.trsplabel.Location = new System.Drawing.Point(4, 20);
-            this.trsplabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.trsplabel.Location = new System.Drawing.Point(3, 13);
             this.trsplabel.Name = "trsplabel";
-            this.trsplabel.Size = new System.Drawing.Size(230, 29);
+            this.trsplabel.Size = new System.Drawing.Size(140, 18);
             this.trsplabel.TabIndex = 136;
             this.trsplabel.Text = "Type de Transport : ";
             this.trsplabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -363,10 +343,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Silver;
-            this.label6.Location = new System.Drawing.Point(366, 471);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(244, 306);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(193, 29);
+            this.label6.Size = new System.Drawing.Size(120, 18);
             this.label6.TabIndex = 137;
             this.label6.Text = "Avec Transport : ";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -376,10 +355,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Silver;
-            this.label7.Location = new System.Drawing.Point(364, 385);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(243, 250);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(205, 29);
+            this.label7.Size = new System.Drawing.Size(127, 18);
             this.label7.TabIndex = 138;
             this.label7.Text = "Frais de la class  :";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -389,10 +367,9 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Silver;
-            this.label8.Location = new System.Drawing.Point(364, 311);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(243, 202);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(91, 29);
+            this.label8.Size = new System.Drawing.Size(58, 18);
             this.label8.TabIndex = 139;
             this.label8.Text = "Class : ";
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -412,11 +389,11 @@
             this.txtprenom.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.txtprenom.LineMouseHoverColor = System.Drawing.Color.Silver;
             this.txtprenom.LineThickness = 4;
-            this.txtprenom.Location = new System.Drawing.Point(726, 106);
-            this.txtprenom.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtprenom.Location = new System.Drawing.Point(484, 69);
+            this.txtprenom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtprenom.MaxLength = 32767;
             this.txtprenom.Name = "txtprenom";
-            this.txtprenom.Size = new System.Drawing.Size(196, 57);
+            this.txtprenom.Size = new System.Drawing.Size(131, 37);
             this.txtprenom.TabIndex = 143;
             this.txtprenom.Text = "Prenom";
             this.txtprenom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -428,10 +405,9 @@
             this.eleverechercherBTN.BackColor = System.Drawing.Color.Transparent;
             this.eleverechercherBTN.Image = ((System.Drawing.Image)(resources.GetObject("eleverechercherBTN.Image")));
             this.eleverechercherBTN.ImageActive = null;
-            this.eleverechercherBTN.Location = new System.Drawing.Point(1058, 106);
-            this.eleverechercherBTN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.eleverechercherBTN.Location = new System.Drawing.Point(705, 69);
             this.eleverechercherBTN.Name = "eleverechercherBTN";
-            this.eleverechercherBTN.Size = new System.Drawing.Size(70, 57);
+            this.eleverechercherBTN.Size = new System.Drawing.Size(47, 37);
             this.eleverechercherBTN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.eleverechercherBTN.TabIndex = 142;
             this.eleverechercherBTN.TabStop = false;
@@ -453,11 +429,11 @@
             this.txt_nomeleve.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.txt_nomeleve.LineMouseHoverColor = System.Drawing.Color.Silver;
             this.txt_nomeleve.LineThickness = 4;
-            this.txt_nomeleve.Location = new System.Drawing.Point(506, 106);
-            this.txt_nomeleve.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txt_nomeleve.Location = new System.Drawing.Point(337, 69);
+            this.txt_nomeleve.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_nomeleve.MaxLength = 32767;
             this.txt_nomeleve.Name = "txt_nomeleve";
-            this.txt_nomeleve.Size = new System.Drawing.Size(189, 57);
+            this.txt_nomeleve.Size = new System.Drawing.Size(126, 37);
             this.txt_nomeleve.TabIndex = 141;
             this.txt_nomeleve.Text = "Nom";
             this.txt_nomeleve.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -477,11 +453,11 @@
             this.txtfraisCLASS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtfraisCLASS.ForeColor = System.Drawing.Color.Silver;
             this.txtfraisCLASS.isPassword = false;
-            this.txtfraisCLASS.Location = new System.Drawing.Point(711, 385);
-            this.txtfraisCLASS.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtfraisCLASS.Location = new System.Drawing.Point(474, 250);
+            this.txtfraisCLASS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtfraisCLASS.MaxLength = 32767;
             this.txtfraisCLASS.Name = "txtfraisCLASS";
-            this.txtfraisCLASS.Size = new System.Drawing.Size(158, 71);
+            this.txtfraisCLASS.Size = new System.Drawing.Size(105, 46);
             this.txtfraisCLASS.TabIndex = 147;
             this.txtfraisCLASS.Text = "0";
             this.txtfraisCLASS.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -492,10 +468,9 @@
             this.classnomLABEL.AutoSize = true;
             this.classnomLABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.classnomLABEL.ForeColor = System.Drawing.Color.Silver;
-            this.classnomLABEL.Location = new System.Drawing.Point(718, 311);
-            this.classnomLABEL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.classnomLABEL.Location = new System.Drawing.Point(479, 202);
             this.classnomLABEL.Name = "classnomLABEL";
-            this.classnomLABEL.Size = new System.Drawing.Size(160, 29);
+            this.classnomLABEL.Size = new System.Drawing.Size(100, 18);
             this.classnomLABEL.TabIndex = 148;
             this.classnomLABEL.Text = "Nom de class";
             this.classnomLABEL.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -518,9 +493,8 @@
             this.trspCHECKBOX.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
             this.trspCHECKBOX.Cursor = System.Windows.Forms.Cursors.Hand;
             this.trspCHECKBOX.CustomCheckmarkImage = null;
-            this.trspCHECKBOX.Location = new System.Drawing.Point(711, 466);
-            this.trspCHECKBOX.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.trspCHECKBOX.MinimumSize = new System.Drawing.Size(26, 26);
+            this.trspCHECKBOX.Location = new System.Drawing.Point(474, 303);
+            this.trspCHECKBOX.MinimumSize = new System.Drawing.Size(17, 17);
             this.trspCHECKBOX.Name = "trspCHECKBOX";
             this.trspCHECKBOX.OnCheck.BorderColor = System.Drawing.Color.White;
             this.trspCHECKBOX.OnCheck.BorderRadius = 2;
@@ -548,7 +522,7 @@
             this.trspCHECKBOX.OnUncheck.BorderRadius = 2;
             this.trspCHECKBOX.OnUncheck.BorderThickness = 2;
             this.trspCHECKBOX.OnUncheck.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.trspCHECKBOX.Size = new System.Drawing.Size(42, 42);
+            this.trspCHECKBOX.Size = new System.Drawing.Size(28, 28);
             this.trspCHECKBOX.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Bunifu;
             this.trspCHECKBOX.TabIndex = 151;
             this.trspCHECKBOX.ThreeState = false;
@@ -560,10 +534,9 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Silver;
-            this.label14.Location = new System.Drawing.Point(366, 235);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Location = new System.Drawing.Point(244, 153);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(77, 29);
+            this.label14.Size = new System.Drawing.Size(49, 18);
             this.label14.TabIndex = 153;
             this.label14.Text = "Mois :";
             this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -579,11 +552,11 @@
             this.txtmontanttotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtmontanttotal.ForeColor = System.Drawing.Color.Silver;
             this.txtmontanttotal.isPassword = false;
-            this.txtmontanttotal.Location = new System.Drawing.Point(711, 700);
-            this.txtmontanttotal.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtmontanttotal.Location = new System.Drawing.Point(474, 455);
+            this.txtmontanttotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtmontanttotal.MaxLength = 32767;
             this.txtmontanttotal.Name = "txtmontanttotal";
-            this.txtmontanttotal.Size = new System.Drawing.Size(158, 63);
+            this.txtmontanttotal.Size = new System.Drawing.Size(105, 41);
             this.txtmontanttotal.TabIndex = 155;
             this.txtmontanttotal.Text = "0";
             this.txtmontanttotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -593,10 +566,9 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Silver;
-            this.label15.Location = new System.Drawing.Point(374, 725);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Location = new System.Drawing.Point(249, 471);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(177, 29);
+            this.label15.Size = new System.Drawing.Size(111, 18);
             this.label15.TabIndex = 154;
             this.label15.Text = "Montant Total : ";
             this.label15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -623,14 +595,14 @@
             this.PyerBTN.IconVisible = false;
             this.PyerBTN.IconZoom = 0D;
             this.PyerBTN.IsTab = true;
-            this.PyerBTN.Location = new System.Drawing.Point(1011, 700);
+            this.PyerBTN.Location = new System.Drawing.Point(674, 455);
             this.PyerBTN.Margin = new System.Windows.Forms.Padding(0);
             this.PyerBTN.Name = "PyerBTN";
             this.PyerBTN.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.PyerBTN.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.PyerBTN.OnHoverTextColor = System.Drawing.Color.White;
             this.PyerBTN.selected = true;
-            this.PyerBTN.Size = new System.Drawing.Size(132, 57);
+            this.PyerBTN.Size = new System.Drawing.Size(88, 37);
             this.PyerBTN.TabIndex = 156;
             this.PyerBTN.Text = "Payer";
             this.PyerBTN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -645,13 +617,13 @@
             this.comboBox_mois.DisabledColor = System.Drawing.Color.Gray;
             this.comboBox_mois.ForeColor = System.Drawing.Color.Silver;
             this.comboBox_mois.items = new string[0];
-            this.comboBox_mois.Location = new System.Drawing.Point(711, 235);
-            this.comboBox_mois.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.comboBox_mois.Location = new System.Drawing.Point(474, 153);
+            this.comboBox_mois.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.comboBox_mois.Name = "comboBox_mois";
             this.comboBox_mois.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.comboBox_mois.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.comboBox_mois.selectedIndex = -1;
-            this.comboBox_mois.Size = new System.Drawing.Size(236, 46);
+            this.comboBox_mois.Size = new System.Drawing.Size(157, 30);
             this.comboBox_mois.TabIndex = 159;
             this.comboBox_mois.onItemSelected += new System.EventHandler(this.comboBox_mois_onItemSelected);
             // 
@@ -662,13 +634,13 @@
             this.combo_typetrsp.DisabledColor = System.Drawing.Color.Gray;
             this.combo_typetrsp.ForeColor = System.Drawing.Color.Silver;
             this.combo_typetrsp.items = new string[0];
-            this.combo_typetrsp.Location = new System.Drawing.Point(348, 9);
-            this.combo_typetrsp.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.combo_typetrsp.Location = new System.Drawing.Point(232, 6);
+            this.combo_typetrsp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.combo_typetrsp.Name = "combo_typetrsp";
             this.combo_typetrsp.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.combo_typetrsp.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.combo_typetrsp.selectedIndex = -1;
-            this.combo_typetrsp.Size = new System.Drawing.Size(236, 46);
+            this.combo_typetrsp.Size = new System.Drawing.Size(157, 30);
             this.combo_typetrsp.TabIndex = 160;
             this.combo_typetrsp.onItemSelected += new System.EventHandler(this.combo_typetrsp_onItemSelected);
             // 
@@ -676,10 +648,9 @@
             // 
             this.paneltrsp.Controls.Add(this.combo_typetrsp);
             this.paneltrsp.Controls.Add(this.trsplabel);
-            this.paneltrsp.Location = new System.Drawing.Point(363, 534);
-            this.paneltrsp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.paneltrsp.Location = new System.Drawing.Point(242, 347);
             this.paneltrsp.Name = "paneltrsp";
-            this.paneltrsp.Size = new System.Drawing.Size(602, 71);
+            this.paneltrsp.Size = new System.Drawing.Size(401, 46);
             this.paneltrsp.TabIndex = 161;
             // 
             // calculerBTN
@@ -704,14 +675,14 @@
             this.calculerBTN.IconVisible = false;
             this.calculerBTN.IconZoom = 0D;
             this.calculerBTN.IsTab = true;
-            this.calculerBTN.Location = new System.Drawing.Point(369, 628);
+            this.calculerBTN.Location = new System.Drawing.Point(246, 408);
             this.calculerBTN.Margin = new System.Windows.Forms.Padding(0);
             this.calculerBTN.Name = "calculerBTN";
             this.calculerBTN.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.calculerBTN.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.calculerBTN.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.calculerBTN.selected = true;
-            this.calculerBTN.Size = new System.Drawing.Size(219, 57);
+            this.calculerBTN.Size = new System.Drawing.Size(146, 37);
             this.calculerBTN.TabIndex = 162;
             this.calculerBTN.Text = "Calculer le Total ";
             this.calculerBTN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -724,10 +695,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Silver;
-            this.label5.Location = new System.Drawing.Point(10, 106);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(7, 69);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(211, 25);
+            this.label5.Size = new System.Drawing.Size(151, 16);
             this.label5.TabIndex = 142;
             this.label5.Text = "Les Mois Deja Payer";
             // 
@@ -736,19 +706,18 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Silver;
-            this.label16.Location = new System.Drawing.Point(18, 437);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Location = new System.Drawing.Point(12, 284);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(206, 25);
+            this.label16.Size = new System.Drawing.Size(146, 16);
             this.label16.TabIndex = 164;
             this.label16.Text = "Les Mois Non Payer";
             // 
             // PAYMENT_DE_MOIS_FORM
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
-            this.ClientSize = new System.Drawing.Size(1718, 785);
+            this.ClientSize = new System.Drawing.Size(1142, 510);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.calculerBTN);
@@ -775,7 +744,6 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "PAYMENT_DE_MOIS_FORM";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PAYMENT_DE_MOIS_FORM";

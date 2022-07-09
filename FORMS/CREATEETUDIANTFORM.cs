@@ -52,7 +52,7 @@ namespace GESTIONECOLE.FORMS
             if (string.IsNullOrEmpty(txtFirstname.Text) || string.IsNullOrEmpty(txtLastname.Text) || string.IsNullOrEmpty(txtadress.Text) || string.IsNullOrEmpty(txtnomcompletTUTEUR.Text) || string.IsNullOrEmpty(txttele.Text) || string.IsNullOrEmpty(txtemail.Text) ||
                 (!checkBoxOUI.Checked && !checkBoxNON.Checked) || string.IsNullOrEmpty(txtnationaliter.Text) || sex.SelectedItem == null)
             {
-                MessageBox.Show("UNE COLUMN EST VIDE");
+                MessageBox.Show("Uue column est vide");
             }
             else
             {
@@ -86,7 +86,7 @@ namespace GESTIONECOLE.FORMS
 
                 r.command = new SqlCommand("insert into eleve values('" + txtFirstname.Text + "','" + txtLastname.Text + "','" + datofbirth.Value.ToShortDateString() + "','" + pere + "','" + mere + "','" + tuteur + "','" + txttele.Text + "','" + txtadress.Text + "','" + sport + "','" + sex.SelectedItem.ToString() + "','" + txtnationaliter.Text + "')", r.connection);
 
-                MessageBox.Show("l'eleve a ete cree");
+                MessageBox.Show("l'éleve a été crée", "Information", MessageBoxButtons.OK , MessageBoxIcon.Information) ;
 
 
                 r.command.ExecuteNonQuery();
@@ -94,7 +94,7 @@ namespace GESTIONECOLE.FORMS
 
                 r.deconnecter();
 
-                if (MessageBox.Show("Tu Veux faire Une inscription de cette Eleve", "ALERT", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Tu veux faire Une inscription de cette éleve", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     CREATEINSCRIPTIONFORM ee = new CREATEINSCRIPTIONFORM();
                      this.Hide();
@@ -113,7 +113,7 @@ namespace GESTIONECOLE.FORMS
 
         private void CANCELBTN_Click_1(object sender, EventArgs e)
         {
-            if (MessageBox.Show("TU VEUX EXIT ? ", "ALERT", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            if (MessageBox.Show("est ce que tu veux sortir ? ", "Question", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
                     ETUDIANT_FORM ee = new ETUDIANT_FORM();
                      this.Hide();
