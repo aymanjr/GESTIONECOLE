@@ -13,7 +13,7 @@ namespace GESTIONECOLE.FORMS
 {
     public partial class Print_Inscription : Form
     {
-        public string Date, type, description, cost, datefrais;
+        public string Date, cost,nomcomplete,Classnom,Annescolaire;
 
         public Print_Inscription()
         {

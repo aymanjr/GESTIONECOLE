@@ -219,7 +219,8 @@ namespace GESTIONECOLE.FORMS
                 gridfill();
                 showrecents();
 
-            } 
+
+            }
         }
 
         private void print1_Click(object sender, EventArgs e)
@@ -248,6 +249,11 @@ namespace GESTIONECOLE.FORMS
 
 
             r.deconnecter();
+
+        }
+
+        public void printInscription()
+        {
 
         }
 
