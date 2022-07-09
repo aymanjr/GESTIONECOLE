@@ -121,5 +121,13 @@ namespace GESTIONECOLE.FORMS
                 panel1.Hide();
             }
         }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            Frais_Form ee = new Frais_Form();
+            this.Hide();
+            ee.ShowDialog();
+            this.Close();
+        }
     }
 }
