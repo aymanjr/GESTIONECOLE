@@ -119,12 +119,13 @@
             this.combo_type.BorderRadius = 3;
             this.combo_type.DisabledColor = System.Drawing.Color.Gray;
             this.combo_type.ForeColor = System.Drawing.Color.Silver;
-            this.combo_type.items = new string[0];
+            this.combo_type.items = new string[] {
+        "Other"};
             this.combo_type.Location = new System.Drawing.Point(145, 7);
             this.combo_type.Name = "combo_type";
             this.combo_type.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.combo_type.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.combo_type.selectedIndex = -1;
+            this.combo_type.selectedIndex = 0;
             this.combo_type.Size = new System.Drawing.Size(291, 30);
             this.combo_type.TabIndex = 147;
             this.combo_type.onItemSelected += new System.EventHandler(this.combo_type_onItemSelected);

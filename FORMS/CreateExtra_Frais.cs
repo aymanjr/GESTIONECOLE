@@ -27,34 +27,47 @@ namespace GESTIONECOLE.FORMS
 
 
             }
-            combo_type.AddItem("Other");
+         //   combo_type.AddItem("Other");
             r.deconnecter();
         }
 
         private void CreateExtra_Frais_Load(object sender, EventArgs e)
         {
             type_show();
+            if (combo_type.selectedValue == "Other")
+            {
+                panel1.Show();
+            }
+            else
+            {
+                panel1.Hide();
+            }
+
         }
 
         string thetype;
         private void btnajouter_Click(object sender, EventArgs e)
         {
 
-            if (combo_type.selectedValue == "Other")
-            {
-                thetype = txt_type.Text;
-            }
-            else
-            {
-                thetype = combo_type.selectedValue.ToString();
-            }
 
-            if (thetype == "" || string.IsNullOrWhiteSpace(description_richtext.Text) || string.IsNullOrWhiteSpace(txt_cost.Text))
+
+            if ( combo_type.selectedValue == null || string.IsNullOrWhiteSpace(description_richtext.Text) || string.IsNullOrWhiteSpace(txt_cost.Text))
             {
                 MessageBox.Show("Remplier svpl !", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
+                if (combo_type.selectedValue == "Other")
+                {
+                    thetype = txt_type.Text;
+                }
+                else
+                {
+                    thetype = combo_type.selectedValue.ToString();
+                }
+
+
+
                 r.connecter();
 
                 r.command = new SqlCommand(" insert into extra_frais values('" + description_richtext.Text + "','" + thetype + "','" + txt_cost.Text + "','" + DateTime.Now.ToShortDateString() + "') ", r.connection);
@@ -65,14 +78,14 @@ namespace GESTIONECOLE.FORMS
                 Frais_Form ee = new Frais_Form();
                 this.Hide();
                 ee.ShowDialog();
-               
-                this.Close();
-                
 
+                this.Close();
 
             }
-
+        
         }
+
+    
 
 
 
