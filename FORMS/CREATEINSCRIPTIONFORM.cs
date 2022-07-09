@@ -337,6 +337,9 @@ namespace GESTIONECOLE.FORMS
                 this.Close();
         }
 
+        private void Printbutton_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
