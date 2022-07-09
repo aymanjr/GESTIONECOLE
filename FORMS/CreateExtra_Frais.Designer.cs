@@ -164,7 +164,7 @@
             this.txt_cost.LineMouseHoverColor = System.Drawing.Color.Silver;
             this.txt_cost.LineThickness = 4;
             this.txt_cost.Location = new System.Drawing.Point(132, 460);
-            this.txt_cost.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txt_cost.Margin = new System.Windows.Forms.Padding(6);
             this.txt_cost.MaxLength = 32767;
             this.txt_cost.Name = "txt_cost";
             this.txt_cost.Size = new System.Drawing.Size(522, 57);
@@ -189,12 +189,12 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Silver;
-            this.label1.Location = new System.Drawing.Point(16, 35);
+            this.label1.Location = new System.Drawing.Point(17, 34);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 22);
+            this.label1.Size = new System.Drawing.Size(127, 22);
             this.label1.TabIndex = 151;
-            this.label1.Text = "Other  Type : ";
+            this.label1.Text = "Autre Type : ";
             // 
             // txt_type
             // 
@@ -212,7 +212,7 @@
             this.txt_type.LineMouseHoverColor = System.Drawing.Color.Silver;
             this.txt_type.LineThickness = 4;
             this.txt_type.Location = new System.Drawing.Point(165, 15);
-            this.txt_type.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txt_type.Margin = new System.Windows.Forms.Padding(6);
             this.txt_type.MaxLength = 32767;
             this.txt_type.Name = "txt_type";
             this.txt_type.Size = new System.Drawing.Size(300, 51);

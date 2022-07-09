@@ -53,7 +53,7 @@ namespace GESTIONECOLE.FORMS
 
             if ( combo_type.selectedValue == null || string.IsNullOrWhiteSpace(description_richtext.Text) || string.IsNullOrWhiteSpace(txt_cost.Text))
             {
-                MessageBox.Show("Remplier svpl !", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Remplier les champ vide!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {

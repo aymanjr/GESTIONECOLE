@@ -69,7 +69,7 @@ namespace GESTIONECOLE.FORMS
         {
             r.cmdb = new SqlCommandBuilder(r.adapter);
             r.adapter.Update(r.ds, "TRANSPORT");
-            if (MessageBox.Show("TRANSPORT is updated ", "DONE", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
+            if (MessageBox.Show("le transport a bien modifier ", "Terminer", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
             {
                 listtransport();
 
@@ -83,7 +83,7 @@ namespace GESTIONECOLE.FORMS
             SqlCommand command = new SqlCommand("delete TRANSPORT where TRSP_ID = '" + theid + "'", r.connection);
             command.ExecuteNonQuery();
             r.deconnecter();
-            if (MessageBox.Show("TRANSPORT is deleted ", "DONE", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
+            if (MessageBox.Show("le Transport a bien supprimer ", "Terminer", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
             {
                 listtransport();
 

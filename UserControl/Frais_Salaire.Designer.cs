@@ -60,14 +60,14 @@
             this.ModifierBtn.IconVisible = false;
             this.ModifierBtn.IconZoom = 0D;
             this.ModifierBtn.IsTab = true;
-            this.ModifierBtn.Location = new System.Drawing.Point(189, 354);
+            this.ModifierBtn.Location = new System.Drawing.Point(437, 545);
             this.ModifierBtn.Margin = new System.Windows.Forms.Padding(0);
             this.ModifierBtn.Name = "ModifierBtn";
             this.ModifierBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.ModifierBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.ModifierBtn.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
             this.ModifierBtn.selected = true;
-            this.ModifierBtn.Size = new System.Drawing.Size(153, 28);
+            this.ModifierBtn.Size = new System.Drawing.Size(230, 43);
             this.ModifierBtn.TabIndex = 144;
             this.ModifierBtn.Text = "Modifier Frais";
             this.ModifierBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -104,7 +104,8 @@
             this.datagridviewsalaire.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.datagridviewsalaire.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.datagridviewsalaire.HeaderForeColor = System.Drawing.Color.Silver;
-            this.datagridviewsalaire.Location = new System.Drawing.Point(32, 63);
+            this.datagridviewsalaire.Location = new System.Drawing.Point(48, 97);
+            this.datagridviewsalaire.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.datagridviewsalaire.Name = "datagridviewsalaire";
             this.datagridviewsalaire.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -115,38 +116,41 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.datagridviewsalaire.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.datagridviewsalaire.RowHeadersWidth = 62;
             this.datagridviewsalaire.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.datagridviewsalaire.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datagridviewsalaire.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Silver;
             this.datagridviewsalaire.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Silver;
             this.datagridviewsalaire.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.datagridviewsalaire.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datagridviewsalaire.Size = new System.Drawing.Size(652, 270);
+            this.datagridviewsalaire.Size = new System.Drawing.Size(978, 415);
             this.datagridviewsalaire.TabIndex = 143;
             this.datagridviewsalaire.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridviewsalaire_CellClick);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Silver;
-            this.label4.Location = new System.Drawing.Point(200, 21);
+            this.label4.Location = new System.Drawing.Point(444, 31);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(132, 25);
+            this.label4.Size = new System.Drawing.Size(210, 37);
             this.label4.TabIndex = 142;
             this.label4.Text = "Salaire Frais";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Frais_Salaire
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.Controls.Add(this.ModifierBtn);
             this.Controls.Add(this.datagridviewsalaire);
             this.Controls.Add(this.label4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Frais_Salaire";
-            this.Size = new System.Drawing.Size(726, 405);
+            this.Size = new System.Drawing.Size(1089, 623);
             this.Load += new System.EventHandler(this.Frais_Salaire_Load);
             ((System.ComponentModel.ISupportInitialize)(this.datagridviewsalaire)).EndInit();
             this.ResumeLayout(false);

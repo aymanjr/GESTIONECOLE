@@ -103,7 +103,7 @@ namespace GESTIONECOLE
 
             r.cmdb = new SqlCommandBuilder(r.adapter);
             r.adapter.Update(r.ds, "EMPLOYEE");
-            if (MessageBox.Show("EMPLOYEE is updated ", "DONE", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
+            if (MessageBox.Show("Le Employee est bien modifer ", "Terminer", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
             {
                 list_teachers();
 
@@ -125,7 +125,7 @@ namespace GESTIONECOLE
             if (dataGridView1.AreAllCellsSelected(true))
             {
 
-                MessageBox.Show("selectioner just une row ", "Selected Cells");
+                MessageBox.Show("sélectionner juste une row ", "Cellules sélectionnées");
 
             }
             else
@@ -137,7 +137,7 @@ namespace GESTIONECOLE
             command.ExecuteNonQuery();
             r.deconnecter();
 
-            if (MessageBox.Show("EMPLOYEE is deleted ", "DONE", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
+            if (MessageBox.Show("EMPLOYEE est bien supprimé ", "Terminer", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
             {
                 list_teachers();
 

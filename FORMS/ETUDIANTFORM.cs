@@ -94,7 +94,7 @@ namespace GESTIONECOLE
             r.command.ExecuteNonQuery();
             r.deconnecter();
 
-            if (MessageBox.Show("eleve is deleted ", "DONE", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
+            if (MessageBox.Show("eleve est supprimé ", "Terminer", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
             {
                 list_ETUDIANT();
 
@@ -106,7 +106,7 @@ namespace GESTIONECOLE
 
             r.cmdb = new SqlCommandBuilder(r.adapter);
             r.adapter.Update(r.ds, "eleve");
-            if (MessageBox.Show("eleve is updated ", "DONE", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
+            if (MessageBox.Show("eleve est Modifer ", "Terminer", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
             {
                 list_ETUDIANT();
 
