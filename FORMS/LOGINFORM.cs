@@ -31,9 +31,9 @@ namespace GESTIONECOLE
 
             if (r.reader.Read())
             {
-                MessageBox.Show("WELCOME BACK ");
+                MessageBox.Show("WELCOME BACK ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                   THEMAINFORM ee = new THEMAINFORM();
+                THEMAINFORM ee = new THEMAINFORM();
                    this.Hide();
                    ee.ShowDialog();
                    this.Close();

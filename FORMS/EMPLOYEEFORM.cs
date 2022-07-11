@@ -125,7 +125,7 @@ namespace GESTIONECOLE
             if (dataGridView1.AreAllCellsSelected(true))
             {
 
-                MessageBox.Show("sélectionner juste une row ", "Cellules sélectionnées");
+                MessageBox.Show("sélectionner juste une row ", "Cellules sélectionnées", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
             }
             else
@@ -137,7 +137,7 @@ namespace GESTIONECOLE
             command.ExecuteNonQuery();
             r.deconnecter();
 
-            if (MessageBox.Show("EMPLOYEE est bien supprimé ", "Terminer", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
+            if (MessageBox.Show("Employee est bien supprimé ", "Terminer", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
             {
                 list_teachers();
 
@@ -157,7 +157,7 @@ namespace GESTIONECOLE
             r.deconnecter();
             if (dataGridView1.RowCount < 1)
             {
-                MessageBox.Show(" ancun trouver ", "AUCUN");
+                MessageBox.Show("Ancun trouver ", "Aucun",  MessageBoxButtons.OK, MessageBoxIcon.Error);
                 list_teachers();
 
             }
@@ -282,6 +282,22 @@ namespace GESTIONECOLE
         private void panel_ville_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void txt_nom_Enter(object sender, EventArgs e)
+        {
+            if (txt_nom.Text.Trim() != "" || txt_nom.Text != null)
+            {
+                txt_nom.Text = "";
+            }
+        }
+
+        private void txtprenom_Enter(object sender, EventArgs e)
+        {
+            if (txtprenom.Text.Trim() != "" || txtprenom.Text != null)
+            {
+                txtprenom.Text = "";
+            }
         }
     }
 }

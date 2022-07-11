@@ -510,22 +510,16 @@ namespace GESTIONECOLE.FORMS
         private void txt_nomeleve_Enter(object sender, EventArgs e)
         {
             if (txt_nomeleve.Text.Trim() != "" || txt_nomeleve.Text != null)
-
             {
-
                 txt_nomeleve.Text = "";
-
             }
         }
 
         private void txtprenom_Enter(object sender, EventArgs e)
         {
             if (txtprenom.Text.Trim() != "" || txtprenom.Text != null)
-
             {
-
                 txtprenom.Text = "";
-
             }
         }
     }

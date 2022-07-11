@@ -71,14 +71,14 @@ namespace GESTIONECOLE.FORMS
 
             if (string.IsNullOrEmpty(txtmatricule.Text) || string.IsNullOrEmpty(txtcapaciter.Text) || string.IsNullOrEmpty(txtmodule.Text) || string.IsNullOrEmpty(txtstaut.Text) || chauffeurcombo.SelectedItem == null || accompcombo.SelectedItem == null)
             {
-                MessageBox.Show("Les cases sont vides !");
+                MessageBox.Show("Les cases sont vides !", "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
                 r.connecter();
                 r.command = new SqlCommand(" INSERT INTO TRANSPORT VALUES('" + txtmatricule.Text + "','" + txtmodule.Text + "','" + txtcapaciter.Text + "','" + chauffeurcombo.SelectedValue.ToString() + "','" + accompcombo.SelectedValue.ToString() + "','" + txtstaut.Text + "')", r.connection);
 
-                MessageBox.Show("Le transport a été crée");
+                MessageBox.Show("Le transport a été crée", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 r.command.ExecuteNonQuery();
                 r.deconnecter();
 

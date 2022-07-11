@@ -194,7 +194,7 @@ namespace GESTIONECOLE
             r.adapter.Fill(r.ds, "eleve");
             if (r.ds.Tables["eleve"].Rows.Count == 0)
             {
-                MessageBox.Show("Aucun L'eleve avec ce nom et prenom");
+                MessageBox.Show("Aucun L'eleve avec ce nom et prenom", "Information", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 txt_nomeleve.Text = "";
                 txtprenom.Text = "";
             }
@@ -211,7 +211,7 @@ namespace GESTIONECOLE
         {
             if (string.IsNullOrWhiteSpace(txt_nomeleve.Text) || string.IsNullOrWhiteSpace(txtprenom.Text))
             {
-                MessageBox.Show("Entre le nom et le prénom de éleve","Information", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("Entre le nom et le prénom de éleve","Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             else
@@ -319,7 +319,7 @@ namespace GESTIONECOLE
 
             r.cmdb = new SqlCommandBuilder(r.adapter);
             r.adapter.Update(r.ds,"eleve");
-            MessageBox.Show("done");
+            MessageBox.Show("done", "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
             list_ETUDIANT();
 
         }
@@ -373,6 +373,22 @@ namespace GESTIONECOLE
         private void combo_anneescolaire_MouseClick(object sender, MouseEventArgs e)
         {
             
+        }
+
+        private void txt_nomeleve_Enter(object sender, EventArgs e)
+        {
+            if (txt_nomeleve.Text.Trim() != "" || txt_nomeleve.Text != null)
+            {
+                txt_nomeleve.Text = "";
+            }
+        }
+
+        private void txtprenom_Enter(object sender, EventArgs e)
+        {
+            if (txtprenom.Text.Trim() != "" || txtprenom.Text != null)
+            {
+                txtprenom.Text = "";
+            }
         }
     }
 }

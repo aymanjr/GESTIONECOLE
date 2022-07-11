@@ -52,7 +52,7 @@ namespace GESTIONECOLE.FORMS
             if (string.IsNullOrEmpty(txtFirstname.Text) || string.IsNullOrEmpty(txtLastname.Text) || string.IsNullOrEmpty(txtadress.Text) || string.IsNullOrEmpty(txtnomcompletTUTEUR.Text) || string.IsNullOrEmpty(txttele.Text) || string.IsNullOrEmpty(txtemail.Text) ||
                 (!checkBoxOUI.Checked && !checkBoxNON.Checked) || string.IsNullOrEmpty(txtnationaliter.Text) || sex.SelectedItem == null)
             {
-                MessageBox.Show("Uue column est vide");
+                MessageBox.Show("Uue column est vide", "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {

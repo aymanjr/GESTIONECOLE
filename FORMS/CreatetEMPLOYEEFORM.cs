@@ -45,7 +45,7 @@ namespace GESTIONECOLE.FORMS
                 SEXcombo.SelectedItem == null ||
                 (!checkBoxCNSS_OUI.Checked && !checkBoxCNSS_NON.Checked))
             {
-                MessageBox.Show("Les colonnes sont vides");
+                MessageBox.Show("Les colonnes sont vides", "Information", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
             {
@@ -57,7 +57,7 @@ namespace GESTIONECOLE.FORMS
                 r.command.ExecuteNonQuery();
                 r.deconnecter();
 
-                MessageBox.Show("Employee a éte crée ");
+                MessageBox.Show("Employee a éte crée ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 EMPLOYEEFORM ee = new EMPLOYEEFORM();
                this.Hide();

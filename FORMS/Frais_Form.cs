@@ -220,7 +220,7 @@ namespace GESTIONECOLE.FORMS
         {
             if (combobox_type.selectedValue == null)
             {
-                MessageBox.Show("entre type ");
+                MessageBox.Show("Entre type ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Hand);
             }
             else
             {

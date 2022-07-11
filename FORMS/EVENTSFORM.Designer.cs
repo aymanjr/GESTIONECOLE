@@ -469,6 +469,7 @@
             this.txtnom.TabIndex = 105;
             this.txtnom.Text = "Nom ";
             this.txtnom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtnom.Enter += new System.EventHandler(this.txtnom_Enter);
             // 
             // txtdescrip
             // 

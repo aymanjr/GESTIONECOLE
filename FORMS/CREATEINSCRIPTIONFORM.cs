@@ -70,7 +70,7 @@ namespace GESTIONECOLE.FORMS
         {
             if (NIVEAUCOMBO.Text == "")
             {
-                MessageBox.Show("Veuillez Selectioner Niveau");
+                MessageBox.Show("Veuillez Selectioner Niveau","Information", MessageBoxButtons.OK , MessageBoxIcon.Hand);
                 return;
             }
             r.connecter();
@@ -107,7 +107,7 @@ namespace GESTIONECOLE.FORMS
 
             if (CLASSCOMBO.Text == "" )
             {
-                MessageBox.Show("Veuillez Selectioner class");
+                MessageBox.Show("Veuillez Selectioner class", "Information", MessageBoxButtons.OK, MessageBoxIcon.Hand);
                 return;
             }
             r.connecter();
@@ -143,7 +143,7 @@ namespace GESTIONECOLE.FORMS
         {
             if (elevecombo.Text == "")
             {
-                MessageBox.Show("Veuillez Selectioner eleve");
+                MessageBox.Show("Veuillez Selectioner eleve", "Information", MessageBoxButtons.OK, MessageBoxIcon.Hand);
                 return;
             }
             r.connecter();
@@ -190,13 +190,14 @@ namespace GESTIONECOLE.FORMS
             etd_recherche();
             if (count_etd == "1")
             {
-                    MessageBox.Show("cette etd a ete deja INSCRIER");
+                    MessageBox.Show("cette etd a ete deja INSCRIER", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
 
             if (NIVEAUCOMBO.Text == "" && CLASSCOMBO.Text == "" && elevecombo.Text == "")
             {
-                MessageBox.Show("Veuillez saisir"); return;
+                MessageBox.Show("Veuillez saisir", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
 
 
             }
@@ -207,7 +208,7 @@ namespace GESTIONECOLE.FORMS
                 r.command.ExecuteNonQuery();
 
 
-                MessageBox.Show("Bien ajouter");
+                MessageBox.Show("Bien ajouter", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 r.deconnecter();
                 TXTCOST.Clear();

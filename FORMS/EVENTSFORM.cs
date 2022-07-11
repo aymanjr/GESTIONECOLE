@@ -258,5 +258,13 @@ namespace GESTIONECOLE.FORMS
               ee.ShowDialog();
                this.Close();
         }
+
+        private void txtnom_Enter(object sender, EventArgs e)
+        {
+            if (txtnom.Text.Trim() != "" || txtnom.Text != null)
+            {
+                txtnom.Text = "";
+            }
+        }
     }
 }
