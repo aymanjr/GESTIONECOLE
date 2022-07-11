@@ -30,10 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Print_Inscription));
             this.panelprint = new System.Windows.Forms.Panel();
+            this.Printbutton = new Bunifu.Framework.UI.BunifuImageButton();
             this.coutlabel = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.niveaulabel = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.anneescolairelabel = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.classlabel = new System.Windows.Forms.Label();
@@ -51,7 +50,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.Printbutton = new Bunifu.Framework.UI.BunifuImageButton();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.panelprint.SuspendLayout();
@@ -64,8 +62,6 @@
             this.panelprint.Controls.Add(this.Printbutton);
             this.panelprint.Controls.Add(this.coutlabel);
             this.panelprint.Controls.Add(this.label15);
-            this.panelprint.Controls.Add(this.niveaulabel);
-            this.panelprint.Controls.Add(this.label10);
             this.panelprint.Controls.Add(this.anneescolairelabel);
             this.panelprint.Controls.Add(this.label9);
             this.panelprint.Controls.Add(this.classlabel);
@@ -89,6 +85,21 @@
             this.panelprint.Size = new System.Drawing.Size(816, 574);
             this.panelprint.TabIndex = 160;
             // 
+            // Printbutton
+            // 
+            this.Printbutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Printbutton.BackColor = System.Drawing.Color.Transparent;
+            this.Printbutton.Image = global::GESTIONECOLE.Properties.Resources.printicon;
+            this.Printbutton.ImageActive = null;
+            this.Printbutton.Location = new System.Drawing.Point(698, 32);
+            this.Printbutton.Name = "Printbutton";
+            this.Printbutton.Size = new System.Drawing.Size(37, 34);
+            this.Printbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Printbutton.TabIndex = 161;
+            this.Printbutton.TabStop = false;
+            this.Printbutton.Zoom = 10;
+            this.Printbutton.Click += new System.EventHandler(this.Printbutton_Click);
+            // 
             // coutlabel
             // 
             this.coutlabel.AutoSize = true;
@@ -108,26 +119,6 @@
             this.label15.Size = new System.Drawing.Size(46, 16);
             this.label15.TabIndex = 31;
             this.label15.Text = "Cout :";
-            // 
-            // niveaulabel
-            // 
-            this.niveaulabel.AutoSize = true;
-            this.niveaulabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.niveaulabel.Location = new System.Drawing.Point(217, 307);
-            this.niveaulabel.Name = "niveaulabel";
-            this.niveaulabel.Size = new System.Drawing.Size(14, 16);
-            this.niveaulabel.TabIndex = 30;
-            this.niveaulabel.Text = "?";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(23, 307);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(64, 16);
-            this.label10.TabIndex = 29;
-            this.label10.Text = "Niveau :";
             // 
             // anneescolairelabel
             // 
@@ -300,21 +291,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Syste,e scolaire";
             // 
-            // Printbutton
-            // 
-            this.Printbutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Printbutton.BackColor = System.Drawing.Color.Transparent;
-            this.Printbutton.Image = global::GESTIONECOLE.Properties.Resources.printicon;
-            this.Printbutton.ImageActive = null;
-            this.Printbutton.Location = new System.Drawing.Point(698, 32);
-            this.Printbutton.Name = "Printbutton";
-            this.Printbutton.Size = new System.Drawing.Size(37, 34);
-            this.Printbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Printbutton.TabIndex = 161;
-            this.Printbutton.TabStop = false;
-            this.Printbutton.Zoom = 10;
-            this.Printbutton.Click += new System.EventHandler(this.Printbutton_Click);
-            // 
             // printPreviewDialog1
             // 
             this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
@@ -365,7 +341,5 @@
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Windows.Forms.Label coutlabel;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label niveaulabel;
-        private System.Windows.Forms.Label label10;
     }
 }

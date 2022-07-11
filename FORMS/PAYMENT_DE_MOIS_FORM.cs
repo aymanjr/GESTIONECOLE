@@ -426,7 +426,7 @@ namespace GESTIONECOLE.FORMS
             }
             else
             {
-                if (comboBox_mois.selectedValue == "")
+                if (comboBox_mois.selectedValue == null)
                 {
                     MessageBox.Show("Selctioner un mois  ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

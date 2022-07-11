@@ -183,6 +183,12 @@ namespace GESTIONECOLE.FORMS
 
         }
 
+        public void printinscription()
+        {
+            Print_Inscription print_ = new Print_Inscription(nomcompletLABEL.Text, AnnescolaireLABEL.Text, classnomLABEL.Text,cout);
+            print_.ShowDialog();
+        }
+
         private void AJOUTERBTN_Click_1(object sender, EventArgs e)
         {
             classid();
@@ -218,6 +224,7 @@ namespace GESTIONECOLE.FORMS
 
                 gridfill();
                 showrecents();
+                printinscription();
 
 
             }
@@ -256,21 +263,20 @@ namespace GESTIONECOLE.FORMS
         {
 
         }
-
+        string cout="";
         public void showrecents()
         {
             r.connecter();
-            r.command = new SqlCommand("select (EL_NOM +SPACE(2)+ EL_PRENOM) as Nom_Complet,SUBSTRING (c.CL_nom,7,20) as Class,c.CL_annee_scolaire as Anne_scolaire,i.INS_date  as date_Inscription,e.EL_NOMCOMPLETEPERE,e.EL_TELETUTEUR from eleve E , INSCRIPTION I, CLASS c where e.EL_ID = i.INS_eleveID# and c.CL_id=i.INS_classID# order by i.INS_date desc", r.connection);
+            r.command = new SqlCommand("select (EL_NOM +SPACE(2)+ EL_PRENOM) as Nom_Complet,SUBSTRING (c.CL_nom,7,20) as Class,c.CL_annee_scolaire as Anne_scolaire,i.INS_date  as date_Inscription,e.EL_NOMCOMPLETEPERE,e.EL_TELETUTEUR  ,i.INS_cout from eleve E , INSCRIPTION I, CLASS c where e.EL_ID = i.INS_eleveID# and c.CL_id=i.INS_classID# order by i.INS_date desc", r.connection);
             r.reader = r.command.ExecuteReader();
             r.dt.Load(r.reader);
-
             nomcompletLABEL.Text = r.dt.Rows[compt]["Nom_Complet"].ToString();
             tuteurNOMLABEL.Text = r.dt.Rows[compt]["EL_NOMCOMPLETEPERE"].ToString();
             telelabel.Text = r.dt.Rows[compt]["EL_TELETUTEUR"].ToString();
             classnomLABEL.Text = r.dt.Rows[compt]["Class"].ToString();
             AnnescolaireLABEL.Text = r.dt.Rows[compt]["Anne_scolaire"].ToString();
             dateinscLABEL.Text = r.dt.Rows[compt]["date_Inscription"].ToString();
-
+            cout = r.dt.Rows[compt]["INS_cout"].ToString();
 
             r.deconnecter();
 
