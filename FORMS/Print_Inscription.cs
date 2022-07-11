@@ -13,12 +13,15 @@ namespace GESTIONECOLE.FORMS
 {
     public partial class Print_Inscription : Form
     {
-        public string Date, cost,nomcomplete,Classnom,Annescolaire;
 
-        public Print_Inscription()
+        public Print_Inscription(string nomcomplete, string classnom,string anneescolaire, string cout)
         {
             InitializeComponent();
-            Date = DateTime.Now.ToString("M/d/yyyy");
+           string Date = DateTime.Now.ToString("M/d/yyyy");
+            nomcompletlabel.Text  = nomcomplete;
+            classlabel.Text = classnom;
+            anneescolairelabel.Text = anneescolaire;
+            coutlabel.Text = cout;
         }
 
         private void Printbutton_Click(object sender, EventArgs e)
@@ -40,6 +43,7 @@ namespace GESTIONECOLE.FORMS
             printPreviewDialog1.ShowDialog();
 
         }
+ 
 
         private Bitmap memorying;
 
