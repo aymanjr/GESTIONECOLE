@@ -44,7 +44,7 @@ namespace GESTIONECOLE.FORMS
         {
             r.ds.Clear();
             r.connecter();
-            r.adapter = new SqlDataAdapter(" select [INS_id] as 'Numero Inscription', (EL_NOM +SPACE(2)+ EL_PRENOM) as Nom_Complet,SUBSTRING (c.CL_nom,7,20) as Class,c.CL_annee_scolaire as   Anne_scolaire,i.INS_date  as date_Inscription from eleve E , INSCRIPTION I, CLASS c where e.EL_ID = i.INS_eleveID# and c.CL_id=i.INS_classID# order by i.INS_date desc ", r.connection);
+            r.adapter = new SqlDataAdapter(" select [INS_id] as 'Numero Inscription', (EL_NOM +SPACE(2)+ EL_PRENOM) as Nom_Complet,e.EL_TELETUTEUR as tele,SUBSTRING (c.CL_nom,7,20) as Class,c.CL_annee_scolaire as   Anne_scolaire,i.INS_cout as cout,i.INS_date  as date_Inscription from eleve E , INSCRIPTION I, CLASS c where e.EL_ID = i.INS_eleveID# and c.CL_id=i.INS_classID# order by i.INS_date desc ", r.connection);
             r.adapter.Fill(r.ds, "inscr");
             dataGridView1.DataSource = r.ds.Tables["inscr"];
 
@@ -225,7 +225,7 @@ namespace GESTIONECOLE.FORMS
 
                 gridfill();
                 showrecents();
-                printinscription();
+              
 
 
             }
@@ -260,10 +260,7 @@ namespace GESTIONECOLE.FORMS
 
         }
 
-        public void printInscription()
-        {
 
-        }
         string cout="";
         public void showrecents()
         {
@@ -272,7 +269,6 @@ namespace GESTIONECOLE.FORMS
             r.reader = r.command.ExecuteReader();
             r.dt.Load(r.reader);
             nomcompletLABEL.Text = r.dt.Rows[compt]["Nom_Complet"].ToString();
-            tuteurNOMLABEL.Text = r.dt.Rows[compt]["EL_NOMCOMPLETEPERE"].ToString();
             telelabel.Text = r.dt.Rows[compt]["EL_TELETUTEUR"].ToString();
             classnomLABEL.Text = r.dt.Rows[compt]["Class"].ToString();
             AnnescolaireLABEL.Text = r.dt.Rows[compt]["Anne_scolaire"].ToString();
@@ -346,6 +342,22 @@ namespace GESTIONECOLE.FORMS
 
         private void Printbutton_Click(object sender, EventArgs e)
         {
+            printinscription();
+        }
+
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            dataGridView1.CurrentRow.Selected = true;
+            nomcompletLABEL.Text = dataGridView1.Rows[e.RowIndex].Cells["Nom_Complet"].Value.ToString();
+            telelabel.Text = dataGridView1.Rows[e.RowIndex].Cells["tele"].Value.ToString();
+            classnomLABEL.Text = dataGridView1.Rows[e.RowIndex].Cells["Class"].Value.ToString();
+            AnnescolaireLABEL.Text = dataGridView1.Rows[e.RowIndex].Cells["Anne_scolaire"].Value.ToString();
+            dateinscLABEL.Text = dataGridView1.Rows[e.RowIndex].Cells["date_Inscription"].Value.ToString();
+            cout = dataGridView1.Rows[e.RowIndex].Cells["cout"].Value.ToString();
+            //AnnescolaireLABEL.Text = r.dt.Rows[compt]["Anne_scolaire"].ToString();
+            //dateinscLABEL.Text = r.dt.Rows[compt]["date_Inscription"].ToString();
+            //cout = r.dt.Rows[compt]["INS_cout"].ToString();
 
         }
     }

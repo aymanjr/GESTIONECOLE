@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CREATEINSCRIPTIONFORM));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.NIVEAUCOMBO = new System.Windows.Forms.ComboBox();
             this.CLASSCOMBO = new System.Windows.Forms.ComboBox();
             this.TXTCOST = new System.Windows.Forms.TextBox();
@@ -55,11 +55,9 @@
             this.AnnescolaireLABEL = new System.Windows.Forms.Label();
             this.classnomLABEL = new System.Windows.Forms.Label();
             this.telelabel = new System.Windows.Forms.Label();
-            this.tuteurNOMLABEL = new System.Windows.Forms.Label();
             this.nomcompletLABEL = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -197,12 +195,12 @@
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -210,14 +208,14 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.dataGridView1.ColumnHeadersHeight = 30;
             this.dataGridView1.DoubleBuffered = true;
             this.dataGridView1.EnableHeadersVisualStyles = false;
@@ -227,14 +225,14 @@
             this.dataGridView1.Location = new System.Drawing.Point(355, 46);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridView1.RowHeadersWidth = 72;
             this.dataGridView1.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.dataGridView1.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -244,6 +242,7 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(466, 393);
             this.dataGridView1.TabIndex = 102;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // refreshBTN
             // 
@@ -366,15 +365,14 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.Printbutton);
             this.panel3.Controls.Add(this.dateinscLABEL);
             this.panel3.Controls.Add(this.AnnescolaireLABEL);
             this.panel3.Controls.Add(this.classnomLABEL);
             this.panel3.Controls.Add(this.telelabel);
-            this.panel3.Controls.Add(this.tuteurNOMLABEL);
             this.panel3.Controls.Add(this.nomcompletLABEL);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Controls.Add(this.label12);
-            this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label2);
@@ -389,7 +387,7 @@
             this.dateinscLABEL.AutoSize = true;
             this.dateinscLABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateinscLABEL.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.dateinscLABEL.Location = new System.Drawing.Point(193, 337);
+            this.dateinscLABEL.Location = new System.Drawing.Point(193, 291);
             this.dateinscLABEL.Name = "dateinscLABEL";
             this.dateinscLABEL.Size = new System.Drawing.Size(0, 16);
             this.dateinscLABEL.TabIndex = 134;
@@ -399,7 +397,7 @@
             this.AnnescolaireLABEL.AutoSize = true;
             this.AnnescolaireLABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AnnescolaireLABEL.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.AnnescolaireLABEL.Location = new System.Drawing.Point(193, 290);
+            this.AnnescolaireLABEL.Location = new System.Drawing.Point(193, 244);
             this.AnnescolaireLABEL.Name = "AnnescolaireLABEL";
             this.AnnescolaireLABEL.Size = new System.Drawing.Size(0, 16);
             this.AnnescolaireLABEL.TabIndex = 133;
@@ -409,7 +407,7 @@
             this.classnomLABEL.AutoSize = true;
             this.classnomLABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.classnomLABEL.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.classnomLABEL.Location = new System.Drawing.Point(193, 250);
+            this.classnomLABEL.Location = new System.Drawing.Point(193, 204);
             this.classnomLABEL.Name = "classnomLABEL";
             this.classnomLABEL.Size = new System.Drawing.Size(0, 16);
             this.classnomLABEL.TabIndex = 132;
@@ -419,20 +417,10 @@
             this.telelabel.AutoSize = true;
             this.telelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.telelabel.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.telelabel.Location = new System.Drawing.Point(193, 212);
+            this.telelabel.Location = new System.Drawing.Point(193, 166);
             this.telelabel.Name = "telelabel";
             this.telelabel.Size = new System.Drawing.Size(0, 16);
             this.telelabel.TabIndex = 131;
-            // 
-            // tuteurNOMLABEL
-            // 
-            this.tuteurNOMLABEL.AutoSize = true;
-            this.tuteurNOMLABEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tuteurNOMLABEL.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.tuteurNOMLABEL.Location = new System.Drawing.Point(193, 172);
-            this.tuteurNOMLABEL.Name = "tuteurNOMLABEL";
-            this.tuteurNOMLABEL.Size = new System.Drawing.Size(0, 16);
-            this.tuteurNOMLABEL.TabIndex = 130;
             // 
             // nomcompletLABEL
             // 
@@ -449,7 +437,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Silver;
-            this.label13.Location = new System.Drawing.Point(3, 337);
+            this.label13.Location = new System.Drawing.Point(3, 291);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(123, 16);
             this.label13.TabIndex = 128;
@@ -460,29 +448,18 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Silver;
-            this.label12.Location = new System.Drawing.Point(3, 212);
+            this.label12.Location = new System.Drawing.Point(3, 166);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(98, 16);
             this.label12.TabIndex = 127;
             this.label12.Text = "Telephone  : ";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Silver;
-            this.label11.Location = new System.Drawing.Point(3, 172);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(152, 16);
-            this.label11.TabIndex = 126;
-            this.label11.Text = "Nom complet tuteur : ";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Silver;
-            this.label10.Location = new System.Drawing.Point(3, 290);
+            this.label10.Location = new System.Drawing.Point(3, 244);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(123, 16);
             this.label10.TabIndex = 125;
@@ -493,7 +470,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Silver;
-            this.label3.Location = new System.Drawing.Point(3, 250);
+            this.label3.Location = new System.Drawing.Point(3, 204);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 16);
             this.label3.TabIndex = 124;
@@ -567,13 +544,12 @@
             this.Printbutton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Printbutton.Image = global::GESTIONECOLE.Properties.Resources.printicon;
             this.Printbutton.ImageActive = null;
-            this.Printbutton.Location = new System.Drawing.Point(16, 389);
+            this.Printbutton.Location = new System.Drawing.Point(291, 347);
             this.Printbutton.Name = "Printbutton";
             this.Printbutton.Size = new System.Drawing.Size(44, 43);
             this.Printbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Printbutton.TabIndex = 159;
             this.Printbutton.TabStop = false;
-            this.Printbutton.Visible = false;
             this.Printbutton.Zoom = 10;
             this.Printbutton.Click += new System.EventHandler(this.Printbutton_Click);
             // 
@@ -583,7 +559,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.ClientSize = new System.Drawing.Size(1244, 451);
-            this.Controls.Add(this.Printbutton);
             this.Controls.Add(this.precedentBTN);
             this.Controls.Add(this.bunifuImageButton2);
             this.Controls.Add(this.label1);
@@ -646,7 +621,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -658,7 +632,6 @@
         private System.Windows.Forms.Label AnnescolaireLABEL;
         private System.Windows.Forms.Label classnomLABEL;
         private System.Windows.Forms.Label telelabel;
-        private System.Windows.Forms.Label tuteurNOMLABEL;
         private System.Windows.Forms.Label nomcompletLABEL;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
