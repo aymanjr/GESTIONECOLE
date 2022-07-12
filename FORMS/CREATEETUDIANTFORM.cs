@@ -52,7 +52,7 @@ namespace GESTIONECOLE.FORMS
             if (string.IsNullOrEmpty(txtFirstname.Text) || string.IsNullOrEmpty(txtLastname.Text) || string.IsNullOrEmpty(txtadress.Text) || string.IsNullOrEmpty(txtnomcompletTUTEUR.Text) || string.IsNullOrEmpty(txttele.Text) || string.IsNullOrEmpty(txtemail.Text) ||
                 (!checkBoxOUI.Checked && !checkBoxNON.Checked) || string.IsNullOrEmpty(txtnationaliter.Text) || sex.SelectedItem == null)
             {
-                MessageBox.Show("Uue column est vide", "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Une column est vide", "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -113,7 +113,7 @@ namespace GESTIONECOLE.FORMS
 
         private void CANCELBTN_Click_1(object sender, EventArgs e)
         {
-            if (MessageBox.Show("est ce que tu veux sortir ? ", "Question", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            if (MessageBox.Show("Est ce que tu veux sortir ? ", "Question", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
                     ETUDIANT_FORM ee = new ETUDIANT_FORM();
                      this.Hide();

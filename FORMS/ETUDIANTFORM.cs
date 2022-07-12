@@ -319,7 +319,7 @@ namespace GESTIONECOLE
 
             r.cmdb = new SqlCommandBuilder(r.adapter);
             r.adapter.Update(r.ds,"eleve");
-            MessageBox.Show("done", "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show("Done", "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
             list_ETUDIANT();
 
         }

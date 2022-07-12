@@ -31,7 +31,7 @@ namespace GESTIONECOLE
 
             if (r.reader.Read())
             {
-                MessageBox.Show("WELCOME BACK ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("BIENVENUE ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 THEMAINFORM ee = new THEMAINFORM();
                    this.Hide();
@@ -42,7 +42,7 @@ namespace GESTIONECOLE
             }
             else
             {
-                if (MessageBox.Show("VOTRE INFORMATION ET INCORRECT ", "ALERT", MessageBoxButtons.OK, MessageBoxIcon.Error) == DialogResult.OK)
+                if (MessageBox.Show("Votre information et incorrect ", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error) == DialogResult.OK)
                 {
                     txtpass.ResetText();
                 }
@@ -59,7 +59,7 @@ namespace GESTIONECOLE
 
         private void cancelbtn_Click(object sender, EventArgs e)   //cancel button
         {
-            if (MessageBox.Show("TU VEUX QUITER L'APPLICATION ? ", "ALERT", MessageBoxButtons.YesNo, MessageBoxIcon.Stop) == DialogResult.Yes)
+            if (MessageBox.Show("tu veux quiter l'applicaion ? ", "Alert", MessageBoxButtons.YesNo, MessageBoxIcon.Stop) == DialogResult.Yes)
             {
                 Application.Exit();
 
@@ -72,7 +72,7 @@ namespace GESTIONECOLE
 
         private void label3_Click(object sender, EventArgs e)  //quiter button 
         {
-            if (MessageBox.Show("TU VEUX QUITER L'APPLICATION ? ", "ALERT", MessageBoxButtons.YesNo, MessageBoxIcon.Stop) == DialogResult.Yes)
+            if (MessageBox.Show("tu veux quiter l'applicaion ? ", "Alert", MessageBoxButtons.YesNo, MessageBoxIcon.Stop) == DialogResult.Yes)
             {
                 Application.Exit();
 
@@ -119,7 +119,7 @@ namespace GESTIONECOLE
         { 
             if (string.IsNullOrEmpty(Txtusername.Text) || string.IsNullOrEmpty(txtpass.Text))
             {
-                MessageBox.Show("ENTRER VOTRE USERNAME ET PASSWORD", "ALERT", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("entre votre username et password", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 Txtusername.ResetText();
                 txtpass.ResetText();
 

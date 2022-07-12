@@ -157,7 +157,7 @@ namespace GESTIONECOLE.FORMS
         {
             r.cmdb = new SqlCommandBuilder(r.adapter);
             r.adapter.Update(r.ds, "events");
-            if (MessageBox.Show("L'événement a été modife ", "Terminer", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
+            if (MessageBox.Show("L'événement a été modifer ", "Terminer", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
             {
                 eventsshow();
 

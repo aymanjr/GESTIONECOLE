@@ -57,7 +57,7 @@ namespace GESTIONECOLE.FORMS
                 r.command.ExecuteNonQuery();
                 r.deconnecter();
 
-                MessageBox.Show("Employee a éte crée ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("L'employee a éte crée ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 EMPLOYEEFORM ee = new EMPLOYEEFORM();
                this.Hide();

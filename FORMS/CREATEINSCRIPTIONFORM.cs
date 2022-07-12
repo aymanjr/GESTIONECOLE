@@ -70,7 +70,7 @@ namespace GESTIONECOLE.FORMS
         {
             if (NIVEAUCOMBO.Text == "")
             {
-                MessageBox.Show("Veuillez Selectioner Niveau","Information", MessageBoxButtons.OK , MessageBoxIcon.Hand);
+                MessageBox.Show("Veuillez vous selectioner niveau","Information", MessageBoxButtons.OK , MessageBoxIcon.Hand);
                 return;
             }
             r.connecter();
@@ -107,7 +107,7 @@ namespace GESTIONECOLE.FORMS
 
             if (CLASSCOMBO.Text == "" )
             {
-                MessageBox.Show("Veuillez Selectioner class", "Information", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                MessageBox.Show("Veuillez vous selectioner class", "Information", MessageBoxButtons.OK, MessageBoxIcon.Hand);
                 return;
             }
             r.connecter();
@@ -143,7 +143,7 @@ namespace GESTIONECOLE.FORMS
         {
             if (elevecombo.Text == "")
             {
-                MessageBox.Show("Veuillez Selectioner eleve", "Information", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                MessageBox.Show("Veuillez vous selectioner eleve", "Information", MessageBoxButtons.OK, MessageBoxIcon.Hand);
                 return;
             }
             r.connecter();
@@ -196,13 +196,13 @@ namespace GESTIONECOLE.FORMS
             etd_recherche();
             if (count_etd == "1")
             {
-                    MessageBox.Show("cette etd a ete deja INSCRIER", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Cette etudiant a ete deja inscrier ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
 
             if (NIVEAUCOMBO.Text == "" && CLASSCOMBO.Text == "" && elevecombo.Text == "")
             {
-                MessageBox.Show("Veuillez saisir", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Veuillez vous saisir", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
 
 

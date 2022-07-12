@@ -35,6 +35,8 @@
             this.label15 = new System.Windows.Forms.Label();
             this.BtnLogin = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label16
@@ -42,8 +44,8 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Silver;
-            this.label16.Location = new System.Drawing.Point(53, 160);
+            this.label16.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label16.Location = new System.Drawing.Point(38, 266);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(100, 24);
             this.label16.TabIndex = 131;
@@ -65,11 +67,11 @@
             this.txtpass.LineIdleColor = System.Drawing.Color.LightGray;
             this.txtpass.LineMouseHoverColor = System.Drawing.Color.Black;
             this.txtpass.LineThickness = 3;
-            this.txtpass.Location = new System.Drawing.Point(178, 150);
+            this.txtpass.Location = new System.Drawing.Point(42, 294);
             this.txtpass.Margin = new System.Windows.Forms.Padding(4);
             this.txtpass.MaxLength = 32767;
             this.txtpass.Name = "txtpass";
-            this.txtpass.Size = new System.Drawing.Size(220, 34);
+            this.txtpass.Size = new System.Drawing.Size(319, 34);
             this.txtpass.TabIndex = 130;
             this.txtpass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtpass.OnValueChanged += new System.EventHandler(this.txtpass_OnValueChanged);
@@ -90,11 +92,11 @@
             this.Txtusername.LineIdleColor = System.Drawing.Color.LightGray;
             this.Txtusername.LineMouseHoverColor = System.Drawing.Color.Black;
             this.Txtusername.LineThickness = 3;
-            this.Txtusername.Location = new System.Drawing.Point(178, 76);
+            this.Txtusername.Location = new System.Drawing.Point(42, 205);
             this.Txtusername.Margin = new System.Windows.Forms.Padding(4);
             this.Txtusername.MaxLength = 32767;
             this.Txtusername.Name = "Txtusername";
-            this.Txtusername.Size = new System.Drawing.Size(220, 34);
+            this.Txtusername.Size = new System.Drawing.Size(319, 34);
             this.Txtusername.TabIndex = 129;
             this.Txtusername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -104,7 +106,7 @@
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Silver;
-            this.label15.Location = new System.Drawing.Point(53, 86);
+            this.label15.Location = new System.Drawing.Point(38, 177);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(105, 24);
             this.label15.TabIndex = 128;
@@ -135,14 +137,14 @@
             this.BtnLogin.IconVisible = true;
             this.BtnLogin.IconZoom = 90D;
             this.BtnLogin.IsTab = false;
-            this.BtnLogin.Location = new System.Drawing.Point(178, 214);
+            this.BtnLogin.Location = new System.Drawing.Point(42, 388);
             this.BtnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.BtnLogin.Name = "BtnLogin";
             this.BtnLogin.Normalcolor = System.Drawing.Color.Transparent;
             this.BtnLogin.OnHovercolor = System.Drawing.Color.Transparent;
             this.BtnLogin.OnHoverTextColor = System.Drawing.Color.LightGray;
             this.BtnLogin.selected = false;
-            this.BtnLogin.Size = new System.Drawing.Size(78, 41);
+            this.BtnLogin.Size = new System.Drawing.Size(319, 41);
             this.BtnLogin.TabIndex = 132;
             this.BtnLogin.Text = "LOGIN";
             this.BtnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -157,12 +159,11 @@
             this.bunifuFlatButton1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.bunifuFlatButton1.BorderRadius = 7;
-            this.bunifuFlatButton1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.bunifuFlatButton1.ButtonText = "Quiter";
+            this.bunifuFlatButton1.ButtonText = "X";
             this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton1.ForeColor = System.Drawing.Color.DarkRed;
+            this.bunifuFlatButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton1.ForeColor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton1.Iconimage = null;
             this.bunifuFlatButton1.Iconimage_right = null;
@@ -175,29 +176,39 @@
             this.bunifuFlatButton1.IconVisible = true;
             this.bunifuFlatButton1.IconZoom = 90D;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(320, 214);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(364, 1);
             this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.LightGray;
             this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(78, 41);
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(28, 29);
             this.bunifuFlatButton1.TabIndex = 133;
-            this.bunifuFlatButton1.Text = "Quiter";
+            this.bunifuFlatButton1.Text = "X";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(124, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(151, 132);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 134;
+            this.pictureBox1.TabStop = false;
             // 
             // LOGINFORM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(663, 335);
+            this.ClientSize = new System.Drawing.Size(394, 471);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bunifuFlatButton1);
             this.Controls.Add(this.BtnLogin);
             this.Controls.Add(this.label16);
@@ -210,6 +221,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.loginbtn_KeyDown);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,6 +235,7 @@
         private System.Windows.Forms.Label label15;
         private Bunifu.Framework.UI.BunifuFlatButton BtnLogin;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

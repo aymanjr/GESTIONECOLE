@@ -103,7 +103,7 @@ namespace GESTIONECOLE
 
             r.cmdb = new SqlCommandBuilder(r.adapter);
             r.adapter.Update(r.ds, "EMPLOYEE");
-            if (MessageBox.Show("Le Employee est bien modifer ", "Terminer", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
+            if (MessageBox.Show("L'employee est bien modifer ", "Terminer", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
             {
                 list_teachers();
 
@@ -125,7 +125,7 @@ namespace GESTIONECOLE
             if (dataGridView1.AreAllCellsSelected(true))
             {
 
-                MessageBox.Show("sélectionner juste une row ", "Cellules sélectionnées", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("sélectionner juste une row ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
             }
             else
@@ -137,7 +137,7 @@ namespace GESTIONECOLE
             command.ExecuteNonQuery();
             r.deconnecter();
 
-            if (MessageBox.Show("Employee est bien supprimé ", "Terminer", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
+            if (MessageBox.Show("L'employee est bien supprimé ", "Terminer", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
             {
                 list_teachers();
 
@@ -157,7 +157,7 @@ namespace GESTIONECOLE
             r.deconnecter();
             if (dataGridView1.RowCount < 1)
             {
-                MessageBox.Show("Ancun trouver ", "Aucun",  MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ancun trouver", "Aucun",  MessageBoxButtons.OK, MessageBoxIcon.Error);
                 list_teachers();
 
             }
