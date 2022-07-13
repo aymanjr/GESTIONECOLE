@@ -81,7 +81,7 @@ namespace GESTIONECOLE.FORMS
         private void bunifuFlatButton9_Click(object sender, EventArgs e)
         {
             
-         if (MessageBox.Show("Exit or no?",
+         if (MessageBox.Show("tu veux quiter l'applicaion?",
                            "GESTION ECOLE",
                             MessageBoxButtons.YesNo,
                             MessageBoxIcon.Information) == DialogResult.Yes)
