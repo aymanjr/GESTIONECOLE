@@ -100,18 +100,21 @@ namespace GESTIONECOLE.FORMS
 
         private void rechercherBTN_Click(object sender, EventArgs e)
         {
+            if (combo_year.selectedValue == "select annee")
+            {
+                MessageBox.Show("voulez vous selctioner date", "Information", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+            }
+            else
+            { 
+                r.ds.Tables["events"].Clear();
 
+                r.connecter();
+                r.adapter = new SqlDataAdapter("select * from EVENTES where year(EV_DATE) = '" + combo_year.selectedValue.ToString() + "' order by EV_DATE desc  ", r.connection);
 
-            r.ds.Tables["events"].Clear();
-
-            r.connecter();
-            r.adapter = new SqlDataAdapter("select * from EVENTES where year(EV_DATE) = '" + combo_year.selectedValue.ToString() + "' order by EV_DATE desc  ", r.connection);
-
-            r.adapter.Fill(r.ds, "events");
-            dataGridView1.DataSource = r.ds.Tables["events"];
-            r.deconnecter();
-
-
+                r.adapter.Fill(r.ds, "events");
+                dataGridView1.DataSource = r.ds.Tables["events"];
+                r.deconnecter();
+            }
         }
 
         int eventid;
@@ -119,9 +122,6 @@ namespace GESTIONECOLE.FORMS
         {
             DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
             eventid = int.Parse(row.Cells["EV_ID"].Value.ToString());
-
-
-
         }
 
         private void SupprimerBTN_Click(object sender, EventArgs e)
@@ -129,7 +129,6 @@ namespace GESTIONECOLE.FORMS
             if (dataGridView1.SelectedRows.Count == 0)
             {
                 MessageBox.Show("Sélectionner une ligne dans la liste ", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Hand);
-
             }
             else
             {
@@ -141,11 +140,7 @@ namespace GESTIONECOLE.FORMS
                 {
                     eventsshow();
                 }
-
-
             }
-
-
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
@@ -160,9 +155,7 @@ namespace GESTIONECOLE.FORMS
             if (MessageBox.Show("L'événement a été modifer ", "Terminer", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
             {
                 eventsshow();
-
             }
-
         }
 
         public void recentevent()
@@ -177,33 +170,25 @@ namespace GESTIONECOLE.FORMS
             if (r.dt.Rows[0]["EV_DATE"].ToString().Length == 20)
             {
                 datelabelRecent.Text = r.dt.Rows[0]["EV_DATE"].ToString().Substring(0, 9);
-
             }
             else if (r.dt.Rows[0]["EV_DATE"].ToString().Length == 21)
             {
                 datelabelRecent.Text = r.dt.Rows[0]["EV_DATE"].ToString().Substring(0, 10);
-
             }
             else
             {
                 datelabelRecent.Text = r.dt.Rows[0]["EV_DATE"].ToString().Substring(0, 11);
             }
-
-
-
-
             r.deconnecter();
         }
 
         public void prochaineevent()
         {
-
-
             r.connecter();
             r.command = new SqlCommand("select  top 1 *  from EVENTES where EV_DATE > GETDATE()  order by EV_DATE asc   ", r.connection);
             r.reader = r.command.ExecuteReader();
             r.dt1.Load(r.reader);
-               if (r.dt1.Rows.Count == 0 )
+            if (r.dt1.Rows.Count == 0 )
             {
                 nomlabelProchaine.Text = "Auncun Prochain événement ";
                 richTextBoxProchaine.Text = "Auncun Prochain événement";
@@ -211,31 +196,21 @@ namespace GESTIONECOLE.FORMS
             }
             else
             {
-
-            
-            nomlabelProchaine.Text = r.dt1.Rows[0]["EV_nom"].ToString();
-            richTextBoxProchaine.Text = r.dt1.Rows[0]["EV_DESCR"].ToString();
-
-            if (r.dt1.Rows[0]["EV_DATE"].ToString().Length == 20)
-            {
-
-                datelabelProchaine.Text = r.dt1.Rows[0]["EV_DATE"].ToString().Substring(0, 9);
-
+                nomlabelProchaine.Text = r.dt1.Rows[0]["EV_nom"].ToString();
+                richTextBoxProchaine.Text = r.dt1.Rows[0]["EV_DESCR"].ToString(); 
+                if (r.dt1.Rows[0]["EV_DATE"].ToString().Length == 20)
+                {
+                   datelabelProchaine.Text = r.dt1.Rows[0]["EV_DATE"].ToString().Substring(0, 9);
+                }
+                else if (r.dt1.Rows[0]["EV_DATE"].ToString().Length == 21)
+                {
+                    datelabelProchaine.Text = r.dt1.Rows[0]["EV_DATE"].ToString().Substring(0, 10);
+                }
+                else
+                {
+                        datelabelProchaine.Text = r.dt1.Rows[0]["EV_DATE"].ToString().Substring(0, 11);
+                }
             }
-            else if (r.dt1.Rows[0]["EV_DATE"].ToString().Length == 21)
-            {
-
-                datelabelProchaine.Text = r.dt1.Rows[0]["EV_DATE"].ToString().Substring(0, 10);
-
-            }
-            else
-            {
-
-                datelabelProchaine.Text = r.dt1.Rows[0]["EV_DATE"].ToString().Substring(0, 11);
-
-            }
-              }
-
             r.deconnecter();
         }
         private void panel3_Paint(object sender, PaintEventArgs e)
