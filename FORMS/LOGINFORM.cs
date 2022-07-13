@@ -31,7 +31,7 @@ namespace GESTIONECOLE
 
             if (r.reader.Read())
             {
-                MessageBox.Show("BIENVENUE ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show("BIENVENUE ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 THEMAINFORM ee = new THEMAINFORM();
                    this.Hide();
