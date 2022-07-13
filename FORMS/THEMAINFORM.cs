@@ -82,7 +82,7 @@ namespace GESTIONECOLE.FORMS
         {
             
          if (MessageBox.Show("tu veux quiter l'applicaion?",
-                           "GESTION ECOLE",
+                           "Question",
                             MessageBoxButtons.YesNo,
                             MessageBoxIcon.Information) == DialogResult.Yes)
         {
