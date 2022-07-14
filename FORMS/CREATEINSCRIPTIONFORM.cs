@@ -200,35 +200,40 @@ namespace GESTIONECOLE.FORMS
 
             }
 
-            if (NIVEAUCOMBO.Text == "" && CLASSCOMBO.Text == "" && elevecombo.Text == "")
+            try
+            {
+                if (NIVEAUCOMBO.Text == "" && CLASSCOMBO.Text == "" && elevecombo.Text == "")
+                            {
+                                MessageBox.Show("Veuillez vous saisir", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                return;
+                            }
+                            else
+                            {
+                                r.connecter();
+                                r.command = new SqlCommand("insert into inscription values('" + idclass + "','" + id_etd + "','" + DateTime.Now.ToShortDateString().ToString() + "','" + TXTCOST.Text + "')", r.connection);
+                                r.command.ExecuteNonQuery();
+
+
+                                MessageBox.Show("Bien ajouter", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                r.deconnecter();
+                                TXTCOST.Clear();
+
+                                NIVEAUCOMBO.Text = "";
+                                CLASSCOMBO.Text = "";
+                                elevecombo.Text = "";
+
+                                gridfill();
+                                showrecents();
+                            }
+            }
+            catch
             {
                 MessageBox.Show("Veuillez vous saisir", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
-
-
             }
-            else
-            {
-                r.connecter();
-                r.command = new SqlCommand("insert into inscription values('" + idclass + "','" + id_etd + "','" + DateTime.Now.ToShortDateString().ToString() + "','" + TXTCOST.Text + "')", r.connection);
-                r.command.ExecuteNonQuery();
 
-
-                MessageBox.Show("Bien ajouter", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                r.deconnecter();
-                TXTCOST.Clear();
-
-                NIVEAUCOMBO.Text = "";
-                CLASSCOMBO.Text = "";
-                elevecombo.Text = "";
-
-                gridfill();
-                showrecents();
-              
-
-
-            }
+            
         }
 
         private void print1_Click(object sender, EventArgs e)

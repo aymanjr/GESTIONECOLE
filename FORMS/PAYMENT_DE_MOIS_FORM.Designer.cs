@@ -397,7 +397,6 @@
             this.txtprenom.TabIndex = 143;
             this.txtprenom.Text = "Prenom";
             this.txtprenom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtprenom.OnValueChanged += new System.EventHandler(this.txtprenom_OnValueChanged);
             this.txtprenom.Enter += new System.EventHandler(this.txtprenom_Enter);
             // 
             // eleverechercherBTN
@@ -437,10 +436,7 @@
             this.txt_nomeleve.TabIndex = 141;
             this.txt_nomeleve.Text = "Nom";
             this.txt_nomeleve.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txt_nomeleve.OnValueChanged += new System.EventHandler(this.txt_nomeleve_OnValueChanged);
-            this.txt_nomeleve.Click += new System.EventHandler(this.txt_nomeleve_Click);
             this.txt_nomeleve.Enter += new System.EventHandler(this.txt_nomeleve_Enter);
-            this.txt_nomeleve.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txt_nomeleve_MouseClick);
             // 
             // txtfraisCLASS
             // 

@@ -218,7 +218,7 @@ namespace GESTIONECOLE.FORMS
 
         private void rechercheBTN_type_Click(object sender, EventArgs e)
         {
-            if (combobox_type.selectedValue == null)
+            if (combobox_type.selectedValue == "selectioner type")
             {
                 MessageBox.Show("Entre type ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Hand);
             }

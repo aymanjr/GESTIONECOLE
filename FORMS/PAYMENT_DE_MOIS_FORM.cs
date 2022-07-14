@@ -20,37 +20,34 @@ namespace GESTIONECOLE.FORMS
 
         public void rechercheleve()
         {
-            r.connecter();
-            r.adapter = new SqlDataAdapter("select * FROM eleve where el_nom = '" + txt_nomeleve.Text + "' and el_prenom = '" + txtprenom.Text + "' ", r.connection);
-            r.ds = new System.Data.DataSet();
-            r.adapter.Fill(r.ds, "eleve");
-
-            if (r.ds.Tables["eleve"].Rows.Count == 0)
+            try
             {
+                r.connecter();
+                r.adapter = new SqlDataAdapter("select * FROM eleve where el_nom = '" + txt_nomeleve.Text + "' and el_prenom = '" + txtprenom.Text + "' ", r.connection);
+                r.ds = new System.Data.DataSet();
+                r.adapter.Fill(r.ds, "eleve");
 
-                MessageBox.Show("Aucune éleve avec ce nom et ce prénom", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Hand);
-                txt_nomeleve.Text = "";
-                txtprenom.Text = "";
+                if (r.ds.Tables["eleve"].Rows.Count == 0)
+                { MessageBox.Show("Aucune éleve avec ce nom et ce prénom", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Hand); }
+                else
+                {
+                                validElev = true;
+                                eleveid = int.Parse(r.ds.Tables["eleve"].Rows[0]["el_id"].ToString());
+                               // TrsprtTYPENOM.Text = eleveid.ToString();
+                                nomcompleteleveLABEL.Text = r.ds.Tables["eleve"].Rows[0]["el_nom"].ToString() + "  " + r.ds.Tables["eleve"].Rows[0]["el_prenom"].ToString();
+                                moisshow();
+                                showpayedmois();
+                                classrecherche();
+                                inscriptionrech();
+                                showlastpayment();
 
+                 }
+                 r.deconnecter();
             }
-            else
-            {
-                validElev = true;
-                eleveid = int.Parse(r.ds.Tables["eleve"].Rows[0]["el_id"].ToString());
-               // TrsprtTYPENOM.Text = eleveid.ToString();
-                nomcompleteleveLABEL.Text = r.ds.Tables["eleve"].Rows[0]["el_nom"].ToString() + "  " + r.ds.Tables["eleve"].Rows[0]["el_prenom"].ToString();
-                moisshow();
-                showpayedmois();
-                classrecherche();
-                inscriptionrech();
-                showlastpayment();
-
-            }
-
-
-            r.deconnecter();
+            catch
+            { MessageBox.Show("Aucune éleve avec ce nom et ce prénom et ce mois", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Hand); }
         }
-
+        
         public void FRAIS_MOIS_ELEVE()
         {
             r.connecter();
@@ -256,19 +253,11 @@ namespace GESTIONECOLE.FORMS
             if (string.IsNullOrWhiteSpace(txt_nomeleve.Text) || string.IsNullOrWhiteSpace(txtprenom.Text))
             {
                 MessageBox.Show("Entrer le nom et le prénom d'éleve", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Hand);
-
             }
             else
             {
-
-
-
                 rechercheleve();
-
-
             }
-
-
         }
 
         private void comboBox_mois_onItemSelected(object sender, EventArgs e)
@@ -415,63 +404,68 @@ namespace GESTIONECOLE.FORMS
 
         private void PyerBTN_Click(object sender, EventArgs e)
         {
-
-            if (txtprenom.Text == "Prenom" || txt_nomeleve.Text == "Nom")
+            try
             {
-                MessageBox.Show("Enter un éleve ", "Information", MessageBoxButtons.OK,MessageBoxIcon.Information) ;
-
-            }  else if(validElev == false)
-            {
-                MessageBox.Show("Enter un éleve ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                if (comboBox_mois.selectedValue == null)
+                if (txtprenom.Text == "Prenom" || txt_nomeleve.Text == "Nom")
                 {
-                    MessageBox.Show("Selctioner un mois  ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Enter un éleve ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                }
+                else if (validElev == false)
+                {
+                    MessageBox.Show("Enter un éleve ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    if (clickcalcul == false)
+                    if (comboBox_mois.selectedValue == null)
                     {
-                        MessageBox.Show("Calculer le montant depuis payer ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Selectioner un mois  ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                     }
                     else
                     {
-
-                        if (!trspCHECKBOX.Checked)
+                        if (clickcalcul == false)
                         {
-                            trsptypeid = 0;
+                            MessageBox.Show("Calculer le montant depuis payer ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
-                        r.connecter();
-                        r.command = new SqlCommand(" exec ajouterfraismois '" + insid + "','" + annescolaire + "','" + trsptypeid + "','" + moisid + "','" + txtmontanttotal.Text + "','" + DateTime.Now.ToShortDateString() + "' ", r.connection);
+                        else
+                        {
 
-                        r.command.ExecuteNonQuery();
-                        MessageBox.Show("Paiment a été ajouter ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            if (!trspCHECKBOX.Checked)
+                            {
+                                trsptypeid = 0;
+                            }
+                            r.connecter();
+                            r.command = new SqlCommand(" exec ajouterfraismois '" + insid + "','" + annescolaire + "','" + trsptypeid + "','" + moisid + "','" + txtmontanttotal.Text + "','" + DateTime.Now.ToShortDateString() + "' ", r.connection);
+
+                            r.command.ExecuteNonQuery();
+                            MessageBox.Show("Paiment a été ajouter ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
 
-                        r.deconnecter();
+                            r.deconnecter();
 
-                        showlastpayment();
+                            showlastpayment();
 
 
-                        //   PD.cost = MontantLABEL.Text;
-                        //  PD.class_ = classnomLABEL.Text;
-                        // PD.mois = moislabel.Text;
-                        // PD.nomcomplet = nomcompleteleveLABEL.Text;
-                        // PD.transporttype = TrsprtTYPENOM.Text;
-                        //PD.annescolaire = annescolaire;
-                        //PD.DatePayment = datepaymentlabel.Text;
-                        printthelastpayment();
+                            //   PD.cost = MontantLABEL.Text;
+                            //  PD.class_ = classnomLABEL.Text;
+                            // PD.mois = moislabel.Text;
+                            // PD.nomcomplet = nomcompleteleveLABEL.Text;
+                            // PD.transporttype = TrsprtTYPENOM.Text;
+                            //PD.annescolaire = annescolaire;
+                            //PD.DatePayment = datepaymentlabel.Text;
+                            printthelastpayment();
 
+
+                        }
 
                     }
-
                 }
             }
+            catch { MessageBox.Show("Calculer le montant depuis payer et Selectioner le mois", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         }
+        
         public void printthelastpayment()
         {
             print_Paymentdemois PD = new print_Paymentdemois(nomcompleteleveLABEL.Text,MontantLABEL.Text,classnomLABEL.Text, moislabel.Text, TrsprtTYPENOM.Text, annescolaire, datepaymentlabel.Text);
@@ -487,25 +481,6 @@ namespace GESTIONECOLE.FORMS
             this.Close();
         }
 
-        private void txt_nomeleve_OnValueChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void txtprenom_OnValueChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void txt_nomeleve_MouseClick(object sender, MouseEventArgs e)
-        {
-          
-
-        }
-
-        private void txt_nomeleve_Click(object sender, EventArgs e)
-        {
-          
-        }
 
         private void txt_nomeleve_Enter(object sender, EventArgs e)
         {
