@@ -263,6 +263,7 @@
             this.checkBoxOUI.TabIndex = 94;
             this.checkBoxOUI.Text = "OUI";
             this.checkBoxOUI.UseVisualStyleBackColor = true;
+            this.checkBoxOUI.CheckedChanged += new System.EventHandler(this.checkBoxOUI_CheckedChanged);
             // 
             // checkBoxNON
             // 
@@ -274,6 +275,7 @@
             this.checkBoxNON.TabIndex = 95;
             this.checkBoxNON.Text = "NON";
             this.checkBoxNON.UseVisualStyleBackColor = true;
+            this.checkBoxNON.CheckedChanged += new System.EventHandler(this.checkBoxNON_CheckedChanged);
             // 
             // createbtn
             // 

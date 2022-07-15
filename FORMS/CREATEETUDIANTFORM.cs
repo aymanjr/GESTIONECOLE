@@ -30,7 +30,11 @@ namespace GESTIONECOLE.FORMS
         private void CREATEETUDIANTFORM_Load(object sender, EventArgs e)
         {
 
-
+            if(checkBoxOUI.Checked && checkBoxNON.Checked)
+            {
+                checkBoxOUI.Checked = true;
+                checkBoxNON.Checked = false;
+            }
         }
 
 
@@ -126,6 +130,24 @@ namespace GESTIONECOLE.FORMS
 
             }
 
+        }
+
+        private void checkBoxOUI_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxOUI.Checked && checkBoxNON.Checked)
+            {
+                checkBoxOUI.Checked = true;
+                checkBoxNON.Checked = false;
+            }
+        }
+
+        private void checkBoxNON_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxOUI.Checked && checkBoxNON.Checked)
+            {
+                checkBoxOUI.Checked = false;
+                checkBoxNON.Checked = true;
+            }
         }
     }
 }
