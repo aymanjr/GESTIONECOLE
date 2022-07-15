@@ -256,7 +256,7 @@ namespace GESTIONECOLE.FORMS
             r.ds.Clear();
             r.connecter();
 
-            r.adapter = new SqlDataAdapter(" select (EL_NOM +SPACE(2)+ EL_PRENOM) as Nom_Complet,SUBSTRING (c.CL_nom,7,20) as Class,c.CL_annee_scolaire as   Anne_scolaire,i.INS_date  as date_Inscription from eleve E , INSCRIPTION I, CLASS c where e.EL_ID = i.INS_eleveID# and c.CL_id=i.INS_classID# and c.CL_annee_scolaire = '" + combo_annescolaire.selectedValue.ToString() + "' order by i.INS_date desc ", r.connection);
+            r.adapter = new SqlDataAdapter(" select [INS_id] as 'Numero Inscription', (EL_NOM +SPACE(2)+ EL_PRENOM) as Nom_Complet,SUBSTRING (c.CL_nom,7,20) as Class,c.CL_annee_scolaire as   Anne_scolaire,i.INS_date  as date_Inscription from eleve E , INSCRIPTION I, CLASS c where e.EL_ID = i.INS_eleveID# and c.CL_id=i.INS_classID# and c.CL_annee_scolaire = '" + combo_annescolaire.selectedValue.ToString() + "' order by i.INS_date desc ", r.connection);
             r.adapter.Fill(r.ds, "inscr");
             dataGridView1.DataSource = r.ds.Tables["inscr"];
 
