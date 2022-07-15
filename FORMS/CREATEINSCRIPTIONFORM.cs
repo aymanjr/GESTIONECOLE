@@ -365,5 +365,15 @@ namespace GESTIONECOLE.FORMS
             //cout = r.dt.Rows[compt]["INS_cout"].ToString();
 
         }
+
+        private void bunifuFlatButton2_Click_1(object sender, EventArgs e)
+        {
+            ETUDIANT_FORM ee = new ETUDIANT_FORM();
+
+
+            this.Hide();
+            ee.ShowDialog();
+            this.Close();
+        }
     }
 }

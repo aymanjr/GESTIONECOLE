@@ -51,7 +51,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.Printbutton = new Bunifu.Framework.UI.BunifuImageButton();
             this.dateinscLABEL = new System.Windows.Forms.Label();
             this.AnnescolaireLABEL = new System.Windows.Forms.Label();
             this.classnomLABEL = new System.Windows.Forms.Label();
@@ -63,15 +62,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.bunifuImageButton4 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.Printbutton = new Bunifu.Framework.UI.BunifuImageButton();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.precedentBTN = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.refreshBTN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rechercherBTN)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Printbutton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Printbutton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.precedentBTN)).BeginInit();
             this.SuspendLayout();
@@ -79,7 +80,7 @@
             // NIVEAUCOMBO
             // 
             this.NIVEAUCOMBO.FormattingEnabled = true;
-            this.NIVEAUCOMBO.Location = new System.Drawing.Point(138, 110);
+            this.NIVEAUCOMBO.Location = new System.Drawing.Point(138, 131);
             this.NIVEAUCOMBO.Name = "NIVEAUCOMBO";
             this.NIVEAUCOMBO.Size = new System.Drawing.Size(179, 21);
             this.NIVEAUCOMBO.TabIndex = 0;
@@ -88,7 +89,7 @@
             // CLASSCOMBO
             // 
             this.CLASSCOMBO.FormattingEnabled = true;
-            this.CLASSCOMBO.Location = new System.Drawing.Point(138, 176);
+            this.CLASSCOMBO.Location = new System.Drawing.Point(138, 197);
             this.CLASSCOMBO.Name = "CLASSCOMBO";
             this.CLASSCOMBO.Size = new System.Drawing.Size(179, 21);
             this.CLASSCOMBO.TabIndex = 1;
@@ -96,7 +97,7 @@
             // 
             // TXTCOST
             // 
-            this.TXTCOST.Location = new System.Drawing.Point(138, 326);
+            this.TXTCOST.Location = new System.Drawing.Point(138, 347);
             this.TXTCOST.Name = "TXTCOST";
             this.TXTCOST.Size = new System.Drawing.Size(179, 20);
             this.TXTCOST.TabIndex = 3;
@@ -104,7 +105,7 @@
             // elevecombo
             // 
             this.elevecombo.FormattingEnabled = true;
-            this.elevecombo.Location = new System.Drawing.Point(138, 251);
+            this.elevecombo.Location = new System.Drawing.Point(138, 272);
             this.elevecombo.Name = "elevecombo";
             this.elevecombo.Size = new System.Drawing.Size(179, 21);
             this.elevecombo.TabIndex = 10;
@@ -115,7 +116,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Silver;
-            this.label5.Location = new System.Drawing.Point(12, 171);
+            this.label5.Location = new System.Drawing.Point(12, 192);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(78, 24);
             this.label5.TabIndex = 94;
@@ -126,7 +127,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Silver;
-            this.label6.Location = new System.Drawing.Point(12, 105);
+            this.label6.Location = new System.Drawing.Point(12, 126);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(93, 24);
             this.label6.TabIndex = 94;
@@ -137,7 +138,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Silver;
-            this.label7.Location = new System.Drawing.Point(12, 246);
+            this.label7.Location = new System.Drawing.Point(12, 267);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(81, 24);
             this.label7.TabIndex = 95;
@@ -149,7 +150,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Silver;
-            this.label8.Location = new System.Drawing.Point(12, 324);
+            this.label8.Location = new System.Drawing.Point(12, 345);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(115, 24);
             this.label8.TabIndex = 96;
@@ -381,20 +382,6 @@
             this.panel3.Size = new System.Drawing.Size(335, 343);
             this.panel3.TabIndex = 119;
             // 
-            // Printbutton
-            // 
-            this.Printbutton.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Printbutton.Image = global::GESTIONECOLE.Properties.Resources.printicon;
-            this.Printbutton.ImageActive = null;
-            this.Printbutton.Location = new System.Drawing.Point(874, 396);
-            this.Printbutton.Name = "Printbutton";
-            this.Printbutton.Size = new System.Drawing.Size(44, 43);
-            this.Printbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Printbutton.TabIndex = 159;
-            this.Printbutton.TabStop = false;
-            this.Printbutton.Zoom = 10;
-            this.Printbutton.Click += new System.EventHandler(this.Printbutton_Click);
-            // 
             // dateinscLABEL
             // 
             this.dateinscLABEL.AutoSize = true;
@@ -513,6 +500,20 @@
             this.bunifuImageButton4.TabStop = false;
             this.bunifuImageButton4.Zoom = 10;
             // 
+            // Printbutton
+            // 
+            this.Printbutton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Printbutton.Image = global::GESTIONECOLE.Properties.Resources.printicon;
+            this.Printbutton.ImageActive = null;
+            this.Printbutton.Location = new System.Drawing.Point(874, 396);
+            this.Printbutton.Name = "Printbutton";
+            this.Printbutton.Size = new System.Drawing.Size(44, 43);
+            this.Printbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Printbutton.TabIndex = 159;
+            this.Printbutton.TabStop = false;
+            this.Printbutton.Zoom = 10;
+            this.Printbutton.Click += new System.EventHandler(this.Printbutton_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -552,12 +553,50 @@
             this.precedentBTN.Zoom = 10;
             this.precedentBTN.Click += new System.EventHandler(this.precedentBTN_Click);
             // 
+            // bunifuFlatButton2
+            // 
+            this.bunifuFlatButton2.Active = true;
+            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.bunifuFlatButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton2.BorderRadius = 5;
+            this.bunifuFlatButton2.ButtonText = "Nouveau eleve";
+            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton2.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton2.Iconimage")));
+            this.bunifuFlatButton2.Iconimage_right = null;
+            this.bunifuFlatButton2.Iconimage_right_Selected = null;
+            this.bunifuFlatButton2.Iconimage_Selected = null;
+            this.bunifuFlatButton2.IconMarginLeft = 0;
+            this.bunifuFlatButton2.IconMarginRight = 0;
+            this.bunifuFlatButton2.IconRightVisible = false;
+            this.bunifuFlatButton2.IconRightZoom = 0D;
+            this.bunifuFlatButton2.IconVisible = false;
+            this.bunifuFlatButton2.IconZoom = 0D;
+            this.bunifuFlatButton2.IsTab = true;
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(16, 63);
+            this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(0);
+            this.bunifuFlatButton2.Name = "bunifuFlatButton2";
+            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(121)))));
+            this.bunifuFlatButton2.selected = true;
+            this.bunifuFlatButton2.Size = new System.Drawing.Size(301, 28);
+            this.bunifuFlatButton2.TabIndex = 161;
+            this.bunifuFlatButton2.Text = "Nouveau eleve";
+            this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuFlatButton2.Textcolor = System.Drawing.Color.Silver;
+            this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton2.Click += new System.EventHandler(this.bunifuFlatButton2_Click_1);
+            // 
             // CREATEINSCRIPTIONFORM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.ClientSize = new System.Drawing.Size(1244, 451);
+            this.Controls.Add(this.bunifuFlatButton2);
             this.Controls.Add(this.Printbutton);
             this.Controls.Add(this.precedentBTN);
             this.Controls.Add(this.bunifuImageButton2);
@@ -591,8 +630,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.rechercherBTN)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Printbutton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Printbutton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.precedentBTN)).EndInit();
             this.ResumeLayout(false);
@@ -636,5 +675,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private Bunifu.Framework.UI.BunifuImageButton Printbutton;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
     }
 }
