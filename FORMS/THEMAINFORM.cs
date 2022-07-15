@@ -175,5 +175,10 @@ namespace GESTIONECOLE.FORMS
         ee.ShowDialog();
         this.Close();
         }
+
+        private void bunifuFlatButton3_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }
